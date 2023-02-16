@@ -26,7 +26,7 @@ a {text-decoration: none;color: initial}
 .resp-img{object-fit: contain;width: 100% !important;position: relative !important;height: unset !important;}
 .chat-icon{position: fixed;right: 2.5%;bottom: 2.5%;}
 .chat-icon img{width: 10.5rem;height: auto;}
-.enq-btn {width: 5.5rem;}
+.enq-btn {width: 5.5rem;background: none;border: none;}
 select.sec3-btns {-webkit-appearance: none;position: relative;}
 select.sec3-btns::after{content: '';position: absolute;right: 0;background-image:url("/img/cross_arrow_white.svg");}
 
