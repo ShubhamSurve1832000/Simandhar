@@ -101,7 +101,7 @@ export default function programmSection() {
               </Tab.Panel>
             </div>
           </Tab.Panels>
-          <div className='clear'></div>
+          
         </div>
       </Tab.Group>
     </section >
