@@ -91,7 +91,8 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
 
 /* programm section */
 .programm-section{background-color: #F8F8F8;
-    .pro-leftbox{width: 36%;float: left;padding-right: 3rem;
+	.programm-container{display: grid;grid-template-columns: 36% 64%}
+    .pro-leftbox{padding-right: 3rem;
         p{margin-top: .6rem;}
         .tab-head-box{margin-top: 2rem;padding-right: 6rem;
             .tab-button{color: #000;font-size: 3.6rem;font-weight: 400;padding: 0;border: none;background: transparent;display: block;padding: 2.5rem 0;border-top: solid 1px #000;width: 100%;text-align: left;line-height: 4.2rem;
@@ -99,7 +100,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
             }
         }
     }
-    .pro-rigbhbox{width: 64%;float: right;background-image: url("/img/programm_bg.jpg");background-repeat: no-repeat;background-position: top right;padding: 3rem 6.6rem;padding-right: 29%;border-radius: 50px;overflow: hidden;background-size: 100%;
+    .pro-rigbhbox{background-image: url("/img/programm_bg.jpg");background-repeat: no-repeat;background-position: top right;padding: 3rem 6.6rem;padding-right: 29%;border-radius: 50px;overflow: hidden;background-size: 100%;
         .heading04{color: #760B28;}
         ul{padding-left: 2.5rem; list-style: disc;
             li{color: #000;font-weight: 500;font-size: 2.4rem;line-height: 3.2rem;margin-top: 3rem;}
