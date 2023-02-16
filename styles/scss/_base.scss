@@ -4,13 +4,14 @@ html {font-size: 62.5%;
     @include breakpoint(max, 1700px) {font-size: 55%;}
     @include breakpoint(max, 1500px) {font-size: 45%;}
     @include breakpoint(max, 1300px) {font-size: 40%;}
+		@include breakpoint(max, 1279px) {font-size: 35%;}
 }
 
 body {font-family: 'Space Grotesk', sans-serif;}
 a {text-decoration: none;color: initial}
 #page-container {max-width: 1920px;width: 100%;margin: 0 auto;}
-.container-l {max-width: 162rem;width: 100%;margin: 0 auto;}
-.container {max-width: 150rem;width: 100%;margin: 0 auto;}
+.container-l {max-width: 162rem;width: 90%;margin: 0 auto;}
+.container {max-width: 150rem;width: 90%;margin: 0 auto;}
 .section { padding: 8rem 0;}
 .flex{display: flex;}
 .align-center{align-items: center;}
@@ -26,9 +27,12 @@ a {text-decoration: none;color: initial}
 .resp-img{object-fit: contain;width: 100% !important;position: relative !important;height: unset !important;}
 .chat-icon{position: fixed;right: 2.5%;bottom: 2.5%;}
 .chat-icon img{width: 10.5rem;height: auto;}
-.enq-btn {width: 5.5rem;background: none;border: none;}
-select.sec3-btns {-webkit-appearance: none;position: relative;}
-select.sec3-btns::after{content: '';position: absolute;right: 0;background-image:url("/img/cross_arrow_white.svg");}
+.enq-btn {width: 5.5rem;background-color: transparent;border: none;}
+.custom-select{position: relative;
+	select{-webkit-appearance: none;position: relative;}
+	&:after{content: '';position: absolute;right: 2rem;background-image:url("/img/cross_arrow_white.svg");width: 2rem;height: 2rem;background-size: contain;background-repeat: no-repeat;transform: rotate(90deg);}
+}
+
 
 
 /* heading */
@@ -91,7 +95,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
         p{margin-top: .6rem;}
         .tab-head-box{margin-top: 2rem;padding-right: 6rem;
             .tab-button{color: #000;font-size: 3.6rem;font-weight: 400;padding: 0;border: none;background: transparent;display: block;padding: 2.5rem 0;border-top: solid 1px #000;width: 100%;text-align: left;line-height: 4.2rem;
-            &.active{color: #760B28;background-image: url('/img/cross_arrow.svg');background-repeat: no-repeat;background-position: center right 2rem;}   
+            &[data-headlessui-state=selected]{color: #760B28;background-image: url('/img/cross_arrow.svg');background-repeat: no-repeat;background-position: center right 2rem;}   
             }
         }
     }
@@ -125,15 +129,16 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
 
 /* founder section */
 .founder-section{ border-bottom: 10px solid transparent;border-image: linear-gradient(189deg, rgba(118,11,40,1) 0%, rgba(136,35,111,1) 100%);border-image-slice: 2;
-    .founder-container{max-width: 171rem;float: right;background-image: url("/img/founder_bg.png");background-repeat: no-repeat;background-position: top right;background-size: 60%;
-        .founder-info{width: 45%;padding-bottom: 7rem;
-            .founder-innerbox{width: 80%;
-                p{font-size: 2.4rem;line-height: 3.8rem;margin-top: 1rem;}
-                .heading04{Color: #760B28;margin: 3.5rem 0}
-            }
-        }
-    }
-
+	.founder-container{max-width: 171rem;float: right;background-image: url("/img/founder_bg.png");background-repeat: no-repeat;background-position: top right;background-size: 60%;
+		@include breakpoint(max, 1279px){max-width: 100%;padding-left: 5%;}
+		.founder-info{width: 45%;padding-bottom: 7rem;
+			.founder-innerbox{width: 80%;
+				p{font-size: 2.4rem;line-height: 3.8rem;margin-top: 1rem;color: #000}
+				.heading05 + p{color: #2c2c2c;}
+				.heading04{Color: #760B28;margin: 3.5rem 0}
+			}
+		}
+	}
 }
 
 /* video section */
@@ -178,7 +183,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
     .tab-header{display: grid;grid-template-columns: repeat(3, 1fr);
        .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2rem;color: #760B28;
         &:first-child{border-left: solid 1px #760B28;}
-        &.active{background-color: #760B28;color: #fff;}
+        &[data-headlessui-state=selected]{background-color: #760B28;color: #fff;}
         }
     }
     .partner-slider{margin-top: 6rem;position: relative;
@@ -208,7 +213,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
     p{font-size: 2.4rem;line-height: 2.8rem;color: #366985;margin-top: 1rem;}
     }
     .award-right-box{background: rgb(118,11,40);background: linear-gradient(189deg, rgba(118,11,40,1) 0%, rgba(118,11,40,.4) 100%);position: absolute;right: 0;top: 0;bottom: 0;width: 25%;padding: 6rem;text-align: center;color: #fff;display: flex;flex-direction: column;justify-content: center;align-items: center;
-        p{color: #F4CED8;}
+        p{color: #F4CED8;font-size: 2.4rem;}
         .btn{margin-top: 14rem;}
     }
 }
@@ -223,14 +228,13 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
             &:first-child{margin-top: 0;}
         }
         input{border: none;border-bottom: 1px solid #FFFFFF;padding-bottom: 0.7rem;width: 100%;background-color: transparent;color: #fff;font-size: 2.5rem;font-weight: 400;
-        &::placeholder {color: #fff;font-size: 2rem;font-family: 'Space Grotesk';}
+        	&::placeholder {color: #FEF1CE;font-size: 2rem;font-family: 'Space Grotesk';}
         }
-        select{border: none;border-bottom: 1px solid #FFFFFF;width: 100%;background-color: transparent;margin-bottom: 5.5rem;font-size: 2rem;background-color:#2C2C2C;color: #fff;padding-bottom: 0.7rem;}
+        select{border: none;border-bottom: 1px solid #FFFFFF;width: 100%;background-color: transparent;margin-bottom: 5.5rem;font-size: 2rem;background-color:#2C2C2C;color: #FEF1CE;padding-bottom: 0.7rem;}
         .register-btn .btn{border: 1px solid ;}
-
     .contact_right_box .add_row{display: grid;grid-template-columns: 10% 76%; grid-gap: 3.4rem;margin-top: 4rem;
-        span i{color: #fff;font-size: 3rem;}
-        p , a{color: #fff;font-size: 2rem;}
+        span i{color: #FEF1CE;font-size: 3rem;}
+        p , a{color: #FEF1CE;font-size: 2rem;}
     }
     .map{position: absolute;left: 44.5%;top: -7%;
         iframe {width: 35.5rem;height: 57.2rem;}}
