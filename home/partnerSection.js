@@ -46,12 +46,12 @@ export default function partnerSection() {
 									<div className='partner-slider'>
 
 										<Slider {...partnerSlider}>
-											<div className='logo-box resp-img-box'><Image src="/img/logo01.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/logo02.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/logo03.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/logo04.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/logo05.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/logo05.png" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/logo01.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/logo02.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/logo03.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/logo04.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/logo05.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/logo05.jpg" layout="fill" className='resp-img' /></div>
 										</Slider>
 
 									</div>
@@ -62,9 +62,9 @@ export default function partnerSection() {
 
 										<Slider {...partnerSlider}>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo01.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/partners_logo02.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/partners_logo03.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/partners_logo04.png" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo02.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo03.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo04.jpg" layout="fill" className='resp-img' /></div>
 										</Slider>
 
 									</div>
@@ -74,12 +74,12 @@ export default function partnerSection() {
 									<div className='partner-slider'>
 
 										<Slider {...partnerSlider}>
-											<div className='logo-box resp-img-box'><Image src="/img/media_logo01.png" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/media_logo01.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo02.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo03.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/media_logo04.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/media_logo05.png" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/media_logo06.svg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/media_logo04.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/media_logo05.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/media_logo06.jpg" layout="fill" className='resp-img' /></div>
 										</Slider>
 
 									</div>
