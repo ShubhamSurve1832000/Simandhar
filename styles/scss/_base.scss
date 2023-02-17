@@ -162,7 +162,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;}
             .tab-button{color: #000;font-size: 3.6rem;font-weight: 400;padding: 0;border: none;background: transparent;display: block;padding: 2.5rem 0;border-top: solid 1px #000;width: 100%;text-align: left;line-height: 4.2rem;
 							@include breakpoint(max, 767px){display: inline-block;width: auto;margin: 0 .5rem;border: solid 1px #000;padding: 1.3rem 2rem;font-size: 3.2rem;}
                 &:last-child{padding-bottom: 0;
-									@include breakpoint(max, 767px){padding-bottom: 2rem}
+									@include breakpoint(max, 767px){padding-bottom: 1.4rem}
 								}
             &[data-headlessui-state=selected], &:hover{color: #760B28;background-image: url('/img/cross_arrow.svg');background-repeat: no-repeat;background-position: center right 2rem;background-size: 2.2rem;
 							@include breakpoint(max, 767px){padding-right: 7rem;}
