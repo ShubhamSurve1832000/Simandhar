@@ -2,25 +2,85 @@ import Link from 'next/link'
 import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
+import Slider from 'react-slick'
 import { CgProfile } from 'react-icons/cg'
 import { BsCart2 } from 'react-icons/bs'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { IoCaretForward } from 'react-icons/io5'
 
 
+// function MyComponent (props) {
+//   const [isActive, setActive] = useState(false);
+
+//   const toggleClass = () => {
+//     setActive(!isActive);
+//   };
+
+//   return (
+//     <div 
+//       className={isActive ? 'active': ''} 
+//       onClick={toggleClass} 
+//     >
+//       <p>{props.text}</p>
+//     </div>
+//    );
+// }
+
 export default function header() {
+  var programSlider = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+    {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+    ]
+  };
+
+  // const [isActive, setActive] = useState(false);
+  // const toggleClass = () => {
+  //   setActive(!isActive);
+  // };
+  
   // const [porgrams, setPrograms] = useState([{ name: 'Our Programs', icon: '<IoCaretForward />' }, { name: 'US CPA' }, { name: 'EA' }, { name: 'CIA' }, { name: 'IFRS' }, { name: 'Data Analytics' }, { name: 'Simandhar Saamarth' }, { name: 'More' }])
 
 
   // const [links, setLinks] = useState([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }, { label: 'Webinars', path: '/Webinars' }, { label: 'Free Resources', path: '/Free Resources' }])
   return (
+
     <>
       <header className="header" id="header">
         <nav className='navbar hf-container'>
           <div className='logo_img  resp-img-box'>
             <Image src='/img/logo.png' layout="fill" className='resp-img'  alt='Simandhar logo'/>
+            <Image src='/img/mobile_logo.png' layout="fill" className='resp-img mobile-logo'  alt='Simandhar logo'/>
           </div>
           <div className='left_nav'>
+          <button className="menu-btn" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav">
+            <button class="close-menu">
+                    <span></span>
+                    <span></span>
+                </button>
             <ul className='navbar_list'>
               {/* {
                 links.map(link => (
@@ -29,7 +89,7 @@ export default function header() {
                   </li>
                 ))
               } */}
-              <li>Home</li>
+              <li className='active'>Home</li>
               <li>About</li>
               <li>Webinars</li>
               <li>Free Resources</li>
@@ -39,10 +99,12 @@ export default function header() {
           
               </li>
             </ul>
+            </div>
             <div className='btn01'><button className='btn'>Buy Course</button></div>
             <span><i className='profile'> <CgProfile /></i></span>
             <span><i className='cart'> <BsCart2 /></i></span>
           </div>
+          <div className='clear'></div>
         </nav>
 
         {/* 
@@ -63,6 +125,9 @@ export default function header() {
       
           <div className='program_bar'>
             <div className='nav-title'>Our Programs<span><i><IoCaretForward /></i></span></div>
+            {/* <div className='program_bar'> */}
+            {/* <Slider {...programSlider}> */}
+
             <div className='nav-title'><h3>US CPA</h3></div>
             <div className='nav-title'>US CMA</div>
             <div className='nav-title'>EA</div>
@@ -70,9 +135,12 @@ export default function header() {
             <div className='nav-title'>IFRS</div>
             <div className='nav-title'>Data Analytics</div>
             <div className='nav-title'>Simandhar Saamarth</div>
+            {/* </Slider> */}
+
             {/* <div className='nav-title'>More<span><i><RiArrowDropDownLine /></i></span>
             </div> */}
           </div>
+          {/* </div> */}
         
         </section>
 
@@ -98,6 +166,8 @@ export default function header() {
         </div>
         </section>
       </header>
+
+      {/* Form */}
     </>
   )
 }
