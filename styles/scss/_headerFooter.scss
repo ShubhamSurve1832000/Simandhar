@@ -1,22 +1,58 @@
 
 // Header
+.menu-btn{display: none;}
+.close-menu{display: none;}
+.clear{display: none;}
+@include breakpoint(max,767px){.nav {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: #ffffff;z-index: 9;padding: 30px;padding-top: 55px;transform: translateX(100%);transition: ease .5s all; &.active{transform: translateX(0);}
+    ul li {margin-left: 2.9rem;transition: ease 1s all;display: block;margin-bottom: 5rem;font-size: 4.5rem;}
+}
+    .close-menu, .menu-btn {position: absolute;right: 3rem;top: 3rem;background: none;border: none;padding: 0;width: 25px;height: 25px;display: block;}
+    .menu-btn span {width: 100%;height: 4px;background: $primary-color;margin: 4px 0;display: block;border-radius: 2px;}
+    .close-menu span {width: 100%;height: 4px;background: $primary-color;margin: 2px 0;display: block;border-radius: 2px;transition: 3s ease all;}
+    .close-menu span:first-child {transform: rotate(45deg);margin: -6px 0;transition: 4s ease all;}
+    .close-menu span:last-child {transform: rotate(-45deg);transition: 4s ease all}
+    .clear{display: block;}
+}
+
 .navbar{display: flex;justify-content: space-between;align-items: center;padding: 2.7rem 0 3.2rem;
+    @include breakpoint(max,767px){display: block;}
     &.hf-container{max-width: 175rem;width: 96%;margin: 0 auto;}
-    .left_nav{display: flex;    align-items: center;
+    .left_nav{display: flex;align-items: center;
+        @include breakpoint(max,767px){margin-right: 10rem;float: right;}
     .navbar_list{display: flex;justify-content: space-between;align-items: center;
-        li{margin-inline: 3.6rem ;list-style: none;font-size: 2rem;font-family: 'Space Grotesk';vertical-align: middle;font-weight: 500;}
+        li{margin-inline: 3.6rem ;list-style: none;font-size: 2rem;font-family: 'Space Grotesk';vertical-align: middle;font-weight: 500;cursor: pointer;
+            &.active{color: $primary-color;}
+        @include breakpoint(max,1279px){margin-inline: 2.6rem; }
+        @include breakpoint(max,1023px){margin-inline: 2rem;}
+        @include breakpoint(max,767px){margin-inline: 3rem;font-size: 4rem;border-bottom: 1px solid;padding-bottom: 1rem;}
+        
+        }
     }
-    .btn01 button{color: #811C4B;   border: 1px solid #811C4B;background: transparent;padding: 1.6rem 2.9rem;border-radius: 3.3rem;margin-left: 4.2rem;}
-    span i{font-size: 3rem;vertical-align: middle;&.cart{margin-left: 5rem;}&.profile{margin-left: 7.5rem;}}
+    .btn01 button{color: #760B28;   border: 1px solid #760B28;background: transparent;padding: 1.6rem 2.9rem;border-radius: 3.3rem;margin-left: 4.2rem; 
+    @include breakpoint(max,1279px){margin-left: 3.2rem;} 
+    @include breakpoint(max,1279px){margin-left: 2.2rem;}}
+    span i{font-size: 3rem;vertical-align: middle;&.cart{margin-left: 5rem;}&.profile{margin-left: 7.5rem;
+        @include breakpoint(max,1279px){margin-left: 6.5rem;}
+        @include breakpoint(max,1279px){margin-left: 5.5rem;}}
+        @include breakpoint(max,767px){font-size: 5rem;}
+}
     }
-    .logo_img {width: 20%;img{width: 100%;height: auto;}}
+    .logo_img {width: 20%;
+        @include breakpoint(max,767px){width: 5%;display: inline-block;}
+        @include breakpoint(max,500px){width: 9%;}
+        img{width: 100%;height: auto;
+            @include breakpoint(max,767px){display: none;}}
+        .mobile-logo{display: none;
+            @include breakpoint(max,767px){display: block;}}
+        }
 }
 
 // Program Bar
 .backgroud{background-color: #811C4B; 
-    .program_bar{display: flex; justify-content: space-evenly;align-items: center;
+    .program_bar{display: flex; justify-content: space-evenly;align-items: center;grid-gap: 2rem;
         .nav-title{font-size: 2rem;color: #fff;padding: 1.3rem;vertical-align: middle;font-weight: 500;
-            span{vertical-align: sub;margin-left: 3.5rem;}
+            span{vertical-align: sub;margin-left: 3.5rem;
+                @include breakpoint(max,767px){margin-left: 1.5rem;}}
         }
         
     }
@@ -26,14 +62,21 @@
 
 /* Offers */
 .offer_row {padding-block: 1.5rem;background-color: #272727;color: #fff;border: 1px solid #272727;text-align: center;
-    .offer_box1{border-right: 1px solid;padding-right: 3.8rem;display: inline-block;    vertical-align: middle;}
+    .offer_box1{border-right: 1px solid;padding-right: 3.8rem;display: inline-block;vertical-align: middle;
+        @include breakpoint(max,500px){padding-right: 2rem;width: 20rem;}}
     .offer_box2{display: inline-block;padding-left: 3.8rem;vertical-align: middle;
-        h3{font-size: 5.4rem;font-family: 'Space Grotesk';font-weight: 500;}}
+        @include breakpoint(max,500px){padding-left: 2rem;}
+        h3{font-size: 5.4rem;font-family: 'Space Grotesk';font-weight: 500;
+            @include breakpoint(max,500px){font-size: 3.6rem;}}}
     .offer_box3{display: inline-block;padding-left: 3.8rem;text-align: initial;vertical-align: middle;
+        @include breakpoint(max,767px){display: none;}
         h3{font-size: 2.4rem;font-family: 'Space Grotesk';font-weight: 500;}}
-    .offer_box4{padding: 1.2rem 1rem;background-color: #5C5C5C;display: inline-block;margin-left: 3.8rem;vertical-align: middle;
+        
+    .offer_box4{padding: 1.2rem 1rem;background-color: #5C5C5C;display: inline-block;margin-left: 3.8rem;vertical-align: middle; 
+        @include breakpoint(max,500px){display: none;}
         h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;}}
     .offer_box5{padding: 1.6rem 4.6rem;color: #040404; background-color: #fff;border-radius: 3.3rem;display: inline-block;margin-left: 3.8rem;vertical-align: middle;
+        @include breakpoint(max,500px){margin-left: 2rem;padding: 1.6rem 3.6rem;}
         h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;}}
 }
 
@@ -41,10 +84,11 @@
 
 /* Footer */
 .footer{background-color: #E9E9E9;
-    .hf-container{max-width: 175rem;width: 96%;margin: 0 auto;&.footer_row{padding: 8rem 0 5rem;}
+    .hf-container{max-width: 175rem;width: 96%;margin: 0 auto;&.footer_row{padding: 8rem 0 5rem;  @include breakpoint(max,767px){padding: 5rem 2rem;}}
     .Footer_box1{display: flex; justify-content: space-between;align-items: center;
-        .logo_img {width: 22%;} 
-        .social_media i{font-size: 3rem;color: #2C2C2C;margin-left: 3.6rem;}} }
+        .logo_img {width: 22%;
+            @include breakpoint(max,767px){width: 35%;}} 
+        .social_media i{font-size: 3rem;color: #2C2C2C;margin-left: 3.6rem; @include breakpoint(max,767px){font-size: 5rem;}  @include breakpoint(max,500px){margin-left: 2.6rem;}}} }
     .footer_grid{display: grid;grid-template-columns: 23% 26% 16% 15% 22%;
         .footer_box {padding: 4.5rem 3.5rem;border-left: 1px solid #909090;display: flex;justify-content: space-between;flex-direction: column;&:first-child{border-left: none;padding-left: 0} 
             .footer_para{font-size: 2rem;font-family: 'Space Grotesk'}
