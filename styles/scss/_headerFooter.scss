@@ -60,7 +60,7 @@
                 @include breakpoint(max,767px){margin-left: 1.5rem;}}
         }
         
-        .programs{display: flex;justify-content: space-between;grid-gap: 10rem;
+        .programs{display: flex;justify-content: space-between;grid-gap: 10rem;cursor: pointer;
             @include breakpoint(max,1279px){grid-gap: 6rem;}
             @include breakpoint(max,1023px){grid-gap: 3rem;}}
         
@@ -70,7 +70,7 @@
 }
 
 /* Offers */
-.offer_row {padding-block: 1.5rem;background-color: #272727;color: #fff;border: 1px solid #272727;text-align: center;
+.offer_row {padding-block: 1.5rem;background-color: #272727;color: #fff;border: 1px solid #272727;text-align: center;cursor: pointer;
     .offer_box1{border-right: 1px solid;padding-right: 3.8rem;display: inline-block;vertical-align: middle;
         @include breakpoint(max,500px){padding-right: 2rem;width: 20rem;}}
     .offer_box2{display: inline-block;padding-left: 3.8rem;vertical-align: middle;
