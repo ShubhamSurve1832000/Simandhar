@@ -31,8 +31,8 @@ a {text-decoration: none;color: initial}
 	&.active{transform: translateX(100%);}
 }
 .custom-select{position: relative;
-	select{-webkit-appearance: none;position: relative;}
-	&:after{content: '';position: absolute;right: 2rem;background-image:url("/img/cross_arrow_white.svg");width: 2rem;height: 2rem;background-size: contain;background-repeat: no-repeat;transform: rotate(90deg);}
+	// select{position: relative;}
+	// &:after{content: '';position: absolute;right: 2rem;background-image:url("/img/cross_arrow_white.svg");width: 2rem;height: 2rem;background-size: contain;background-repeat: no-repeat;transform: rotate(90deg);}
 }
 
 
