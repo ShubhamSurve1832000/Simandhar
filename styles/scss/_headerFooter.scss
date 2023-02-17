@@ -50,7 +50,7 @@
 }
 
 // Program Bar
-.backgroud{background-color: #811C4B; 
+.backgroud{background: linear-gradient(106deg,#760b28,#811c4b); 
     .program_bar{display: flex; justify-content: space-evenly;align-items: center;grid-gap: 2rem;
         .nav-title{font-size: 2rem;color: #fff;padding: 1.3rem;vertical-align: middle;font-weight: 500;
             span{vertical-align: sub;margin-left: 3.5rem;
