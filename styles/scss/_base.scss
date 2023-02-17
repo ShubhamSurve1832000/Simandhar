@@ -327,7 +327,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
             .slick-slide{height: auto;border: solid 1px #C9C9C9;display: flex !important;align-items: center;margin: 0 5px;    justify-content: center;
                 img{width: 100%;}               
             }
-            .slick-slide > div{padding: 6rem 7rem; width: 100%;
+            .slick-slide > div{padding:0; width: 100%;
 							@include breakpoint(max, 1023px){padding: 3rem 4rem;}
 						} 
         }
