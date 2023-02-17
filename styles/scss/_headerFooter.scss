@@ -55,7 +55,7 @@
     .program_bar{display: flex; justify-content: space-evenly;align-items: center;grid-gap: 2rem;
         @include breakpoint(max,767px){display: grid;grid-template-columns: 110px auto;
             .program-scroll{overflow: auto; .programs{width: max-content;}}}
-        .nav-title{font-size: 2rem;color: #fff;padding: 1.3rem;vertical-align: middle;font-weight: 500;
+        .nav-title{font-size: 2rem;color: #fff;padding: 1.3rem;vertical-align: middle;font-weight: 500;width:max-content;
             span{vertical-align: sub;margin-left: 3.5rem;
                 @include breakpoint(max,767px){margin-left: 1.5rem;}}
         }
