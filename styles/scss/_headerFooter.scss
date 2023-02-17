@@ -47,6 +47,7 @@
         .mobile-logo{display: none;
             @include breakpoint(max,767px){display: block;}}
         }
+    .clear{display: none;}
 }
 
 // Program Bar
