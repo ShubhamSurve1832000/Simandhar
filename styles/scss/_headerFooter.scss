@@ -20,8 +20,8 @@
     &.hf-container{max-width: 175rem;width: 96%;margin: 0 auto;}
     .left_nav{display: flex;align-items: center;
         @include breakpoint(max,767px){margin-right: 10rem;float: right;}
-    .navbar_list{display: flex;justify-content: space-between;align-items: center;
-        @include breakpoint(max,767px){display: block;}
+    .navbar_list{display: flex;justify-content: space-between;align-items: center;         
+       @include breakpoint(max,767px){display: block;}
         li{margin-inline: 3.6rem ;list-style: none;font-size: 2rem;font-family: 'Space Grotesk';vertical-align: middle;font-weight: 500;cursor: pointer;
             &.active{color: $primary-color;}
         @include breakpoint(max,1279px){margin-inline: 2.6rem; }
@@ -47,16 +47,22 @@
         .mobile-logo{display: none;
             @include breakpoint(max,767px){display: block;}}
         }
-    .clear{display: none;}
+        .clear{display: none;}
 }
 
 // Program Bar
 .backgroud{background: linear-gradient(106deg,#760b28,#811c4b); 
     .program_bar{display: flex; justify-content: space-evenly;align-items: center;grid-gap: 2rem;
+        @include breakpoint(max,767px){display: grid;grid-template-columns: 110px auto;
+            .program-scroll{overflow: auto; .programs{width: max-content;}}}
         .nav-title{font-size: 2rem;color: #fff;padding: 1.3rem;vertical-align: middle;font-weight: 500;
             span{vertical-align: sub;margin-left: 3.5rem;
                 @include breakpoint(max,767px){margin-left: 1.5rem;}}
         }
+        
+        .programs{display: flex;justify-content: space-between;grid-gap: 10rem;
+            @include breakpoint(max,1279px){grid-gap: 6rem;}
+            @include breakpoint(max,1023px){grid-gap: 3rem;}}
         
     }
 
