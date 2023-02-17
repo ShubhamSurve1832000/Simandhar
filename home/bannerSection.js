@@ -67,7 +67,7 @@ export default function bannerSection() {
           </form>
         </div>
       </div>
-      <div class="overlay" style={{display: (isActive ? "block" : 'none')}}></div>
+      <div class="overlay" onClick={toggleClass} style={{display: (isActive ? "block" : 'none')}}></div>
     </>
   )
 }
