@@ -10,9 +10,6 @@ export default function bannerSection() {
   return (
     <>
       <section className="banner-section flex">
-        <div className="left-box resp-img-box">
-        <Image src="/img/ad_banner.png" alt="" layout="fill" className='resp-img'/>
-        </div>
         <div className="right-box">
           <div className="banner-content">
             <div class="banner-text">
@@ -21,6 +18,12 @@ export default function bannerSection() {
             </div>
             <a href="#" className='btn maroon-btn'>Enquire Now</a>
           </div>
+        </div>
+        <div className="left-box resp-img-box">
+        <h3 className='heading04'>Learn Anywhere with Online Courses</h3>
+        <Image src="/img/trangle.png" alt="" layout="fill" className='resp-img'/>
+        <a className='btn white-btn white-btn-arrow' href="">Buy Courses</a>
+        <div className="clear"></div>
         </div>
       </section>
       <div class="sticky-box">
