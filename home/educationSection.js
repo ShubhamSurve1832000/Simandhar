@@ -21,10 +21,10 @@ export default function educationSection() {
         </div>
         <div className='edu-adbox'>
             <div className='adbox resp-img-box'>
-                <Image src="/img/education01.png" layout="fill" className='resp-img' alt=''/>
+                <Image src="/img/education01.png" layout="fill" className='resp-img'/>
             </div>
             <div className='adbox resp-img-box'>
-                <Image src="/img/education02.png" layout="fill" className='resp-img' alt=''/>
+                <Image src="/img/education02.png" layout="fill" className='resp-img'/>
             </div>
         </div>
         <div class="clear"></div>

@@ -21,7 +21,7 @@ export default function achieversSection({ data }) {
 					))} */}
 					<figure className='achiever-box'>
 						<div className='achiever-img resp-img-box'>
-							<Image src='/img/ashwiniNathan.jpg' layout="fill" className='resp-img' alt='Ashwini Nathan' />
+							<Image src='/img/ashwiniNathan.jpg' layout="fill" className='resp-img' />
 						</div>
 						<figcaption>
 							<p>I'm thrilled to share that I have cleared all 4 parts of the US CPA examination. It's been a challenging journey and a lot of ups and downs from deciding to quit my job to studying full time and..</p>
@@ -32,7 +32,7 @@ export default function achieversSection({ data }) {
 					</figure>
 					<figure className='achiever-box'>
 						<div className='achiever-img resp-img-box'>
-							<Image src='/img/raghavPrassana.png' layout="fill" className='resp-img' alt='Raghav Prassanna'/>
+							<Image src='/img/raghavPrassana.png' layout="fill" className='resp-img' />
 						</div>
 						<figcaption>
 							<p>Top-notch quality of student service. Truly a student development oriented organization. The placements and the value adds are impeccable. Great place! Wonderful staff! I definitely recommend!</p>
@@ -43,7 +43,7 @@ export default function achieversSection({ data }) {
 					</figure>
 					<figure className='achiever-box'>
 						<div className='achiever-img resp-img-box'>
-							<Image src='/img/wasinMankad.png' layout="fill" className='resp-img' alt='Wasim Mankad'/>
+							<Image src='/img/wasinMankad.png' layout="fill" className='resp-img' />
 						</div>
 						<figcaption>
 							<p>And here starts my journey to the US CPA. One down and 3 more subjects to go. Thank you Simandhar team for the exception support!</p>

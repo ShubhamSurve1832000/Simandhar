@@ -1,6 +1,6 @@
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import { BiPhoneCall } from 'react-icons/bi'
-
+import Image from 'next/image'
 // import app_store_1 from 'public/app_store_1.png'
 // import app_store_2 from 'public/app_store_2.png'
 
@@ -14,13 +14,15 @@ export default function ContactUs() {
                         <div class="sec3-btns"><input type="text" id="name" name="name" placeholder="Enter Your Name" /></div>
                         <div class="sec3-btns"><input type="text" id="email" name="email" placeholder="Enter Your Email Address" /></div>
                         <div class="sec3-btns"><input type="text" id="phone" name="phone" placeholder="Enter your Mobile Number" /></div>
-                        <select class="sec3-btns" id="" >
-                            <option>Select Course</option>
-                            <option value="Course 1">Course 1</option>
-                            <option value="Course 2">Course 2</option>
-                            <option value="Course 3">Course 3</option>
-                            <option value="Course 4">Course 4</option>
-                        </select>
+                        <div className='sec3-btns custom-select'>
+                            <select id="select-course" >
+                                <option>Select Course</option>
+                                <option value="Course 1">Course 1</option>
+                                <option value="Course 2">Course 2</option>
+                                <option value="Course 3">Course 3</option>
+                                <option value="Course 4">Course 4</option>
+                            </select>
+                        </div>
                         <div className='register-btn'>
                             <a className='btn  white-border-btn white-border-btn-arrow'>Register</a>
                         </div>
@@ -46,12 +48,14 @@ export default function ContactUs() {
 
             </div>
             </section>
-            <div className='red_box grid'>
-                <h3 className='title'>Simandhar Learn App is Available
-                    on all Platform</h3>
-                <div>
-                    <img src="img/app_store_1.png" alt="apple store" />
-                    <img src="img/app_store_2.png" alt="apple store" />
+            <div className='red_box'>
+                <div className='container grid'>
+                    <h3 className='title'>Simandhar Learn App is Available
+                        on all Platform</h3>
+                    <div>
+                        <img src="img/app_store_1.png" alt="apple store" />
+                        <img src="img/app_store_2.png" alt="apple store" />
+                    </div>
                 </div>
             </div>
         </>

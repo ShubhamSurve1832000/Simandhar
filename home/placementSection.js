@@ -9,7 +9,7 @@ export default function placementSection() {
             <div className='pm-box'>
                 <figure>
                     <div className='pm-img resp-img-box'>
-                        <Image src="/img/place_img01.png" layout="fill" className='resp-img' alt=''/>
+                        <Image src="/img/place_img01.png" layout="fill" className='resp-img'/>
                     </div>
                     <figcaption>
                         <h6>Anoushka Baghla</h6>
@@ -21,7 +21,7 @@ export default function placementSection() {
             <div className='pm-box'>
                 <figure>
                     <div className='pm-img resp-img-box'>
-                        <Image src="/img/place_img02.png" layout="fill" className='resp-img' alt=''/>
+                        <Image src="/img/place_img02.png" layout="fill" className='resp-img'/>
                     </div>
                     <figcaption>
                         <h6>Shrikesh Lahoti</h6>
@@ -33,7 +33,7 @@ export default function placementSection() {
             <div className='pm-box'>
                 <figure>
                     <div className='pm-img resp-img-box'>
-                        <Image src="/img/place_img03.jpg" layout="fill" className='resp-img' alt=''/>
+                        <Image src="/img/place_img03.jpg" layout="fill" className='resp-img'/>
                     </div>
                     <figcaption>
                         <h6>Dhruv Patel</h6>
