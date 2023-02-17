@@ -97,6 +97,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 }
 
 .enq-form{width: 66rem;position: fixed;right: 0;top: 50%;transform: translate(105%, -50%);background-color: #fff;z-index: 999;transition: ease .5s all;
+	@include breakpoint(max, 767px){width: 90%;}
 	&.active{transform: translate(0, -50%);}
 	.form-header{background-color: $primary-color;padding: 3.5rem 0 3.5rem 6rem;
 		.resp-img-box{width: 6.2rem;display: inline-block;vertical-align: middle;}
