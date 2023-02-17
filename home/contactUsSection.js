@@ -17,10 +17,13 @@ export default function ContactUs() {
                         <div className='sec3-btns custom-select'>
                             <select id="select-course" >
                                 <option>Select Course</option>
-                                <option value="Course 1">Course 1</option>
-                                <option value="Course 2">Course 2</option>
-                                <option value="Course 3">Course 3</option>
-                                <option value="Course 4">Course 4</option>
+                                <option value="Course 1">US CPA</option>
+                                <option value="Course 2">US CMA</option>
+                                <option value="Course 3">EA</option>
+                                <option value="Course 4">CIA</option>
+                                <option value="Course 4">IFRS</option>
+                                <option value="Course 4">Data Analytics</option>
+                                <option value="Course 4">Simandhar Saamarth</option>
                             </select>
                         </div>
                         <div className='register-btn'>
