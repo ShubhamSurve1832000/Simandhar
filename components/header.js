@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import React from 'react'
-import { useState } from 'react'
 import Image from 'next/image'
 import Slider from 'react-slick'
 import { CgProfile } from 'react-icons/cg'
 import { BsCart2 } from 'react-icons/bs'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { IoCaretForward } from 'react-icons/io5'
+import React, { useState } from 'react'
 
 
 // function MyComponent (props) {
@@ -52,6 +51,11 @@ export default function header() {
     ]
   };
 
+  const [isActive, setActive] = useState(false);
+  const showMenu = () => {
+    setActive(!isActive);
+  };
+
   // const [isActive, setActive] = useState(false);
   // const toggleClass = () => {
   //   setActive(!isActive);
@@ -62,7 +66,7 @@ export default function header() {
 
   // const [links, setLinks] = useState([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }, { label: 'Webinars', path: '/Webinars' }, { label: 'Free Resources', path: '/Free Resources' }])
   return (
-
+    
     <>
       <header className="header" id="header">
         <nav className='navbar hf-container'>
@@ -71,13 +75,13 @@ export default function header() {
             <Image src='/img/mobile_logo.png' layout="fill" className='resp-img mobile-logo' alt='Simandhar logo' />
           </div>
           <div className='left_nav'>
-            <button className="menu-btn" >
+            <button className="menu-btn" onClick={showMenu}>
               <span></span>
               <span></span>
               <span></span>
             </button>
-            <div class="nav">
-              <button class="close-menu">
+            <div className={'nav' + ' ' +(isActive ?  'active' : '')}>
+              <button class="close-menu" onClick={showMenu}>
                 <span></span>
                 <span></span>
               </button>
