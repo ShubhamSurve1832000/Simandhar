@@ -205,17 +205,19 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 /* placement section */
 .pm-section .pm-container{margin-top: 2rem;
     .pm-box{position: relative;display: inline-block;vertical-align: top;margin: 0 4.5rem;width: calc(33.33% - 6rem);
-			@include breakpoint(max, 767px){width: 100%;display: block;padding: 4.5rem 0;margin: 0;}
+			@include breakpoint(max, 767px){width: 80%;display: block;padding: 4.5rem 0;margin: 0 auto;}
         figure{position: relative;
             &:before{content: "";position: absolute;width: 1px;background-color: #5C5C5C;height: 80%;top: 50%;transform: translateY(-50%);left: -4.5rem;
 							@include breakpoint(max, 767px){height: 1px;top: -5rem;transform: none;left: 0;right: 0;width: 100%;}
 						}    
         }
         &:first-child{margin-left: 0;
-					@include breakpoint(max, 767px){padding-top: 0;}
+					@include breakpoint(max, 767px){padding-top: 0;margin: 0 auto;}
             figure:before{content: none;}
         }
-        &:last-child{margin-right: 0;}
+        &:last-child{margin-right: 0;
+					@include breakpoint(max, 767px){margin: 0 auto;}
+				}
         .pm-img{overflow: hidden;border-radius: 3rem;
 					img{transition: ease .5s all;}
 					&:hover{
