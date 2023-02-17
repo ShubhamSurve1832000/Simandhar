@@ -49,9 +49,14 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo01.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo02.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
+											{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
+										<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div> */}
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo01.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo02.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo03.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/partners_logo04.jpg" layout="fill" className='resp-img' /></div>
+
 										</Slider>
 
 									</div>
