@@ -27,17 +27,19 @@ a {text-decoration: none;color: initial}
 .resp-img{object-fit: contain;width: 100% !important;position: relative !important;height: unset !important;}
 .chat-icon{position: fixed;right: 2.5%;bottom: 2.5%;}
 .chat-icon img{width: 10.5rem;height: auto;}
-.enq-btn {width: 5.5rem;background-color: transparent;border: none;transition: ease .5s all;
-	&.active{transform: translateX(100%);}
-}
+.enq-btn {width: 5.5rem;background-color: transparent;border: none;transition: ease .5s all;&.active{transform: translateX(100%);}}
 .custom-select{position: relative;
 	// select{position: relative;}
 	// &:after{content: '';position: absolute;right: 2rem;background-image:url("/img/cross_arrow_white.svg");width: 2rem;height: 2rem;background-size: contain;background-repeat: no-repeat;transform: rotate(90deg);}
 }
+.title01{font-size: 2.4rem;font-weight: 500;color: $primary-color;}
 
 
 
 /* heading */
+.heading01{font-weight: 700;font-size: 9.6rem;color: $primary-color;line-height:10rem;
+	@include breakpoint(max, 1023px){font-size: 8.6rem;line-height: 9.2rem;}
+}
 .heading02{font-weight: 700;font-size: 6.4rem;color: #2C2C2C;line-height: 7.4rem;
 	@include breakpoint(max, 1023px){font-size: 4.4rem;line-height: 5rem;}
 }
@@ -53,8 +55,28 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 }
 
 
+/* Offers */
+.offer_row {padding-block: 1.5rem;background-color: #272727;color: #fff;border: 1px solid #272727;text-align: center;cursor: pointer;
+    .offer_box1{border-right: 1px solid;padding-right: 3.8rem;display: inline-block;vertical-align: middle;
+        @include breakpoint(max,500px){padding-right: 2rem;width: 20rem;}}
+    .offer_box2{display: inline-block;padding-left: 3.8rem;vertical-align: middle;
+        @include breakpoint(max,500px){padding-left: 2rem;}
+        h3{font-size: 5.4rem;font-family: 'Space Grotesk';font-weight: 500;
+            @include breakpoint(max,500px){font-size: 3rem;}}}
+    .offer_box3{display: inline-block;padding-left: 3.8rem;text-align: initial;vertical-align: middle;
+        @include breakpoint(max,767px){display: none;}
+        h3{font-size: 2.4rem;font-family: 'Space Grotesk';font-weight: 500;}}
+        
+    .offer_box4{padding: 1.2rem 1rem;background-color: #5C5C5C;display: inline-block;margin-left: 3.8rem;vertical-align: middle; 
+        @include breakpoint(max,768px){display: none;}
+        h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;}}
+    .offer_box5{padding: 1.6rem 4.6rem;color: #040404; background-color: #fff;border-radius: 3.3rem;display: inline-block;margin-left: 3.8rem;vertical-align: middle;
+        @include breakpoint(max,500px){margin-left: 2rem;padding: 1.6rem 3.6rem;}
+        h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;}}
+}
 
 
+//Banner Section
 .banner-section {
 	&.flex{flex-direction: row-reverse;
 		@include breakpoint(max, 767px){display: block}
@@ -429,3 +451,71 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 // .partner-slider .slick-prev{background-image: url('/img/prev_arrow.svg');left: -10rem;}
 // .partner-slider .slick-next{background-image: url('/img/next_arrow.svg');right: -10rem;}
 // .partner-slider  .slick-slide > div{padding: 6rem 7rem; width: 100%;}
+
+// About us Page
+.about-banner {background-image: url(/img/aboutUs_banner.png);background-repeat: no-repeat;background-size: cover;background-position: top center;padding-bottom: 31%;position: relative;
+	.banner-box{max-width: 33.5rem;margin: 0 auto;position: absolute;left: 14%;top: 30%; 
+		span{display: block;color: $primary-color;}}
+}
+
+// Numbers
+.values{background: $gradient; padding-block: 7rem;
+	.heading05{color: #fff;text-align: center;width: 62%;margin: 0 auto;font-weight: 500;}
+	.four-box-grid{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr; text-align: center;padding-inline: 7%;margin-top: 7.5rem;
+		.grid-box{color: #fff;border-right: 1px solid #FCFCFC;
+		&:last-child{border-right: none;}
+			.heading02{color: #fff;}
+			.title{font-size: 2.5rem;font-weight: 500;}
+		}}
+}
+
+//  Transforming Education
+.transform-educ{ padding-top: 8rem;
+	.education-row{width: 50%;margin: 0 auto;text-align: center; margin-bottom: 3.8rem;
+		.heading02{font-weight: 300;background: -webkit-linear-gradient(106deg, rgba(118, 11, 40, 1) 0%, rgba(129, 28, 75, 1) 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;margin-bottom: 4.4rem;}
+		.heading05{font-weight: 500;}}
+	.TE-flex{display: flex;justify-content: space-between; align-items: center;
+		.left-box{width: 45.7%;
+			.m-block{color: #000;margin-block: 4.3rem;}
+			p{font-size: 2.4rem;color: $primary-color;margin-bottom: 5rem;}
+			ul li{font-size: 2.4rem;list-style: disc;line-height: 3.5rem;color: $primary-color;margin-left: 5%;font-weight: 400;}
+		}
+		.right-box{width: 49.4%;}}	
+}
+
+// Mission Vision Purpose
+.three-box-grid{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: 2rem; width: 137.8rem; margin: 5.8rem auto 6.5rem;
+	.grid-box {width: 44rem;text-align: center; border: 1px solid $primary-color;padding: 4.4rem 2rem;
+	img{width: 34.7% !important;}
+	p{font-size: 2.4rem;font-weight: 400;}
+	.heading04{font-weight: 500;color: $primary-color;margin:4rem 0 3rem;}	}
+}
+
+// Prince Section
+.princeSection{
+	.heading02{text-align: center; margin-bottom: 7rem;
+		span{color: $primary-color;}
+	}
+	.flex{position: relative;
+		&:hover{margin-bottom: 28.5rem;}
+
+		.grid-box{width: 25.4rem;padding: 5rem 0 4.3rem; background-color: #F5E7E7; margin-bottom: 5rem; cursor: pointer;
+			&:hover{background-color: transparent;border: 2px solid $primary-color;padding: 5rem 0 4rem;}
+			&:hover .desc-box{display: block; }
+			.title01{margin-top: 3rem;}
+			.desc-box {position: absolute;bottom: -3%;padding: 9rem 0;background: $gradient; bottom: -68%;display: none;left: 0;right: 0;border-radius: 4.7rem;	transition:1s ease all;
+				.desc-para{font-size: 4rem;color: #fff;}		
+			}
+		}
+	}
+}
+
+//Partners Section
+.partners-section{margin: 3.1rem 0 4.7rem; 
+	.heading02{margin-bottom: 6rem;}
+	.container-s{width: 91.9rem;text-align: center;margin: 0 auto;
+		.partners-grid{display: grid;grid-template-columns: 1fr 1fr 1fr;align-items: center; grid-gap: 2rem;
+			.grid-box{width: 29.3rem;margin: 0 auto;border: 1px solid #C9C9C9;}
+		}
+	}
+}
