@@ -71,8 +71,8 @@ export default function header() {
       <header className="header" id="header">
         <nav className='navbar hf-container'>
           <div className='logo_img  resp-img-box'>
-            <Image src='/img/logo.png' layout="fill" className='resp-img' alt='Simandhar logo' />
-            <Image src='/img/mobile_logo.png' layout="fill" className='resp-img mobile-logo' alt='Simandhar logo' />
+           <Link href="/"> <Image src='/img/logo.png' layout="fill" className='resp-img' alt='Simandhar logo' />
+            <Image src='/img/mobile_logo.png' layout="fill" className='resp-img mobile-logo' alt='Simandhar logo' /></Link>
           </div>
           <div className='left_nav'>
             <button className="menu-btn" onClick={showMenu}>
@@ -93,10 +93,10 @@ export default function header() {
                   </li>
                 ))
               } */}
-                <li className='active'>Home</li>
-                <li>About</li>
-                <li>Webinars</li>
-                <li>Free Resources</li>
+                <Link href="/"> <li className='active'>Home</li></Link>
+               <Link href="/aboutUs"> <li>About</li></Link>
+               <Link href='/webinars'> <li>Webinars</li></Link>
+                <Link href='/resources'> <li>Free Resources</li></Link>
                 <li className='more_dropdown'>
                   More
                   <span><i><RiArrowDropDownLine /></i></span>
@@ -151,26 +151,8 @@ export default function header() {
         </section>
 
 
-        {/* Offer Row */}
-        <section>
-          <div className='offer_row conatainer02'>
-            <div className='offer_box1 resp-img-box'>
-              <Image src='/img/flash_sale.png' layout="fill" className='resp-img' alt='' />
-            </div>
-            <div className='offer_box2'>
-              <h3 >FLAT 50% OFF</h3>
-            </div>
-            <div className='offer_box3'>
-              <h3>Discount <br /> on All Courses</h3>
-            </div>
-            <div className='offer_box4'>
-              <h3>Promo Code : SALE 50</h3>
-            </div>
-            <div className='offer_box5'>
-              <h3>Buy Now</h3>
-            </div>
-          </div>
-        </section>
+       
+     
       </header>
 
       {/* Form */}
