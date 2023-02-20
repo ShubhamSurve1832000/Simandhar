@@ -94,8 +94,11 @@ export default function header() {
                 ))
               } */}
                 <Link href="/"> <li className='active'>Home</li></Link>
+                  
                <Link href="/aboutUs"> <li>About</li></Link>
+                 
                <Link href='/webinars'> <li>Webinars</li></Link>
+                 
                 <Link href='/resources'> <li>Free Resources</li></Link>
                 <li className='more_dropdown'>
                   More
