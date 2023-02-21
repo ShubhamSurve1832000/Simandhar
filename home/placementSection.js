@@ -16,7 +16,7 @@ export default function placementSection() {
                         <p>US CPA License</p>
                     </figcaption>
                 </figure>
-                <a href="#" className='btn maroon-btn maroon-btn-arrow'>View CPA Licensee</a>
+                <a href="#" className='btn maroon-border-btn maroon-border-btn-arrow'>View CPA Licensee</a>
             </div>
             <div className='pm-box'>
                 <figure>
