@@ -548,7 +548,8 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	.flex{position: relative;margin-bottom: 5rem; 
 		@include breakpoint(max,767px){display: block;}
 
-		&:hover{margin-bottom: 28.5rem;}
+		&:hover{margin-bottom: 28.5rem;
+		@include breakpoint (max,767px){margin-bottom: 0;}}
 
 		.grid-box{ cursor: pointer; width: 100%;
 			@include breakpoint(max,767px){position: relative;margin-bottom: 4rem;}
