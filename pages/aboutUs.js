@@ -6,6 +6,7 @@ import TESeducation from '../about/TESection';
 import VisionSection from '../about/VisionSection';
 import PrinceSection from '../about/PrinceSection';
 import PartnersSection from '../about/PartnersSection';
+import RightStep from '../about/RightStep';
 
 const aboutUS = () => {
   return (
@@ -17,6 +18,7 @@ const aboutUS = () => {
 <ExpPlaceInfo />
 <TESeducation/>
 <VisionSection/>
+<RightStep />
 <PrinceSection/>
 <PartnersSection/>
 </>
