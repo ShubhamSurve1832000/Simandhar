@@ -14,6 +14,8 @@ import Achievers from '../home/achieversSection'
 import Partner from '../home/partnerSection'
 import Award from '../home/awardSection'
 import ContactUs from '../home/contactUsSection'
+import OfferSection from '../home/OfferSection'
+
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
         <title>Home page</title>
       </Head>
       <Format>
+        <OfferSection />
         <Banner />
         <Usp />
         <Eduction />
@@ -33,6 +36,8 @@ export default function Home() {
         <Partner />
         <Award />
         <ContactUs />
+     
+       
       </Format>
       <a href='#' className='chat-icon'><Image src="/img/chat.png" alt="" width={122} height={135} /></a>
     </>
