@@ -25,7 +25,7 @@ a {text-decoration: none;color: initial}
 .btn-wrap{margin-top: 3.5rem;}
 .resp-img-box{position: relative;}
 .resp-img{object-fit: contain;width: 100% !important;position: relative !important;height: unset !important;}
-.chat-icon{position: fixed;right: 2.5%;bottom: 2.5%;}
+.chat-icon{position: fixed;right: 2.5%;bottom: 2.5%;z-index: 1;}
 .chat-icon img{width: 10.5rem;height: auto;}
 .enq-btn {width: 5.5rem;background-color: transparent;border: none;transition: ease .5s all;&.active{transform: translateX(100%);}}
 .custom-select{position: relative;
@@ -96,7 +96,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	}
     .right-box {background-image: url("/img/banner_bg.jpg");background-repeat: no-repeat;width: 75.50%;background-size: cover;position: relative;
 		@include breakpoint(max, 767px){padding-bottom: 48%;width: 100%;}
-        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 5rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
+        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 6rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
 					@include breakpoint(max, 1023px){top: 5rem;left: 5rem;}
 					@include breakpoint(max, 767px){width: 60%;top: 5rem;left: 3rem;}
             .banner-title {font-size: 4.8rem;font-weight: 500;color: #2C2C2C;line-height: 5.5rem;
@@ -455,9 +455,10 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 // About us Page
 .about-banner {background-image: url(/img/aboutUs_banner.png);background-repeat: no-repeat;background-size: cover;background-position: top center;padding-bottom: 31%;position: relative;
+	@include breakpoint(max,500px){padding-bottom: 0;height: 40rem;}
 	.banner-box{max-width: 33.5rem;margin: 0 auto;position: absolute;left: 14%;top: 30%; 
 		@include breakpoint(max,767px){left: 7%;top: 22%;}
-		@include breakpoint(max,500px){top: 13%;}
+		@include breakpoint(max,500px){top: 26%;}
 		span{display: block;color: $primary-color;}
 		
 	}
@@ -475,14 +476,13 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max,767px){margin-top: 3.5rem;}	
 		}
 		.grid-box{color: #fff;border-right: 1px solid #FCFCFC;
-		&:last-child{border-right: none;
-			@include breakpoint(max,767px){border-right: 1px solid #FCFCFC;}	
-		}
+		&:last-child{border-right: none;}
+		&:nth-child(2){border-right: none;}
+
 			.heading02{color: #fff;}
 			.title{font-size: 2.5rem;font-weight: 500;}
-			@include breakpoint(max,767px){margin-top: 2rem;}
 		}
-	@include breakpoint(max,767px){grid-template-columns: 1fr 1fr;}
+	@include breakpoint(max,767px){grid-template-columns: 1fr 1fr;row-gap: 3rem;}
 	}
 }
 
@@ -498,7 +498,6 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		@include breakpoint(max,500px){font-size: 4rem;margin-bottom: 2.5rem;}
 		}
 		.heading05{font-weight: 500;
-		@include breakpoint (max,767px){width: max-content;}
 		@include breakpoint (max,500px){width:auto;}
 		}
 		
@@ -512,12 +511,13 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max,767px){margin-block: 3rem;}
 			}
 			p{font-size: 2.4rem;color: $primary-color;margin-bottom: 5rem;line-height: 3.6rem;
+				@include breakpoint(max,500px){margin-bottom: 3rem;}
 			
 		}
 			ul li{font-size: 2.4rem;list-style: disc;line-height: 3.6rem;color: $primary-color;margin-left: 5%;font-weight: 400;
 			
 			}
-			.heading02{text-align: center;}	
+			.heading02{	@include breakpoint(max,500px){    text-align: center;}}	
 		}
 		.right-box{width: 49.4%;
 			@include breakpoint(max,767px){width: 100%;}
@@ -540,47 +540,54 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 // Prince Section
 .princeSection{    padding-top: 17rem;
-	@include breakpoint(max,767px){    padding-top: 7rem;}
-	.heading02{text-align: center; margin-bottom: 7rem;
+	@include breakpoint(max,767px){    padding-top: 6rem;}
+	.heading02{text-align: center; margin-bottom:6.3rem;
 		@include breakpoint(max,970px){margin-bottom: 5rem;}
 		span{color: $primary-color;}
 	}
 	.flex{position: relative;margin-bottom: 5rem; 
 		@include breakpoint(max,767px){display: block;}
 
-		&:hover{margin-bottom: 28.5rem;
+		&:hover{margin-bottom: 34.5rem;
 		@include breakpoint (max,767px){margin-bottom: 0;}}
 
 		.grid-box{ cursor: pointer; width: 100%;
-			@include breakpoint(max,767px){position: relative;margin-bottom: 4rem;}
+			@include breakpoint(max,767px){    position: relative;
+				margin-bottom: 2rem;
+				display: grid;
+				grid-template-columns: 20rem 1fr;
+				grid-gap: 2rem;
+				text-align: left;}
 			
 			
 			// &:hover .flex{margin-bottom: 28.5rem;}
 			.inner-box{padding: 5rem 0 4.3rem; background-color: #F5E7E7;width: 25.4rem;position: relative;border: 2px solid transparent;
 				@include breakpoint(max,970px){width: 19rem;}
-				&::after{content: ''; position:absolute;    border-bottom: 3rem solid #760B28;border-left: 2rem solid transparent;border-right: 2rem solid transparent;left: 50%;right: 50%;transform: translate(-50%, -50%);bottom: -5.2rem;visibility: hidden;
-					@include breakpoint(max,767px){    left: auto;
-						top: 39%;
-						transform: translateX(-50%) rotate(33deg);
-						bottom: auto;
-						right: -10rem;}
+				&::after{content: ''; position:absolute;    border-bottom: 3rem solid #760B28;border-left: 2rem solid transparent;border-right: 2rem solid transparent;left: 50%;right: 50%;transform: translate(-50%, -50%);bottom: -5.9rem;visibility: hidden;
+					@include breakpoint(max,767px){  display: none;}
 					
 				}
 				&:hover{background-color: transparent;border-color: $primary-color;
 					&::after{visibility: visible;}
 				}
-				.title01{margin-top: 3rem;}
-				@include breakpoint(max,767px){width: 20rem;}	
-				@include breakpoint(max,500px){width: 17rem;}	
+				.title01{margin-top: 3rem;
+					@include breakpoint(max,500px){margin-top: 5px;}
+				}
+				@include breakpoint(max,767px){width: 20rem;text-align: center;    padding: 3rem 0 3rem;}	
+				@include breakpoint(max,500px){	display: flex;
+					justify-content: center;
+					flex-direction: column;}	
 			
 			}
-			.desc-box {position: absolute;bottom: -3%;padding: 9rem 0;background: $gradient; bottom: -100%;visibility: hidden;left: 0;right: 0;border-radius: 4.7rem;
+			.desc-box {position: absolute;bottom: -3%;padding: 9rem 0;background: $gradient; bottom: -115%;visibility: hidden;left: 0;right: 0;border-radius: 4.7rem;height: 100%;
 				.desc-para{font-size: 3.5rem;color: #fff;line-height: 4rem;
-					@include breakpoint(max,500px){font-size: 3rem;line-height: 3.6rem;} }	
-				@include breakpoint(max,767px){visibility: visible;left: 30%;right: 0;top: 0;bottom: 0;padding: 6rem 2rem;}	
-				@include breakpoint(max , 970px){bottom: -25rem;padding: 6rem 3rem;}
-				@include breakpoint(max , 767px){bottom: 0;left: 35%;}
-				@include breakpoint(max,500px){left: 36%;}
+					@include breakpoint(max,500px){    font-size: 2.4rem;
+						line-height: 3.2rem;} }	
+				// @include breakpoint(max,767px){visibility: visible;left: 30%;right: 0;top: 0;bottom: 0;padding: 6rem 2rem;}	
+				@include breakpoint(max , 970px){bottom: -26rem;padding: 6rem 3rem;    height: 90%;}
+				@include breakpoint(max , 767px){    position: static;    display: inline-block;
+					width: 100%;    padding: 3rem;    visibility: visible;}
+				@include breakpoint(max,500px){border-radius: 2.7rem;}
 			}
 			&:hover .desc-box{visibility: visible;}
 		}
@@ -590,7 +597,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 
 //Partners Section
-.partners-section{margin: 3.1rem 0 4.7rem; 
+.partners-section{margin: 8.4rem 0 4.7rem; 
 	.heading02{margin-bottom: 6rem;}
 	.container-s{width: 91.9rem;text-align: center;margin: 0 auto;
 		@include breakpoint(max,767px){width: 90%;}
@@ -606,11 +613,12 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 // Steps Section
 .right-step-section{padding-top: 4.6rem; text-align: center;background-color: #F5E7E7;
 	@include breakpoint(max,767px){    padding-bottom: 7rem;}
-	.heading02{color: $primary-color;margin-bottom: 4rem;}
+	.heading02{color: $primary-color;margin-bottom: 4rem;padding-inline: 2rem;}
 	.container{
-		.right-step-row{padding-block: 4.6rem; background: $gradient; color: #fff;
+		.right-step-row{padding:4.6rem 3rem; background: $gradient; color: #fff;
 			.right-steps-title{font-size: 4rem;display: inline-block;margin-right: 9rem;
 				@include breakpoint(max,767px){margin-right: 0;line-height: 4.6rem;margin-bottom: 3rem;}}
+			.btn.white-btn.white-btn-arrow{margin-left: 3rem;}
 		}
 		.steps-container{display: flex;justify-content: space-between;bottom: -7rem;position: relative;margin-top: -7rem;
 			@include breakpoint(max,767px){display: block;margin-top: 7rem;padding-bottom: 7rem;}
@@ -664,7 +672,7 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			.achiever-img{border-radius: 100%;width: 16.1rem;overflow: hidden;position: absolute;top: -8.4rem;left: 0;right: 0;margin: 0 auto;}
 			figcaption{
 				.caption-title{font-size: 3rem;color: #fff;margin-bottom: 1.5rem;}
-				p{color: #fff;}
+				p{color: #fff;font-size: 2rem;}
 			}
 		}
 	}
