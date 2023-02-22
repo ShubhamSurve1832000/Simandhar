@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Slider from 'react-slick'
+// import { useRouter } from 'next/router'
+import {usePathname} from 'next/navigation'
+// import Slider from 'react-slick'
 import { CgProfile } from 'react-icons/cg'
 import { BsCart2 } from 'react-icons/bs'
 import { RiArrowDropDownLine } from 'react-icons/ri'
@@ -56,6 +58,8 @@ export default function header() {
     setActive(!isActive);
   };
 
+  const pathname = usePathname();
+
   // const [isActive, setActive] = useState(false);
   // const toggleClass = () => {
   //   setActive(!isActive);
@@ -93,10 +97,10 @@ export default function header() {
                   </li>
                 ))
               } */}
-                <Link href="/"> <li className='active'>Home</li></Link>
-               <Link href="/aboutUs"> <li>About</li></Link>
-               <Link href='/webinars'> <li>Webinars</li></Link>
-                <Link href='/resources'> <li>Free Resources</li></Link>
+                <Link href="/"> <li className={pathname == '/'?'active':''} onClick={showMenu}>Home</li></Link>
+               <Link href="/about-us" onClick={showMenu}> <li className={pathname == '/about-us'?'active':''}>About</li></Link>
+               <Link href='/webinars' onClick={showMenu}> <li className={pathname == '/webinars'?'active':''}>Webinars</li></Link>
+                <Link href='/resources' onClick={showMenu}> <li className={pathname == '/resources'?'active':''}>Free Resources</li></Link>
                 <li className='more_dropdown'>
                   More
                   <span><i><RiArrowDropDownLine /></i></span>
@@ -104,7 +108,7 @@ export default function header() {
                 </li>
               </ul>
             </div>
-            <div className='btn01'><button className='btn'>Buy Course</button></div>
+            <div className='btn01'><button className='btn'>Buy Courses</button></div>
             <span><i className='profile'> <CgProfile /></i></span>
             <span><i className='cart'> <BsCart2 /></i></span>
           </div>
@@ -133,7 +137,7 @@ export default function header() {
             <div className='programs'>
                 {/* <Slider {...programSlider}> */}
 
-                <div className='nav-title'><h3>US CPA</h3></div>
+                <Link href='/us-cpa' className='nav-title'><h3>US CPA</h3></Link>
                 <div className='nav-title'>US CMA</div>
                 <div className='nav-title'>EA</div>
                 <div className='nav-title'>CIA</div>
