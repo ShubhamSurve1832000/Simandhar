@@ -2,10 +2,10 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 export default function bannerSection() {
-  const [isActive, setActive] = useState(false);
-  const toggleClass = () => {
-    setActive(!isActive);
-  };
+  // const [isActive, setActive] = useState(false);
+  // const toggleClass = () => {
+  //   setActive(!isActive);
+  // };
 
   return (
     <>
@@ -26,15 +26,15 @@ export default function bannerSection() {
           <div className="clear"></div>
         </div>
       </section>
-      <div class="sticky-box">
+      {/* <div class="sticky-box">
         <a href="#" className='resp-img-box'><Image src="/img/phone.png" alt="" layout="fill" className='resp-img' /></a>
         <a href="#" className='resp-img-box'><Image src="/img/email.png" alt="" layout="fill" className='resp-img' /></a>
         <a href="#" className='wa-icon resp-img-box'><Image src="/img/whatsapp.png" alt="" layout="fill" className='resp-img' /></a>
         <button className={'enq-btn resp-img-box' + ' ' + (isActive ? 'active' : '')} onClick={toggleClass} >
           <Image src="/img/enquire_now.svg" alt="" layout="fill" className='resp-img' />
         </button>
-      </div>
-      <div className={'enq-form' + ' ' + (isActive ? 'active' : '')}>
+      </div> */}
+      {/* <div className={'enq-form' + ' ' + (isActive ? 'active' : '')}>
         <button className='close-form resp-img-box' onClick={toggleClass}><Image src="/img/form_arrow.svg" alt="" layout="fill" className='resp-img' /></button>
         <div className='form-header'>
           <i className='resp-img-box'><Image src="/img/enq_icon.svg" layout="fill" className='resp-img' /></i>
@@ -70,7 +70,7 @@ export default function bannerSection() {
           </form>
         </div>
       </div>
-      <div class="overlay" onClick={toggleClass} style={{ display: (isActive ? "block" : 'none') }}></div>
+      <div class="overlay" onClick={toggleClass} style={{ display: (isActive ? "block" : 'none') }}></div> */}
     </>
   )
 }
