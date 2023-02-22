@@ -98,9 +98,9 @@ export default function header() {
                 ))
               } */}
                 <Link href="/"> <li className={pathname == '/'?'active':''} onClick={showMenu}>Home</li></Link>
-               <Link href="/about-us" onClick={showMenu}> <li className={pathname == '/about-us'?'active':''}>About</li></Link>
-               <Link href='/webinars' onClick={showMenu}> <li className={pathname == '/webinars'?'active':''}>Webinars</li></Link>
-                <Link href='/resources' onClick={showMenu}> <li className={pathname == '/resources'?'active':''}>Free Resources</li></Link>
+               <Link href="/about-us"> <li className={pathname == '/about-us'?'active':''} onClick={showMenu}>About</li></Link>
+               <Link href='/webinars'> <li className={pathname == '/webinars'?'active':''} onClick={showMenu}>Webinars</li></Link>
+                <Link href='/resources'> <li className={pathname == '/resources'?'active':''} onClick={showMenu}>Free Resources</li></Link>
                 <li className='more_dropdown'>
                   More
                   <span><i><RiArrowDropDownLine /></i></span>
