@@ -598,13 +598,15 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 //Partners Section
 .partners-section{margin: 8.4rem 0 4.7rem; 
-	.heading02{margin-bottom: 6rem;}
+	.heading02{margin-bottom: 6rem;
+	@include breakpoint(max,500px){margin-bottom: 3rem;}
+	}
 	.container-s{width: 91.9rem;text-align: center;margin: 0 auto;
-		@include breakpoint(max,767px){width: 90%;}
+		@include breakpoint(max,767px){width: 75%;}
 		.partners-grid{display: grid;grid-template-columns: 1fr 1fr 1fr;align-items: center; grid-gap: 2rem;
 			@include breakpoint(max,500px){grid-gap: 0;}
 			.grid-box{width: 29.3rem;margin: 0 auto;border: 1px solid #C9C9C9;
-				@include breakpoint(max,767px){width:auto;}
+				@include breakpoint(max,767px){width: 90%;}
 			}
 		}
 	}
