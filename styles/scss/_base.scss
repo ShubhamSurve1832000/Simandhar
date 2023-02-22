@@ -476,8 +476,10 @@ p{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max,767px){margin-top: 3.5rem;}	
 		}
 		.grid-box{color: #fff;border-right: 1px solid #FCFCFC;
-		&:last-child{border-right: none;}
+			&:last-child{border-right: none;}
+			@include breakpoint(max,767px){
 		&:nth-child(2){border-right: none;}
+	}
 
 			.heading02{color: #fff;}
 			.title{font-size: 2.5rem;font-weight: 500;}
