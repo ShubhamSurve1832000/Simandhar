@@ -20,7 +20,7 @@
     &.hf-container{max-width: 175rem;width: 96%;margin: 0 auto;}
     .left_nav{display: flex;align-items: center;
         @include breakpoint(max,767px){margin-right: 10rem;float: right;}
-    .navbar_list{display: flex;justify-content: space-between;align-items: center;         
+    .navbar_list{display: flex;justify-content: space-between;align-items: center;padding-left: 0;         
        @include breakpoint(max,767px){display: block;}
         li{margin-inline: 3.6rem ;list-style: none;font-size: 2rem;font-family: 'Space Grotesk';vertical-align: middle;font-weight: 500;cursor: pointer;
             &.active{color: $primary-color;}
@@ -98,8 +98,10 @@
             @include breakpoint(max,767px){grid-column: 3/6;grid-row: 3/4;border-right: 1px solid #909090;}}
             .footer_para{font-family: 'Space Grotesk';color: #000;}
             .footer_title{font-size: 2rem;color: #760B28;margin-bottom: 2.8rem;font-weight: 500;}
-            .title01{font-size: 2rem;margin-bottom: 1.8rem;font-weight: 400;line-height: 2.8rem;color: #000;}
+            .title01{font-size: 2rem;margin-bottom: 1.8rem;font-weight: 400;line-height: 2.8rem;color: #000;list-style-type: none;}
             @include breakpoint(max,767px){border-top: 1px solid #909090;vertical-align: top;padding: 3rem 1rem 3rem 3rem;}
+
+            ul{padding-left: 0;}
         }
        
     }
