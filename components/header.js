@@ -65,7 +65,7 @@ export default function header() {
   //   setActive(!isActive);
   // };
 
-  // const [porgrams, setPrograms] = useState([{ name: 'Our Programs', icon: '<IoCaretForward />' }, { name: 'US CPA' }, { name: 'EA' }, { name: 'CIA' }, { name: 'IFRS' }, { name: 'Data Analytics' }, { name: 'Simandhar Saamarth' }, { name: 'More' }])
+  // const [porgrams, setPrograms] = useState([{ name: 'Our Programs', icon: '<IoCaretForward />' }, { name: 'US CPA' }, { name: 'EA' }, { name: 'CIA' }, { name: 'IFRS' }, { name: 'Data Analytics' }, { name: 'Simandhar Saamarth' }, { name: 'More',data:['value1,value1,value1,value1] }])
 
 
   // const [links, setLinks] = useState([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }, { label: 'Webinars', path: '/Webinars' }, { label: 'Free Resources', path: '/Free Resources' }])
@@ -94,6 +94,7 @@ export default function header() {
                 links.map(link => (
                   <li>
                     <Link className="home" href={link.path}>{link.label}</Link>
+                    
                   </li>
                 ))
               } */}
