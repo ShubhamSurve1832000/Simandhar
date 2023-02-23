@@ -12,7 +12,7 @@ const aboutUS = () => {
   return (
     <>
        <Head>
-        <title>About us</title>
+        <title>About Us - Simandhar Education</title>
       </Head>
 <AboutUsBanner />
 <ExpPlaceInfo />

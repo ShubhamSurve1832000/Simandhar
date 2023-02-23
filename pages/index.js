@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home page</title>
+        <title>Simandhar Education</title>
       </Head>
       <Format>
         <OfferSection />
@@ -39,7 +39,7 @@ export default function Home() {
      
        
       </Format>
-      <a href='#' className='chat-icon'><Image src="/img/chat.png" alt="" width={122} height={135} /></a>
+      
     </>
   )
 }
