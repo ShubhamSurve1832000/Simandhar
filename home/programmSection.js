@@ -15,8 +15,8 @@ export default function programmSection() {
                 <Tab className='tab-button active'>US CMA</Tab>
                 <Tab className='tab-button'>EA</Tab>
                 <Tab className='tab-button'>CIA</Tab>
-                <Tab className='tab-button'>DA</Tab>
-                <Tab className='tab-button'>SSP</Tab>
+                <Tab className='tab-button'>Data Analytics</Tab>
+                <Tab className='tab-button'>Simandhar Saamarth</Tab>
               </Tab.List>
             </div>
           </div>
