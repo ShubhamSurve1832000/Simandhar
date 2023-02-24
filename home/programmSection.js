@@ -9,14 +9,15 @@ export default function programmSection() {
           <div className='pro-leftbox'>
             <h2 className='heading02'>Our Programmes</h2>
             <p>Kickstart Your Career in Accounting & Finance</p>
-            <div className='tab-head-row'>
-              <Tab.List className='tab-head-box'>
+            <div className='tab-head-row custom-scrollbar'>
+              <Tab.List className='tab-head-box '>
                 <Tab className='tab-button'>US CPA</Tab>
                 <Tab className='tab-button active'>US CMA</Tab>
                 <Tab className='tab-button'>EA</Tab>
                 <Tab className='tab-button'>CIA</Tab>
                 <Tab className='tab-button'>Data Analytics</Tab>
                 <Tab className='tab-button'>Simandhar Saamarth</Tab>
+                
               </Tab.List>
             </div>
           </div>

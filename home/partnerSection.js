@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Slider from 'react-slick'
 import { Tab } from "@headlessui/react"
+import Link from 'next/link';
 
 
 
 export default function partnerSection() {
 	var partnerSlider = {
 		dots: false,
-		infinite: true,
+		infinite: false,
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -50,8 +51,10 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo01.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><h2 className='heading02'><Link href='/partners'> View More</Link></h2></div>											
+										
+											
+											{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div> */}
 										</Slider>
 
 									</div>
@@ -65,6 +68,8 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo02.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo01.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><h2 className='heading02'><Link href='/partners'> View More</Link></h2></div>											
+											
 										</Slider>
 
 									</div>
@@ -74,12 +79,14 @@ export default function partnerSection() {
 									<div className='partner-slider'>
 
 										<Slider {...partnerSlider}>
-											<div className='logo-box resp-img-box'><Image src="/img/media_logo06.jpg" layout="fill" className='resp-img' /></div>
+											{/* <div className='logo-box resp-img-box'><Image src="/img/media_logo06.jpg" layout="fill" className='resp-img' /></div> */}
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo05.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo02.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/media_logo01.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><h2 className='heading02'><Link href='/partners'> View More</Link></h2></div>											
+
+											{/* <div className='logo-box resp-img-box'><Image src="/img/media_logo01.jpg" layout="fill" className='resp-img' /></div> */}
 										</Slider>
 
 									</div>
