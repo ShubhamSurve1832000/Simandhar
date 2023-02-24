@@ -199,7 +199,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		@include breakpoint(max, 767px){display: block;}
 	}
     .pro-leftbox{padding-right: 3rem;
-		.tab-head-row {height: 57rem;overflow: auto;}
+		.tab-head-row {height: 57rem;overflow: auto;
+		@include breakpoint(max,767px){height: auto;}}
 			@include breakpoint(max, 767px){padding-right: 0;}
         p{margin-top: .6rem;}
 				.tab-head-row{
