@@ -9,25 +9,25 @@ const PlacementSection = () => {
           <div className="partner-container">
             <div className="partner-logo-box">
               <div className="logo-box resp-img-box">
-                <Image src="/img/logo05.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/logo05.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
-                <Image src="/img/logo04.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/logo04.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
-                <Image src="/img/logo01.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/logo01.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
-                <Image src="/img/logo03.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/logo03.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
-                <Image src="/img/logo02.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/logo02.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
-                <Image src="/img/pwc_logo.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/pwc_logo.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
-                <Image src="/img/grant_logo.png" alt="" layout="fill" className='resp-img' />
+                <Image src="/cpa/img/grant_logo.png" alt="" layout="fill" className='resp-img' />
               </div>
               <div className="logo-box resp-img-box">
                 <a href="javascript:;" className='btn maroon-border-btn maroon-border-btn-arrow'>View All Partners</a>
