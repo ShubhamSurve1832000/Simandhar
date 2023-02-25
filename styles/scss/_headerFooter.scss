@@ -52,21 +52,46 @@
 
 // Program Bar
 .backgroud{background: linear-gradient(106deg,#760b28,#811c4b); 
-    .program_bar{display: flex; justify-content: space-evenly;align-items: center;grid-gap: 2rem;
-        @include breakpoint(max,767px){display: grid;grid-template-columns: 110px auto;
-            .program-scroll{overflow: auto; .programs{width: max-content;}}}
-        .nav-title{font-size: 2rem;color: #fff;padding: 1.3rem;vertical-align: middle;font-weight: 500;width: max-content;
+    .program_bar{display: flex; justify-content: space-between;align-items: center;grid-gap: 2rem;
+        @include breakpoint(max,970px){display: grid;grid-template-columns: 110px auto;
+            .program-scroll{overflow: auto; 
+                .programs{width: max-content;}
+            }
+        }
+        .nav-title{font-size: 2rem;color: #fff;padding: 1.7rem 4.4rem;vertical-align: middle;font-weight: 500;width: max-content;
             span{vertical-align: sub;margin-left: 3.5rem;
                 @include breakpoint(max,767px){margin-left: 1.5rem;}}
         }
         
-        .programs{display: flex;justify-content: space-between;grid-gap: 10rem;cursor: pointer;
-            @include breakpoint(max,1279px){grid-gap: 6rem;}
-            @include breakpoint(max,1023px){grid-gap: 3rem;}}
-        
+        .programs{display: flex;justify-content: space-between;grid-gap: 2.3rem;cursor: pointer;
+            @include breakpoint(max,1279px){grid-gap: 2rem;}
+            @include breakpoint(max,1023px){grid-gap: 0rem;}
+        a{
+        &:hover{background-color: #760B28;}
+        }
+        }       
     }
+    .program_bar > .nav-title{padding:0;}
+}
 
-
+// US CPA Bar
+.light-backgroud{background: #F8E4E9; 
+    .uscpa-program{display: flex; justify-content: space-between;align-items: center;grid-gap: 2rem;
+        @include breakpoint(max,970px){display: grid;grid-template-columns: 110px auto;
+            .program-scroll{overflow: auto; .programs{width: max-content;grid-gap: 3.2rem;}}}
+        .nav-title{font-size: 2rem;padding: 3rem 4.4rem;vertical-align: middle;font-weight: 500;width: max-content;
+        @include breakpoint(max , 970px){padding: 3rem 2rem;}    
+            span{vertical-align: inherit;margin-left: 3.5rem;
+                @include breakpoint(max,767px){margin-left: 1.5rem;}}
+        }
+        
+        .programs{display: flex;justify-content: space-between;grid-gap: 0rem;cursor: pointer;align-items: center;
+           a{
+            &:hover{background: #2C2C2C;color: #FFFFFF;}
+           }
+        }
+    }
+    .uscpa-program > .nav-title{padding: 0;}
 }
 
 
