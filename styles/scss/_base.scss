@@ -592,8 +592,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 					flex-direction: column;}	
 			
 			}
-			.desc-box {position: absolute;bottom: -3%;padding: 9rem 0;background: $gradient; bottom: -115%;visibility: hidden;left: 0;right: 0;border-radius: 4.7rem;height: 100%;
-				.desc-para{font-size: 3.5rem;color: #fff;line-height: 4rem;
+			.desc-box {position: absolute;bottom: -3%;padding: 9rem 0;background: $gradient; bottom: -105%;visibility: hidden;left: 0;right: 0;border-radius: 4.7rem;height: 90%;
+				.desc-para{font-size: 3.5rem;color: #fff;line-height: 4rem;position: absolute;top: 50%;transform: translateY(-50%);left: 0;right: 0;
 					@include breakpoint(max,500px){    font-size: 2.4rem;
 						line-height: 3.2rem;} }	
 				// @include breakpoint(max,767px){visibility: visible;left: 30%;right: 0;top: 0;bottom: 0;padding: 6rem 2rem;}	
