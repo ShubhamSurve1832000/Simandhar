@@ -12,7 +12,7 @@ const PrinceSection = () => {
                             <p className='title01'>PASSION</p>
                         </div>
                         <div className='desc-box'>
-                            <p className='desc-para'>Passion in every work we do for our students and team members1.</p>
+                            <p className='desc-para'>Passion in every work we do for our students and team members.</p>
                         </div>
                     </div>
                     <div className='grid-box'>
