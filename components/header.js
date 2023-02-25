@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 // import { useRouter } from 'next/router'
-import {usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 // import Slider from 'react-slick'
 import { CgProfile } from 'react-icons/cg'
 import { BsCart2 } from 'react-icons/bs'
@@ -70,13 +70,13 @@ export default function header() {
 
   // const [links, setLinks] = useState([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }, { label: 'Webinars', path: '/Webinars' }, { label: 'Free Resources', path: '/Free Resources' }])
   return (
-    
+
     <>
       <header className="header" id="header">
         <nav className='navbar hf-container'>
           <div className='logo_img  resp-img-box'>
-           <Link href="/"> <Image src='/img/logo.png' layout="fill" className='resp-img' alt='Simandhar logo' />
-            <Image src='/img/mobile_logo.png' layout="fill" className='resp-img mobile-logo' alt='Simandhar logo' /></Link>
+            <Link href="/"> <Image src='/img/logo.png' layout="fill" className='resp-img' alt='Simandhar logo' />
+              <Image src='/img/mobile_logo.png' layout="fill" className='resp-img mobile-logo' alt='Simandhar logo' /></Link>
           </div>
           <div className='left_nav'>
             <button className="menu-btn" onClick={showMenu}>
@@ -84,7 +84,7 @@ export default function header() {
               <span></span>
               <span></span>
             </button>
-            <div className={'nav' + ' ' +(isActive ?  'active' : '')}>
+            <div className={'nav' + ' ' + (isActive ? 'active' : '')}>
               <button class="close-menu" onClick={showMenu}>
                 <span></span>
                 <span></span>
@@ -98,10 +98,10 @@ export default function header() {
                   </li>
                 ))
               } */}
-                <Link href="/"> <li className={pathname == '/'?'active':''} onClick={showMenu}>Home</li></Link>
-               <Link href="/about-us"> <li className={pathname == '/about-us'?'active':''} onClick={showMenu}>About</li></Link>
-               <Link href='/webinars'> <li className={pathname == '/webinars'?'active':''} onClick={showMenu}>Webinars</li></Link>
-                <Link href='/resources'> <li className={pathname == '/resources'?'active':''} onClick={showMenu}>Free Resources</li></Link>
+                <Link href="/"> <li className={pathname == '/' ? 'active' : ''} onClick={showMenu}>Home</li></Link>
+                <Link href="/about-us"> <li className={pathname == '/about-us' ? 'active' : ''} onClick={showMenu}>About</li></Link>
+                <Link href='/webinars'> <li className={pathname == '/webinars' ? 'active' : ''} onClick={showMenu}>Webinars</li></Link>
+                <Link href='/resources'> <li className={pathname == '/resources' ? 'active' : ''} onClick={showMenu}>Free Resources</li></Link>
                 <li className='more_dropdown'>
                   More
                   <span><i><RiArrowDropDownLine /></i></span>
@@ -131,24 +131,26 @@ export default function header() {
 
         {/* Second NavBar */}
         <section className='backgroud'>
+          <div className='hf-container'>
 
-          <div className='program_bar'>
-            <div className='nav-title'>Our Programs<span><i><IoCaretForward /></i></span></div>
+            <div className='program_bar'>
+              <div className='nav-title'>Our Programs<span><i><IoCaretForward /></i></span></div>
               <div className='program-scroll'>
-            <div className='programs'>
-                {/* <Slider {...programSlider}> */}
+                <div className='programs'>
+                  {/* <Slider {...programSlider}> */}
 
-                <Link href='/us-cpa' className='nav-title'><h3>US CPA</h3></Link>
-                <div className='nav-title'>US CMA</div>
-                <div className='nav-title'>EA</div>
-                <div className='nav-title'>CIA</div>
-                <div className='nav-title'>IFRS</div>
-                <div className='nav-title'>Data Analytics</div>
-                <div className='nav-title'>Simandhar Saamarth</div>
-                {/* </Slider> */}
+                  <Link href='/us-cpa' className='nav-title'>US CPA</Link>
+                  <Link href='' className='nav-title'>US CMA</Link>
+                  <Link href='' className='nav-title'>EA</Link>
+                  <Link href='' className='nav-title'>CIA</Link>
+                  <Link href='' className='nav-title'>IFRS</Link>
+                  <Link href='' className='nav-title'>Data Analytics</Link>
+                  <Link href='' className='nav-title'>Simandhar Saamarth</Link>
+                  {/* </Slider> */}
 
-                {/* <div className='nav-title'>More<span><i><RiArrowDropDownLine /></i></span>
+                  {/* <div className='nav-title'>More<span><i><RiArrowDropDownLine /></i></span>
             </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -156,8 +158,8 @@ export default function header() {
         </section>
 
 
-       
-     
+
+
       </header>
 
       {/* Form */}

@@ -5,7 +5,7 @@ const resources = () => {
   return (
     <>
        <Head>
-        <title>Free Resources</title>
+        <title>Free Resources - Simandhar Education</title>
       </Head>
     </>
   )

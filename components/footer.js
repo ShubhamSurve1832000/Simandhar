@@ -28,10 +28,10 @@ export default function footer() {
           <div className='hf-container'>
             <div className='footer_grid'>
 
-              <div className='footer_box'>
+              <div className='footer_box a'>
                 <p className='footer_para'>An award-winning institute that believes in transforming lives. Simandhar Education is aiming to upskill you and create a new-age approach for success.</p>
               </div>
-              <div className='footer_box'>
+              <div className='footer_box b'>
                 <h4 className='footer_title'>Our Courses <span><i>< IoChevronForward /></i></span> </h4>
                 <ul>
                   <li className='title01'>US Certified Public Accountant</li>
@@ -43,7 +43,7 @@ export default function footer() {
                   <li className='title01'>Simandhar Saamarth Workshops</li>
                 </ul>
               </div>
-              <div className='footer_box'>
+              <div className='footer_box c'>
                 <div>
                   <h4 className='footer_title'>Webinars  <span><i>< IoChevronForward /></i></span> </h4>
                   <ul>
@@ -58,7 +58,7 @@ export default function footer() {
                 </div>
 
               </div>
-              <div className='footer_box'>
+              <div className='footer_box d'>
                 <div>
                   <h4 className='footer_title'>Corporate   <span><i>< IoChevronForward /></i></span> </h4>
                   <ul>
@@ -72,7 +72,7 @@ export default function footer() {
                 </div>
 
               </div>
-              <div className='footer_box'>
+              <div className='footer_box e'>
                 <div>
                   <h4 className='footer_title'>User Registration/Sign-up    <span><i>< IoChevronForward /></i></span> </h4>
                   <ul>

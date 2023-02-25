@@ -51,7 +51,7 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo01.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading02'><Link href='/partners'> View More</Link></h2></div>											
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>											
 										
 											
 											{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div> */}
@@ -68,7 +68,7 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo02.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo01.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading02'><Link href='/partners'> View More</Link></h2></div>											
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>											
 											
 										</Slider>
 
@@ -84,7 +84,7 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo02.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading02'><Link href='/partners'> View More</Link></h2></div>											
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>											
 
 											{/* <div className='logo-box resp-img-box'><Image src="/img/media_logo01.jpg" layout="fill" className='resp-img' /></div> */}
 										</Slider>

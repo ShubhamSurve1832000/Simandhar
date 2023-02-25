@@ -12,6 +12,7 @@ import PlacementSection from '../CPA/PlacementSection'
 import ProgrammTableSection from '../CPA/ProgrammTableSection'
 import AchieversSection from '../CPA/AchieversSection'
 import CareerSection from '../CPA/CareerSection'
+import CpaProgram from '../components/CpaProgram'
 // import Exam from './examSection'
 // import Journery from './journerySection'
 // import OnlineCourse from './onlineCourseSection'
@@ -34,6 +35,7 @@ export default function CPA() {
     </Head>
 			<div id="page-container">
 				<main className='main' id='main'>
+          <CpaProgram />
           <BannerSection/>
           <ExamSection/>
           <JournerySection/>

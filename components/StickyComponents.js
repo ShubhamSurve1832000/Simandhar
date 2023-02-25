@@ -30,7 +30,7 @@ const StickyComponents = () => {
           <h6>Take The First Step!</h6>
           <form>
             <div className='input-box'>
-              <input type="text" placeholder='Enter Your Name' />
+              <input type="text"  placeholder='Enter Your Name' />
             </div>
             <div className='input-box'>
               <input type="text" placeholder='Enter Your Email Address' />
