@@ -1,5 +1,6 @@
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import { BiPhoneCall } from 'react-icons/bi'
+import Link from 'next/link'
 import Image from 'next/image'
 // import app_store_1 from 'public/app_store_1.png'
 // import app_store_2 from 'public/app_store_2.png'
@@ -31,6 +32,7 @@ export default function ContactUs() {
                         </div>
                     </form>
                     <div className='contact_right_box'>
+                        <h3 className='heading05'>Headquarters</h3>
                         <div className='add_row'><span><i><HiOutlineLocationMarker /></i></span>
                             <div><p className=''>Plot Number: 39/A Dr.Subba Rao Colony, Picket, Secunderabad, Telangana 500026</p></div>
                         </div>
@@ -43,6 +45,9 @@ export default function ContactUs() {
                         <div className='add_row'><span><i><HiOutlineMail /></i></span>
                             <div><p className='' ><a href="mailto:info@simandhareducation.com">info@simandhareducation.com</a> </p></div>
                         </div>
+                        <div className='location-box'>
+                           <Link href="/"> <p className='location-title'>Our Locations</p></Link>
+                        </div>
                     </div>
                     <div className='map'>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1366681738036!2d78.4991588143541!3d17.453171605499534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a4010000075%3A0x95d6d292114c88f3!2sSimandhar%20Education%20-%20India&#39;s%20award%20winning%20Institute%20for%20US%20CPA%20%26%20IMA%20approved%20partner%20for%20US%20CMA.!5e0!3m2!1sen!2sin!4v1676294186295!5m2!1sen!2sin" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -53,7 +58,7 @@ export default function ContactUs() {
             </section>
             <div className='red_box'>
                 <div className='container grid'>
-                    <h3 className='title'>Simandhar Learn App is Available
+                    <h3 className='title'>Simandhar Learn App ( LMS ) is Available
                         on all Platform</h3>
                     <div>
                         <img src="img/app_store_1.png" alt="apple store" />
