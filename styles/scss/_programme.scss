@@ -42,7 +42,7 @@ p.mobile-tab {
   display: none;
   @include breakpoint(max,700px){display: block;}
 } 
-// .tab-header.active{display: block;}
+@include breakpoint(max,700px){tab-header.active{display: block;}}
 
 .journery-section{.heading02{@include breakpoint(max,767px){text-align: center;}}}
 .journey-container{margin-top: 5.5rem;display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 5rem;
