@@ -1,8 +1,13 @@
 import Image from 'next/image'
 import { Tab } from "@headlessui/react"
+import { useState } from 'react';
 
 const ExamSection = () => {
-  
+  const [isActive, setActive] = useState(false);
+
+  const showTab = () => {
+    setActive(!isActive);
+  };
   return (
     <>
       <section className="section exam-section">
@@ -18,17 +23,30 @@ const ExamSection = () => {
       </section>
       <section className="tab-section">
         <div className="container-l">
-          <p className='mobile-tab'>select tab</p>
+          <p className='mobile-tab' onClick={showTab}>select tab</p>
           <Tab.Group>
-            <Tab.List className='tab-header'>
-              <Tab className='tab-btn active'>Eligibility Check</Tab>
-              <Tab className='tab-btn'>Licensing/ Licensure</Tab>
-              <Tab className='tab-btn'>Preparation</Tab>
-              <Tab className='tab-btn'>Career Opportunities</Tab>
+            <Tab.List className={'tab-header' + ' ' + (isActive ? 'active' : '')}>
+              <Tab className='tab-btn active' onClick={showTab}>Eligibility Check</Tab>
+              <Tab className='tab-btn' onClick={showTab}>Licensing/ Licensure</Tab>
+              <Tab className='tab-btn' onClick={showTab}>Preparation</Tab>
+              <Tab className='tab-btn' onClick={showTab}>Career Opportunities</Tab>
             </Tab.List>
             <Tab.Panels className='tab-container p2'>
             <Tab.Panel className='tab-box'>
                 <p>The CPA Exams are administered by AICPA, the world’s largest accounting body. AICPA offers membership to all the aspirants successfully clearing all 4 CPA exams. CPA license, however is issued by the 55 state boards of accountancy of US that are part of NASBA. Each state board has different eligibility criteria, that needs to be met by the aspirant to take the US CPA exams.</p>
+                <p className="med-font">General Rules of Thumb :</p>
+                <ul className='li2'>
+                  <li>Master’s Degree in any of the streams of Commerce, Accounting or Finance</li>
+                  <li>An aspirant needs 120 credits to take the US CPA exams and 150 credits to get his CPA license</li>
+                  <li>It’s considered that one year of University education in India is equal to 30 credits of US education</li>
+                  <li>In some cases, first division graduates of a three-year degree from NAAC-A accredited universities of India are qualified to take the US CPA exams too.</li>
+                </ul>
+                <p className='pr-color mt-0'>Simandhar Education provides free eligibility check that you could use to check if you’re eligible to take the prestigious US CPA certification.</p>
+                <a href="javascript:;" className="btn maroon-btn maroon-btn-arrow mt-35">Know Your Eligibility</a>
+              </Tab.Panel>
+
+              <Tab.Panel className='tab-box'>
+                <p>The NASBA (National Association of State Boards of Accountancy) and the state board of accountancy governs the eligibility rules of CPA. The CPA exam requirements vary by state jurisdiction. Every state board of accountancy has a different set of requirements, but most states have a core set of qualifications for a candidate to be eligible for the CPA exam.</p>
                 <p className="med-font">Let’s go through the CPA license requirements.</p>
                 <ul className='li2'>
                   <li>In general, many states ask for <span className="med-font">150 credit hours</span> in some specific courses from a university or an accredited institute under NASBA.</li>
@@ -44,22 +62,11 @@ const ExamSection = () => {
                   <li>MBA.</li>
                   <li>Master of Commerce.</li>
                 </ul>
-              </Tab.Panel>
-
-              <Tab.Panel className='tab-box'>
-                <p>The NASBA (National Association of State Boards of Accountancy) and the state board of accountancy governs the eligibility rules of CPA. The CPA exam requirements vary by state jurisdiction. Every state board of accountancy has a different set of requirements, but most states have a core set of qualifications for a candidate to be eligible for the CPA exam.</p>
-                <p className="med-font">General Rules of Thumb :</p>
-                <ul className='li2'>
-                  <li>Master’s Degree in any of the streams of Commerce, Accounting or Finance</li>
-                  <li>An aspirant needs 120 credits to take the US CPA exams and 150 credits to get his CPA license</li>
-                  <li>It’s considered that one year of University education in India is equal to 30 credits of US education</li>
-                  <li>In some cases, first division graduates of a three-year degree from NAAC-A accredited universities of India are qualified to take the US CPA exams too.</li>
-                </ul>
-                <p className='pr-color mt-0'>Simandhar Education provides free eligibility check that you could use to check if you’re eligible to take the prestigious US CPA certification.</p>
-                <a href="javascript:;" className="btn maroon-btn maroon-btn-arrow mt-35">Know Your Eligibility</a>
+                
               </Tab.Panel>
               
               <Tab.Panel className='tab-box'>
+              <p className="med-font">Simandhar + Becker</p>
                 <p className="med-font">Simandhar LMS</p>
                 <p className='mt-0'>Simandhar Education has its own CPA exam review, taught by India’s best CPA instructors like Sripal Jain (CA, CGMA, US CPA), Surinder Kaur (CPA), Srikanth Tadikonda (CMA, CPA), Dhanashree Kshirsagar (CA, CPA), Heena Vithlani (CA,CPA,IFRS with ACCA), Karan Nathvani (CA,MBA-IIM Indore, CISA, CCSK) Amit Kumar Gupta (ACA,ACS,CMA) Sudha Murthy (CA) and Suraj Lakhotia (CA, CIMA). Simandhar has helped hundreds of CPA aspirants clear their CPA exams in India.</p>
                 <p className="med-font">Why Simandhar LMS + Becker?</p>
