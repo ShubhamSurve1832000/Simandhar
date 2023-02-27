@@ -34,7 +34,7 @@ p.mobile-tab {
   border: solid 1px #760B28;
   background-color: transparent;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #760B28;
   transition: ease 0.5s all;
   width: 100%;
@@ -42,7 +42,7 @@ p.mobile-tab {
   display: none;
   @include breakpoint(max,700px){display: block;}
 } 
-.tab-header.active{display: block;}
+// .tab-header.active{display: block;}
 
 .journery-section{.heading02{@include breakpoint(max,767px){text-align: center;}}}
 .journey-container{margin-top: 5.5rem;display: grid;grid-template-columns: repeat(5, 1fr);grid-column-gap: 5rem;
