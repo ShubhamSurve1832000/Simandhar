@@ -18,7 +18,7 @@ const OfferSection = () => {
                     <h3>Promo Code : SALE 10</h3>
                 </div>
                 <div className='offer_box5'>
-                    <h3>Avail</h3>
+                    <h3>Avail Now</h3>
                 </div>
             </div>
         </section>
