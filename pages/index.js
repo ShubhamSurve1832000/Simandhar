@@ -17,7 +17,7 @@ import ContactUs from '../home/contactUsSection'
 import OfferSection from '../home/OfferSection'
 
 
-export default function Home() {
+export default function Home({showPopup}) {
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <Format>
         <OfferSection />
-        <Banner />
+        <Banner showPopup={showPopup}/>
         <Usp />
         <Eduction />
         <Programm />
