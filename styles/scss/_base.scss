@@ -105,6 +105,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	}
     .right-box {background-image: url("/img/banner_bg.jpg");background-repeat: no-repeat;width: 75.50%;background-size: cover;position: relative;
 		@include breakpoint(max, 767px){padding-bottom: 48%;width: 100%;}
+		.slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide>div, .banner-slider, .banner-inner-slider{height: 100%;}
+			.banner-inner-slider{background-repeat: no-repeat;background-size: cover;position: relative;}
         .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 6rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
 					@include breakpoint(max, 1023px){top: 5rem;left: 5rem;}
 					@include breakpoint(max, 767px){width: 60%;top: 5rem;left: 3rem;}
@@ -141,11 +143,12 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	}
 }
 .close-form{position: absolute !important;top: 50%;transform: translateY(-50%);background-color: transparent;border: none;left: -3.1rem;width: 6.2rem;}
-.input-box{margin-top: 3.5rem;
+.input-box{margin-top: 3.5rem;position: relative;
 	input, select{width: 100%;display: block;border: none;border-bottom: solid 1px #000;font-size: 2rem;line-height: 2.7rem;color: #000;@include placeholder(#000);padding-bottom: .6rem;}
 	select{font-weight: 500;appearance: none;background: transparent}
 	&.custom-select{background-image: url("/img/black_down_arrow.png");background-repeat: no-repeat;background-position: right 2rem top;background-size: 2rem;}
 }
+.error-message{color: #f00;font-size: 1.4rem;position: absolute;left: 0;right: 0;text-align: right;}
 .overlay{background-color: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 99;}
 
 /* usp section */
@@ -711,3 +714,14 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	.med-font{font-weight: 500 !important}
 	
 	.heading06{font-weight: 700;font-size: 2.8rem;line-height: 3.7rem;}
+
+
+	// Home Banner Slider
+	.slick-dots{position: absolute;bottom: 5%;left: 0;right: 0;text-align: center;
+		li{display: inline-block;vertical-align: middle;margin: 0 5px;
+			button{width: 1.7rem;height: 1.7rem;color: transparent;font-size: 0px;background-color: #fff;border-radius: 100%;border:solid 1px $primary-color;padding: 0;}
+			&.slick-active{
+				button{background-color: $primary-color;}
+			}
+		}
+	}
