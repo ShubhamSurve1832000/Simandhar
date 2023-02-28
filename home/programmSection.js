@@ -25,11 +25,8 @@ export default function programmSection() {
             <h2 className='heading02'>Our Programmes</h2>
             <p>Kickstart Your Career in Accounting & Finance</p>
             <div className='tab-head-row  '>
-
               <p className='tab-button-mobile' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select Exams"}<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine /></span></p>
-
               <Tab.List className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}>
-
                 {items.map(item => (
                   <Tab className="tab-button" onClick={e => handleItemClick(e.target.id)} id={item.id}>
                     {item.label}
