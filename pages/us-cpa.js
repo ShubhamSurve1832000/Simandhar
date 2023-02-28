@@ -24,6 +24,11 @@ import CpaProgram from '../components/CpaProgram'
 // import Achievers from './achieversSection'
 // import Placement from './placementSection'
 // import Faq from './faqSection'
+import helpData from '../database/data/helpSection.json'
+import bannerData from '../database/data/banner.json'
+import exam from '../database/data/exam.json'
+import journeyData from '../database/data/journeySection.json'
+
 
 
 
@@ -36,14 +41,14 @@ export default function CPA() {
 			<div id="page-container">
 				<main className='main' id='main'>
           <CpaProgram />
-          <BannerSection/>
-          <ExamSection/>
-          <JournerySection/>
+          <BannerSection bannerData={bannerData.cpaPage}/>
+          <ExamSection />
+          <JournerySection journeyData={journeyData.cpaPage}/>
           <OnlineCourseSection/>
           <CurriculumSection/>
           <ProgrammTableSection />
           <ContentPartnerSection/>
-          <HelpSection/>
+          <HelpSection helpData={helpData.cpaPage}/>
           <CareerSection/>
           <AchieversSection/>
           <PlacementSection/>
