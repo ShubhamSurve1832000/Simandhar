@@ -1,3 +1,5 @@
+.read-more{color: #760B28;}
+
 .program-banner{display: grid;grid-template-columns: 55% 45%;align-items: center;
 @include breakpoint (max,767px){display: block;}  
   .banenr-left{
@@ -30,17 +32,28 @@
 }
 
 p.mobile-tab {
-  padding: 3.5rem 0;
+  padding: 3rem 0;
   border: solid 1px #760B28;
   background-color: transparent;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #760B28;
   transition: ease 0.5s all;
   width: 100%;
   text-align: center;
   display: none;
-  @include breakpoint(max,700px){display: block;}
+  @include breakpoint(max,700px){    display: block;
+    vertical-align: middle;
+    position: relative;}
+
+  svg{    font-size: 6rem;
+   
+    vertical-align: middle;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);}
 } 
 @include breakpoint(max,700px){tab-header.active{display: block;}}
 
@@ -149,6 +162,7 @@ p.mobile-tab {
     }
 
   }
+ 
 }
 
 .cont-partner-container{margin-top: 3.5rem;

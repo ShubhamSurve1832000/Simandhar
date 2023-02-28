@@ -156,7 +156,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 .usp-section{padding: 3rem 0;border-bottom: solid 1px #909090;
 		@include breakpoint(max, 767px){padding: 0}
 		.container-l{
-			@include breakpoint(max, 767px){width: 90%;overflow: auto;padding: 3rem 0;}
+			@include breakpoint(max, 767px){width: 90%; display: none; overflow: auto;padding: 3rem 0;}
 		}
     .usp-container{display: grid;grid-template-columns: auto auto auto;
 			@include breakpoint(max, 767px){grid-template-columns: 45rem 35rem 55rem;width: max-content;}
@@ -171,6 +171,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
         }
         p{margin-left: 3rem;display: inline-block;vertical-align: middle;font-size: 2.4rem;font-weight: 500;width: calc(100% - 9.4rem);color: #000;}
     }
+	
 }  
 
 /* education section */
@@ -211,12 +212,13 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max, 767px){padding-right: 0;}
         p{margin-top: .6rem;}
 				.tab-head-row{
-					@include breakpoint(max, 767px){width: 100%;overflow: auto;}
+					@include breakpoint(max, 767px){width: 100%;overflow: hidden;}
 				}
         .tab-head-box{margin-top: 2rem;padding-right: 6rem;
-					@include breakpoint(max, 767px){width: max-content;padding-bottom: 10px;padding-right: 0;}
+					@include breakpoint(max, 767px){width: 90%;padding-bottom: 10px;padding-right: 0;margin-top: 0rem;display: none;
+					&.active{display: block;}}
             .tab-button{color: #000;font-size: 3.6rem;font-weight: 400;padding: 0;border: none;background: transparent;display: block;padding: 2.5rem 0;border-top: solid 1px #000;width: 100%;text-align: left;line-height: 4.2rem;
-							@include breakpoint(max, 767px){display: inline-block;width: auto;margin: 0 .5rem;border: solid 1px #000;padding: 1.3rem 2rem;font-size: 3.2rem;}
+							@include breakpoint(max, 767px){display:block;margin: 0 .5rem;border: solid 1px #000;padding: 1.3rem 2rem;font-size: 3.2rem;}
                 &:last-child{padding-bottom: 0;
 									@include breakpoint(max, 767px){padding-bottom: 1.4rem}
 								}
@@ -225,7 +227,11 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 						}   
             }
         }
-		
+		.tab-button-mobile{display: none;margin: 0 0.5rem;border: solid 1px #000;padding: 1.3rem 2rem;font-size: 3.2rem;font-weight: 400;background: transparent;width: 90%;text-align: left;line-height: 4.2rem;position: relative;margin-top:2rem;
+			span {font-size: 6rem;vertical-align: middle;position: absolute;right: 0rem;top: 40%;bottom: 0%;transform: translateY(-50%); display: inline-block; width: 7rem;transition: 0.3s ease all;
+				&.active{transform: rotate(180deg); transition: .3s ease all;}
+			}
+		@include breakpoint(max,767px){display: block;}}
     }
     .pro-rigbhbox{background-color: rgb(234, 250, 249);background-image: url("/img/programm_bg.png"), linear-gradient(189deg, rgba(234, 250, 249, 1) 0%, rgba(250, 254, 255, 1) 100%);background-repeat: no-repeat;background-position: top right;padding: 3rem 6.6rem;padding-right: 35%;border-radius: 5rem;overflow: hidden;background-size: cover;height: 100%;
 			@include breakpoint(max, 1500px){padding: 3rem 5rem;padding-right: 38%;}
@@ -323,6 +329,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
         }
     }
     .btn{margin-top: 3rem}
+	.video-lgbox.resp-img-box{@include breakpoint(max,767px){position: relative;height: 21rem;}}
 	.video-lgbox.resp-img-box > div{height: 100%;width: 100%; >div{height: 100%; iframe{width: 100%;height: 100%;}}}
 }
 /* achiever section */
@@ -351,7 +358,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max, 767px){width: 100%;overflow: auto;padding-bottom: 10px;}
 		}
     .tab-header{display: grid;grid-template-columns: repeat(3, 1fr);
-			@include breakpoint(max, 767px){width: max-content;}
+			@include breakpoint(max, 550px){width: 100%;display: block;}
        .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2rem;color: #760B28;transition: ease .5s all;
 				@include breakpoint(max, 767px){padding: 3.5rem 3rem;}
         &:first-child{border-left: solid 1px #760B28;}
@@ -709,16 +716,18 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	 @include breakpoint(max, 700px){display: block;border-left:solid 1px #760B28;display: none;
 		&.active{display: block;}
 	}
-		 .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2rem;color: #760B28;transition: ease .5s all;width: 100%;
-		 @include breakpoint(max, 767px){padding: 3.5rem 3rem;}
+		 .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2.4rem;color: #760B28;transition: ease .5s all;width: 100%;
+		 @include breakpoint(max, 767px){padding: 3.5rem 3rem;font-size: 3rem;}
 		 &:first-child{border-left: solid 1px #760B28;}
 		 &[data-headlessui-state=selected], &:hover{background-color: #760B28;color: #fff;}
 		 }
 	 }
 	 .tab-container{margin-top: 5.5rem;position: relative;}
+	 .pr-color{color: #760B28;}	
 	}
 	.p2 p, .li2 li{font-size: 2.4rem;font-weight: 400;color: #000;line-height: 4.8rem;margin-bottom: 3.5rem;}
 	ul, .li2{padding-left: 4rem;
+	
 	 li{margin-bottom: 0;list-style-type: disc;}
 	}
 	.med-font{font-weight: 500 !important}
@@ -735,3 +744,10 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			}
 		}
 	}
+
+	// Download Brochure
+	.download-overlay{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.6);z-index: 9;}
+.download-popup{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9;
+	.enq-form{left: 50%;right: 0;transform: translate(-50%,-50%);}
+	.close-form{display: none;}
+}
