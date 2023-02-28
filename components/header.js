@@ -140,7 +140,7 @@ export default function header() {
                   {/* <Slider {...programSlider}> */}
 
                   <Link href='/us-cpa' className='nav-title'>US CPA</Link>
-                  <Link href='' className='nav-title'>US CMA</Link>
+                  <Link href='/us-cma' className='nav-title'>US CMA</Link>
                   <Link href='' className='nav-title'>EA</Link>
                   <Link href='' className='nav-title'>CIA</Link>
                   <Link href='' className='nav-title'>IFRS</Link>
