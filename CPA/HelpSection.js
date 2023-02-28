@@ -1,13 +1,19 @@
 import Image from 'next/image'
 
-const HelpSection = () => {
+const HelpSection = ({helpData}) => {
   return (
     <>
       <section className="section help-section">
         <div className="container-l">
-          <h2 className="heading02">How Simandhar Education helps you <br/> to be US CPA ready</h2>
+          <h2 className="heading02">{helpData.mainheading}</h2>
           <div className="help-container">
-            <dl>
+          {helpData.helps.map((item => {
+              return <dl>
+                <dt><Image src={item.img} alt="" layout="fill" className='resp-img' /></dt>
+                <dd>{item.caption}</dd>
+              </dl>
+            }))}
+            {/* <dl>
               <dt><Image src="/img/cpa/help_icon01.svg" alt="" layout="fill" className='resp-img' /></dt>
               <dd>Comprehensive Study <br/> Material</dd>
             </dl>
@@ -38,7 +44,7 @@ const HelpSection = () => {
             <dl>
               <dt><Image src="/img/cpa/help_icon08.svg" alt="" layout="fill" className='resp-img' /></dt>
               <dd>Professional <br/> Training</dd>
-            </dl>
+            </dl> */}
           </div>
         </div>
       </section>

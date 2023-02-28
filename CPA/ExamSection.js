@@ -1,13 +1,23 @@
 import Image from 'next/image'
 import { Tab } from "@headlessui/react"
-import { useState } from 'react';
+import React, { useState } from 'react';
+import {RiArrowDropDownLine} from 'react-icons/ri'
 
 const ExamSection = () => {
   const [isActive, setActive] = useState(false);
+  const data = [{ id: 0, label: "Eligibility Check" }, { id: 1, label: "Licensing/ Licensure" }, { id: 2, label: "Preparation" }, { id: 3, label: "Career Opportunities" }];
 
   const showTab = () => {
     setActive(!isActive);
   };
+
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [items, setItem] = useState(data);
+
+  const handleItemClick = (id) => {
+    selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    setActive(!isActive);
+  }
   return (
     <>
       <section className="section exam-section">
@@ -23,13 +33,19 @@ const ExamSection = () => {
       </section>
       <section className="tab-section">
         <div className="container-l">
-          <p className='mobile-tab' onClick={showTab}>select tab</p>
+          <p className='mobile-tab' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select Programs"}<span><RiArrowDropDownLine /></span></p>
           <Tab.Group>
             <Tab.List className={'tab-header' + ' ' + (isActive ? 'active' : '')}>
-              <Tab className='tab-btn active' onClick={showTab}>Eligibility Check</Tab>
+
+            {items.map(item => (
+                  <Tab className="tab-btn" onClick={e => handleItemClick(e.target.id)} id={item.id}>
+                    {item.label}
+                  </Tab>
+                ))}
+              {/* <Tab className='tab-btn active' onClick={showTab}>Eligibility Check</Tab>
               <Tab className='tab-btn' onClick={showTab}>Licensing/ Licensure</Tab>
               <Tab className='tab-btn' onClick={showTab}>Preparation</Tab>
-              <Tab className='tab-btn' onClick={showTab}>Career Opportunities</Tab>
+              <Tab className='tab-btn' onClick={showTab}>Career Opportunities</Tab> */}
             </Tab.List>
             <Tab.Panels className='tab-container p2'>
             <Tab.Panel className='tab-box'>

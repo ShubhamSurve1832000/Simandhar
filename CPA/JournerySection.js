@@ -1,25 +1,33 @@
 import Image from 'next/image'
 
-const JournerySection = () => {
+const JournerySection = ({journeyData}) => {
   return (
     <>
-      <section className="section journery-section">
+      <section className="section journey-section">
         <div className="container-l">
-          <h2 className="heading02">CPA Journey. Simplified!</h2>
+          <h2 className="heading02">{journeyData.mainHeading}</h2>
           <div className="journey-container">
-            <figure className="journey-box">
-              <dl>
-                <dt className="num">1</dt>
-                <dd className='journey-icon resp-img-box'><Image src="/img/cpa/jour_01.svg" alt="" layout="fill" className='resp-img' /></dd>
-              </dl>
-              <figcaption>
-                <h6 className="heading06">Academic Evaluation</h6>
-                <ul>
-                  <li>Meeting the educational requirements</li>
-                </ul>
-              </figcaption>
-            </figure>
-            <figure className="journey-box">
+
+            {journeyData.journey.map((journey => {
+              return <figure className="journey-box">
+                <dl>
+                  <dt className="num">{journey.number}</dt>
+                  <dd className='journey-icon resp-img-box'><Image src={journey.img} alt="" layout="fill" className='resp-img' /></dd>
+                </dl>
+                <figcaption>
+                  <h6 className="heading06">{journey.title}</h6>
+                  <ul>
+                    {journey.descriptions.map((description) => {
+                      return <li>{description}</li> 
+                    })}
+                  </ul>
+                </figcaption>
+              </figure>
+            }))}
+
+
+
+            {/* <figure className="journey-box">
               <dl>
                 <dt className="num">2</dt>
                 <dd className='journey-icon resp-img-box'><Image src="/img/cpa/jour_02.svg" alt="" layout="fill" className='resp-img' /></dd>
@@ -68,7 +76,7 @@ const JournerySection = () => {
                   <li>Apply for licensure</li>
                 </ul>
               </figcaption>
-            </figure>
+            </figure> */}
           </div>
         </div>
       </section>

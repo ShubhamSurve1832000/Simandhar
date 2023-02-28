@@ -2,25 +2,22 @@ import Image from 'next/image'
 
 import React from 'react'
 
-const BannerSection = () => {
-  
+const BannerSection = ({bannerData}) => {
 
 
-// export default function bannerSection() {
+  // export default function bannerSection() {
   return (
     <>
       <section className="program-banner">
         <div className="banenr-left resp-img-box">
-          <Image src="/img/cpa/banner_video.jpg" alt="" layout="fill" className='resp-img'/>
+          <Image src={bannerData.img} alt="" layout="fill" className='resp-img' />
         </div>
         <div className="progam-info">
-          <h2 className="heading02">US Certified Public Accountant Exam</h2>
+          <h2 className="heading02">{bannerData.mainHeding}</h2>
           <ul>
-            <li>3 Times CPA Watt Sells Awards</li>
-            <li>Best CPA Institute (Awarded by Becker)</li>
-            <li>International Recognition</li>
-            <li>Upskill in US GAAP & Business Laws</li>
-            <li>Flexible & Easy to Pass</li>
+            {bannerData.lists.map((item => {
+              return <li>{item.list}</li>
+            }))}
           </ul>
         </div>
       </section>
