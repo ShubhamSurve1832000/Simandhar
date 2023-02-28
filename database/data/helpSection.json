@@ -1,0 +1,137 @@
+{
+    "cpaPage": {
+        "mainheading": "How Simandhar Education helps you to be US CPA ready",
+        "helps": [
+            {
+                "id": 1,
+                "img": "/img/cpa/help_icon01.svg",
+                "caption": "Consulting Services"
+            },
+            {
+                "id": 2,
+                "img": "/img/cpa/help_icon02.svg",
+                "caption": "End to End Evaluation Assistance"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/help_icon03.svg",
+                "caption": "Last Minute Revision"
+            },
+            {
+                "id": 4,
+                "img": "/img/cpa/help_icon04.svg",
+                "caption": "AI Mocks"
+            },
+            {
+                "id": 5,
+                "img": "/img/cpa/help_icon05.svg",
+                "caption": "Live Interactive Classes"
+            },
+            {
+                "id": 6,
+                "img": "/img/cpa/help_icon06.svg",
+                "caption": "Customer First Approach"
+            },
+            {
+                "id": 7,
+                "img": "/img/cpa/help_icon07.svg",
+                "caption": "Course Training"
+            },
+            {
+                "id": 8,
+                "img": "/img/cpa/help_icon08.svg",
+                "caption": "Professional Training"
+            }
+        ]
+    },
+    "cmaPage": {
+        "mainheading": "Career Opportunities After CMA",
+        "helps": [
+            {
+                "id": 1,
+                "img": "/img/cpa/help_icon01.svg",
+                "caption": "Consulting Services"
+            },
+            {
+                "id": 2,
+                "img": "/img/cpa/help_icon02.svg",
+                "caption": "E-commerce"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/help_icon03.svg",
+                "caption": "Financial Planning"
+            },
+            {
+                "id": 4,
+                "img": "/img/cpa/help_icon04.svg",
+                "caption": "Accounting"
+            },
+            {
+                "id": 5,
+                "img": "/img/cpa/help_icon05.svg",
+                "caption": "Taxation"
+            },
+            {
+                "id": 6,
+                "img": "/img/cpa/help_icon06.svg",
+                "caption": "IT & ES"
+            },
+            {
+                "id": 7,
+                "img": "/img/cpa/help_icon07.svg",
+                "caption": "Non-Profit Organizations"
+            },
+            {
+                "id": 8,
+                "img": "/img/cpa/help_icon08.svg",
+                "caption": "Business Valuation & Many more"
+            }
+        ]
+    },
+    "cmaPageone": {
+        "mainheading": "Career Opportunities After CMA",
+        "helps": [
+            {
+                "id": 1,
+                "img": "/img/cpa/help_icon01.svg",
+                "caption": "Consulting Services"
+            },
+            {
+                "id": 2,
+                "img": "/img/cpa/help_icon02.svg",
+                "caption": "E-commerce"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/help_icon03.svg",
+                "caption": "Financial Planning"
+            },
+            {
+                "id": 4,
+                "img": "/img/cpa/help_icon04.svg",
+                "caption": "Accounting"
+            },
+            {
+                "id": 5,
+                "img": "/img/cpa/help_icon05.svg",
+                "caption": "Taxation"
+            },
+            {
+                "id": 6,
+                "img": "/img/cpa/help_icon06.svg",
+                "caption": "IT & ES"
+            },
+            {
+                "id": 7,
+                "img": "/img/cpa/help_icon07.svg",
+                "caption": "Non-Profit Organizations"
+            },
+            {
+                "id": 8,
+                "img": "/img/cpa/help_icon08.svg",
+                "caption": "Business Valuation & Many more"
+            }
+        ]
+    }
+}

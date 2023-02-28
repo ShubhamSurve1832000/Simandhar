@@ -1,0 +1,46 @@
+{
+    "cpaPage": {
+        "mainHeding": "US Certified Public Accountant Exam",
+        "img": "/img/cpa/banner_video.jpg",
+        "lists": [
+            {
+                "id": 1,
+                "list": "3 Times CPA Watt Sells Awards"
+            },
+            {
+                "id": 2,
+                "list": "Best CPA Institute (Awarded by Becker)"
+            },
+            {
+                "id": 3,
+                "list": "International Recognition"
+            },
+            {
+                "id": 4,
+                "list": "International Recognition"
+            }
+        ]
+    },
+    "cmaPage": {
+        "mainHeding": "US Certified Public Accountant Exam CMA Page",
+        "img": "/img/cpa/banner_video.jpg",
+        "lists": [
+            {
+                "id": 1,
+                "list": "3 Times CPA Watt Sells Awards"
+            },
+            {
+                "id": 2,
+                "list": "Best CPA Institute (Awarded by Becker)"
+            },
+            {
+                "id": 3,
+                "list": "International Recognition"
+            },
+            {
+                "id": 4,
+                "list": "International Recognition"
+            }
+        ]
+    }
+}
