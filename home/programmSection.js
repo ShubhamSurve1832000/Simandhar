@@ -1,7 +1,22 @@
 import Image from 'next/image'
 import { Tab } from "@headlessui/react"
+import { RiArrowDropDownLine } from 'react-icons/ri'
+import { useState } from 'react'
+
 
 export default function programmSection() {
+  const [isActive, setActive] = useState(false);
+  const data = [{ id: 0, label: "US CPA" }, { id: 1, label: "US CMA" }, { id: 1, label: "EA" }, { id: 1, label: "CIA" }, { id: 1, label: "Data Analytics" },{ id: 1, label: "Simandhar Saamarth" }];
+  const showTab = () => {
+    setActive(!isActive);
+  };
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [items, setItem] = useState(data);
+
+  const handleItemClick = (id) => {
+    selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    setActive(!isActive);
+  }
   return (
     <section className="section programm-section">
       <Tab.Group>
@@ -9,15 +24,26 @@ export default function programmSection() {
           <div className='pro-leftbox'>
             <h2 className='heading02'>Our Programmes</h2>
             <p>Kickstart Your Career in Accounting & Finance</p>
-            <div className='tab-head-row custom-scrollbar'>
-              <Tab.List className='tab-head-box '>
-                <Tab className='tab-button'>US CPA</Tab>
-                <Tab className='tab-button active'>US CMA</Tab>
-                <Tab className='tab-button'>EA</Tab>
-                <Tab className='tab-button'>CIA</Tab>
-                <Tab className='tab-button'>Data Analytics</Tab>
-                <Tab className='tab-button'>Simandhar Saamarth</Tab>
-                
+            <div className='tab-head-row  '>
+
+              <p className='tab-button-mobile' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select Exams"}<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine /></span></p>
+
+              <Tab.List className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}>
+
+                {items.map(item => (
+                  <Tab className="tab-button" onClick={e => handleItemClick(e.target.id)} id={item.id}>
+                    {item.label}
+                  </Tab>
+                ))}
+
+
+
+                {/* <Tab className='tab-button' onClick={e => handleItemClick(e.target.id)} id={item.id}>US CPA</Tab>
+                <Tab className='tab-button active' onClick={e => handleItemClick(e.target.id)} id={item.id}>US CMA</Tab>
+                <Tab className='tab-button' onClick={showTab}>EA</Tab>
+                <Tab className='tab-button' onClick={showTab} >CIA</Tab>
+                <Tab className='tab-button' onClick={showTab} >Data Analytics</Tab>
+                <Tab className='tab-button' onClick={showTab} >Simandhar Saamarth</Tab> */}
               </Tab.List>
             </div>
           </div>
