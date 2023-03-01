@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 export default function programmSection() {
   const [isActive, setActive] = useState(false);
-  const data = [{ id: 0, label: "US CPA" }, { id: 1, label: "US CMA" }, { id: 1, label: "EA" }, { id: 1, label: "CIA" }, { id: 1, label: "Data Analytics" },{ id: 1, label: "Simandhar Saamarth" }];
+  const data = [{ id: 0, label: "US CPA" }, { id: 1, label: "US CMA" }, { id: 2, label: "EA" }, { id: 3, label: "CIA" }, { id: 4, label: "Data Analytics" },{ id: 5, label: "Simandhar Saamarth" }];
   const showTab = () => {
     setActive(!isActive);
   };
