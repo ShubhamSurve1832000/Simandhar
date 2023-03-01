@@ -39,7 +39,7 @@ export default function partnerSection() {
 	const showTab = () => {
 		setActive(!isActive);
 	};
-	
+
 	const [selectedItem, setSelectedItem] = useState(null);
 	const [items, setItem] = useState(data);
 
@@ -52,7 +52,7 @@ export default function partnerSection() {
 			<Tab.Group>
 				<div className='container'>
 					<div className='tab-head-row'>
-						<p className='tab-button-mobile tab-btn' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select Exams"}<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine /></span></p>
+						<p className='tab-button-mobile tab-btn' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select"}<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine /></span></p>
 						<Tab.List className={'tab-header tab-head-box ' + ' ' + (isActive ? 'active' : '')}>
 							{items.map(item => (
 								<Tab className="tab-btn" onClick={e => handleItemClick(e.target.id)} id={item.id}>
