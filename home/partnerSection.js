@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Slider from 'react-slick'
 import { Tab } from "@headlessui/react"
 import Link from 'next/link';
+import { useState } from 'react';
+import { RiArrowDropDownLine } from 'react-icons/ri'
 
 
 
@@ -29,15 +31,34 @@ export default function partnerSection() {
 			}
 		]
 	};
+
+	const data = [{ id: 0, label: "Our Corporate Tie-Ups" }, { id: 1, label: "Our Loan Partners" }, { id: 2, label: "Media Recognitions" }];
+
+	const [isActive, setActive] = useState(false);
+
+	const showTab = () => {
+		setActive(!isActive);
+	};
+	
+	const [selectedItem, setSelectedItem] = useState(null);
+	const [items, setItem] = useState(data);
+
+	const handleItemClick = (id) => {
+		selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+		setActive(!isActive);
+	}
 	return (
 		<section className="section partner-section pt-0">
 			<Tab.Group>
 				<div className='container'>
 					<div className='tab-head-row'>
-						<Tab.List className='tab-header'>
-							<Tab className='tab-btn active'>Our Corporate Tie-Ups</Tab>
-							<Tab className='tab-btn'>Our Loan Partners</Tab>
-							<Tab className='tab-btn'>Media Recognitions</Tab>
+						<p className='tab-button-mobile tab-btn' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select Exams"}<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine /></span></p>
+						<Tab.List className={'tab-header tab-head-box ' + ' ' + (isActive ? 'active' : '')}>
+							{items.map(item => (
+								<Tab className="tab-btn" onClick={e => handleItemClick(e.target.id)} id={item.id}>
+									{item.label}
+								</Tab>
+							))}
 						</Tab.List>
 					</div>
 					<div className='tab-container'>
@@ -51,9 +72,9 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo01.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>											
-										
-											
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>
+
+
 											{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div> */}
 										</Slider>
 
@@ -68,8 +89,8 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo02.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/partners_logo01.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>											
-											
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>
+
 										</Slider>
 
 									</div>
@@ -84,7 +105,7 @@ export default function partnerSection() {
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo02.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>											
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>
 
 											{/* <div className='logo-box resp-img-box'><Image src="/img/media_logo01.jpg" layout="fill" className='resp-img' /></div> */}
 										</Slider>
