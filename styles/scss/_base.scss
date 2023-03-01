@@ -398,7 +398,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
         }
     }
-    .tab-btn{padding: 1.5rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size: 3rem;color: #760B28;text-align: center; transition: ease .5s all;position: relative;}
+    .tab-button-mobile.tab-btn{padding: 1.5rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size: 3rem;color: #760B28;text-align: center; transition: ease .5s all;position: relative;display: none;
+	@include breakpoint(max,767px){display: block;}}
 }
 
 
