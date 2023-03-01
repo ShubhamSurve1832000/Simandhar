@@ -1,5 +1,6 @@
 .read-more{color: #760B28;}
 
+
 .program-banner{display: grid;grid-template-columns: 55% 45%;align-items: center;
 @include breakpoint (max,767px){display: block;}  
   .banenr-left{
@@ -31,29 +32,11 @@
   }
 }
 
-p.mobile-tab {
-  padding: 3rem 0;
-  border: solid 1px #760B28;
-  background-color: transparent;
-  font-weight: 500;
-  font-size: 3rem;
-  color: #760B28;
-  transition: ease 0.5s all;
-  width: 100%;
-  text-align: center;
-  display: none;
-  @include breakpoint(max,700px){    display: block;
-    vertical-align: middle;
-    position: relative;}
+p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size: 3rem;color: #760B28;transition: ease 0.5s all;width: 100%;text-align: center;display: none;
+  @include breakpoint(max,700px){    display: block;vertical-align: middle;position: relative;}
 
-  svg{    font-size: 6rem;
-   
-    vertical-align: middle;
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);}
+  svg{font-size: 6rem;vertical-align: middle;position: absolute;right: 2rem;top: 50%;bottom: 50%;transform: translateY(-50%);transition: .3s ease all;
+  &.active{transform: rotate(180deg); transition: .3s ease all;}}
 } 
 @include breakpoint(max,700px){tab-header.active{display: block;}}
 
@@ -180,12 +163,13 @@ p.mobile-tab {
   }
 }
 
+.background-none{.help-section{background-color:transparent;}}
 .help-section{background-color: #FFF5F5;
   
   .help-container{display: grid;grid-template-columns: repeat(4, 1fr);grid-gap: 6.5rem;margin-top: 7.5rem;
   @include breakpoint(max,500px){grid-template-columns: repeat(2, 1fr);margin-top: 5.5rem;}  
     dl{text-align: center;
-      dt{height: 11.2rem;display: inline-block;
+      dt{height: 11.2rem;display: inline-block;width: 11.2rem;
         img{height: 100%;}
       }
       dd{font-size: 3.2rem;font-weight: 700;line-height: 3.7rem;margin-top: 3rem;}
@@ -264,4 +248,18 @@ p.mobile-tab {
       }
     }
   }
+}
+
+
+// CMA PAGE DESIGANTION SECTION
+.designation-section{padding: 5rem 0;
+  .designation-list{margin-top: 5rem;padding-right: 5rem;
+    li{margin-bottom: 5rem;}
+  }
+}
+
+// CMA exam Section
+.cma-exam-section{
+  .exam-section .exam-header{display: block;
+    .heading02{font-size: 6rem;}}
 }
