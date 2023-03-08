@@ -8,6 +8,11 @@ import { BsCart2 } from 'react-icons/bs'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { IoCaretForward } from 'react-icons/io5'
 import React, { useState } from 'react'
+import Slider from 'react-slick'
+import CpaProgram from '../components/CpaProgram'
+import programData from '../database/data/program.json'
+
+
 
 
 // function MyComponent (props) {
@@ -27,27 +32,29 @@ import React, { useState } from 'react'
 //    );
 // }
 
-export default function header() {
+export default function header({showData,showData1}) {
   var programSlider = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 8,
     slidesToScroll: 1,
+    variableWidth: true,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1023,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 6,
+          slidesToScroll: 1
+          // initialSlide: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: true,
         }
       }
     ]
@@ -60,19 +67,33 @@ export default function header() {
 
   const pathname = usePathname();
 
+  // Nav Dropdown
+  const [isShow, setIsShow] = useState(false);
+  const showDwnPopup = () => {
+    setIsShow(!isShow);
+    };
+
+  const [isShow1, setIsShow1] = useState(false);
+  const showDwnPopup1 = () => {
+      setIsShow1(!isShow1);
+      };  
+
+  const [isShow2, setIsShow2] = useState(false);
+  const showDwnPopup2 = () => {
+          setIsShow2(!isShow2);
+          };
+  
+
+
   // const [isActive, setActive] = useState(false);
   // const toggleClass = () => {
   //   setActive(!isActive);
   // };
 
-  // const [porgrams, setPrograms] = useState([{ name: 'Our Programs', icon: '<IoCaretForward />' }, { name: 'US CPA' }, { name: 'EA' }, { name: 'CIA' }, { name: 'IFRS' }, { name: 'Data Analytics' }, { name: 'Simandhar Saamarth' }, { name: 'More',data:['value1,value1,value1,value1] }])
-
-
-  // const [links, setLinks] = useState([{ label: 'Home', path: '/' }, { label: 'About', path: '/about' }, { label: 'Webinars', path: '/Webinars' }, { label: 'Free Resources', path: '/Free Resources' }])
   return (
 
     <>
-      <header className="header" id="header">
+      <header   className="header" id="header">
         <nav className='navbar hf-container'>
           <div className='logo_img  resp-img-box'>
             <Link href="/"> <Image src='/img/logo.png' layout="fill" className='resp-img' alt='Simandhar logo' />
@@ -98,20 +119,36 @@ export default function header() {
                   </li>
                 ))
               } */}
-                <Link href="/"> <li className={pathname == '/' ? 'active' : ''} onClick={showMenu}>Home</li></Link>
-                <Link href="/about-us"> <li className={pathname == '/about-us' ? 'active' : ''} onClick={showMenu}>About</li></Link>
-                <Link href='/webinars'> <li className={pathname == '/webinars' ? 'active' : ''} onClick={showMenu}>Webinars</li></Link>
-                <Link href='/resources'> <li className={pathname == '/resources' ? 'active' : ''} onClick={showMenu}>Free Resources</li></Link>
-                <li className='more_dropdown'>
+                <li className={pathname == '/' ? 'active' : ''} onClick={showMenu}>  <Link href="/">  Home  </Link> </li>
+                <li className={pathname == '/about-us' ? 'active' : ''} onClick={showMenu}>  <Link href="/about-us">About </Link> </li>
+                <li className={pathname == '/webinars' ? 'active' : ''} onClick={showMenu}>   <Link href='/webinars'> Webinars</Link></li>
+                <li className={pathname == '/resources' ? 'active' : ''} onClick={showMenu}><Link href='/resources'>Free Resources</Link></li>
+                <li className='more_dropdown' onClick={showDwnPopup}>
                   More
-                  <span><i><RiArrowDropDownLine /></i></span>
-
+                  <span  className={'tab-head-box ' + ' ' + (isShow ? 'active' : '')}><i><RiArrowDropDownLine /></i></span>
+                  <ul className='navDropdown' style={{display: !isShow ? 'none' : 'block'}}>
+                  
+                    <li><a href="javascript:;">Sripal Jain USA Visit</a></li>
+                    <li><a href="javascript:;">Students Corner</a></li>
+                    <li><a href="javascript;">Corporate Journey</a></li>
+                    <li><a href="javascript;">Corporate Events</a></li>
+                    <li><a href="javascript;">Corporate Tie-Ups</a></li>
+                    <li><a href="javascript;">SEC</a></li>
+                    <li><a href="javascript;">Testimonials</a></li>
+                    <li><a href="javascript;">Testimonials Videos</a></li>
+                    <li><a href="javascript;">Blogs</a></li>
+                    <li><a href="javascript;">Career</a></li>
+                    <li><a href="javascript;">Contact Us</a></li>
+                   
+                  </ul>
                 </li>
               </ul>
             </div>
             <div className='btn01'><button className='btn'>Buy Courses</button></div>
-            <span><i className='profile'> <CgProfile /></i></span>
-            <span><i className='cart'> <BsCart2 /></i></span>
+            <div className='profile-icon'>
+              <span><i className='profile'> <CgProfile /></i></span>
+              <span><i className='cart'> <BsCart2 /></i></span>
+            </div>
           </div>
           <div className='clear'></div>
         </nav>
@@ -134,29 +171,59 @@ export default function header() {
           <div className='hf-container'>
 
             <div className='program_bar'>
-              <div className='nav-title'>Our Programs<span><i><IoCaretForward /></i></span></div>
-              <div className='program-scroll'>
+              <div className= {'nav-title1' + ' '+(isShow2 ?"active":"")} onClick={showDwnPopup2}>Our Programs<span><i><IoCaretForward /></i></span></div>
+              
+              <div className={'program-scroll' + ' ' + (isShow2 ? 'active' : '')} >
+             
                 <div className='programs'>
                   {/* <Slider {...programSlider}> */}
 
                   <Link href='/us-cpa' className='nav-title'>US CPA</Link>
                   <Link href='/us-cma' className='nav-title'>US CMA</Link>
-                  <Link href='' className='nav-title'>EA</Link>
+                  <Link href='/ea' className='nav-title'>EA</Link>
                   <Link href='' className='nav-title'>CIA</Link>
                   <Link href='' className='nav-title'>IFRS</Link>
                   <Link href='' className='nav-title'>Data Analytics</Link>
                   <Link href='' className='nav-title'>Simandhar Saamarth</Link>
+                  <Link href='' className='more_dropdown nav-title' onClick={showDwnPopup1}>
+                    More
+                    <span><i><RiArrowDropDownLine /></i></span>
+                    {/* <ul className='navDropdown' style={{display: !isShow1 ? 'none' : 'block'}}>
+                    <li><a href="javascript:;">Sripal Jain USA Visit</a></li>
+                    <li><a href="javascript:;">Students Corner</a></li>
+                    <li><a href="javascript;">Corporate Journey</a></li>
+                    <li><a href="javascript;">Corporate Events</a></li>
+                    <li><a href="javascript;">Corporate Tie-Ups</a></li>
+                    <li><a href="javascript;">SEC</a></li>
+                    <li><a href="javascript;">Testimonials</a></li>
+                    <li><a href="javascript;">Testimonials Videos</a></li>
+                    <li><a href="javascript;">Blogs</a></li>
+                    <li><a href="javascript;">Career</a></li>
+                    <li><a href="javascript;">Contact Us</a></li>
+                  </ul> */}
+                  </Link>
                   {/* </Slider> */}
 
                   {/* <div className='nav-title'>More<span><i><RiArrowDropDownLine /></i></span>
             </div> */}
                 </div>
+                
+
               </div>
             </div>
+            
           </div>
 
         </section>
-
+        {
+          showData ? 
+        (  <CpaProgram programData={programData.cpaPage} />) :( " ")
+        }
+           {
+          showData1 ? 
+        (  <CpaProgram programData={programData.cmaPage} />) :( " ")
+        }
+       
 
 
 
