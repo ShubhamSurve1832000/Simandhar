@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 const RightStep = () => {
+
+    const [card,setCard]=useState([{path:"/img/AnjuNampoothiry.png",title:'Anju Nampoothiry',rank:'BEC-98 - REG-97 - AUD-93 - FAR-89',country:'US Texas | BDO'},
+    {path:"/img/Accenture.png",title:'Akshay Jaiswal',rank:'FAR-98 - BEC-96 - REG-96 - AUD-88',country:'CPA Bangalore | Amazon'},
+    {path:"/img/KavneetSinghHanspal.png",title:'Kavneet Singh Hanspal',rank:'US CPA, Delhi, India',country:'EY'},
+    {path:"/img/SwethaKiran.png",title:'Swetha Kiran',rank:'US CPA, Hyderabad, India',country:'JP Morgan'}])
     return (
         <section className='right-step-section'>
             <h2 className='heading02'>The Right Step To Take A Giant Leap</h2>
