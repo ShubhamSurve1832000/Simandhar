@@ -12,18 +12,49 @@ export async function getStaticProps(context) {
 }
 
 
-const AchieversSection = ({ data }) => {
- 
-// export default function achieversSection({ data }) {
+const AchieversSection = ({ achieverData, showData }) => {
+
+	// export default function achieversSection({ data }) {
 	return (
-		<section className="section achiever-section">
+		<section className="section achiever-section pt-8">
 			<div className='container'>
-				<h2 className='heading02'>What our Achievers have to say</h2>
-				<div className='achiever-container'>
+				<h2 className='heading02'>{achieverData.mainHeading}</h2>
+				{/* <div className='achiever-container'>
 					{/* {data.map((achiever) => (
 						<li>{achiever.desc}</li>
 					))} */}
-					<figure className='achiever-box'>
+
+				<div className='achiever-container'>
+					{achieverData.list.map((box => {
+
+						return <figure className='achiever-box'>
+							<div className='achiever-img resp-img-box'>
+								<Image src={box.img} layout="fill" className='resp-img' />
+							</div>
+							<figcaption>
+								
+								{
+									showData ? (
+										<p>{box.para}</p>
+									) : ("")
+								}
+								{
+									showData ? (
+										<p><a href='#' className='rm-btn'>{box.btn}</a></p>
+									) : ("")
+								}
+								
+
+								<span className='achiever-name'>{box.title}</span>
+								<span className='achiever-pos'>{box.caption}</span>
+							</figcaption>
+						</figure>
+					}))}
+				</div>
+
+
+
+				{/* <figure className='achiever-box'>
 						<div className='achiever-img resp-img-box'>
 							<Image src='/img/ashwiniNathan.jpg' layout="fill" className='resp-img' />
 						</div>
@@ -56,7 +87,7 @@ const AchieversSection = ({ data }) => {
 							<span className='achiever-pos'>US CPA</span>
 						</figcaption>
 					</figure>
-				</div>
+				</div>  */}
 				<div className='btn-wrap text-center'><a className='btn maroon-border-btn maroon-border-btn-arrow'>View All Testimonials</a></div>
 			</div>
 

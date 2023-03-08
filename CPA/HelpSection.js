@@ -6,10 +6,11 @@ const HelpSection = ({helpData}) => {
       <section className="section help-section">
         <div className="container-l">
           <h2 className="heading02">{helpData.mainheading}</h2>
+          <h3 className='heading04'>{helpData.description}</h3>
           <div className="help-container">
           {helpData.helps.map((item => {
               return <dl>
-                <dt><Image src={item.img} alt="" layout="fill" className='resp-img' /></dt>
+                <dt className='resp-img-box'><Image src={item.img} alt="" layout="fill" className='resp-img' /></dt>
                 <dd>{item.caption}</dd>
               </dl>
             }))}

@@ -8,7 +8,7 @@ const FaqSection = () => {
   }
   return (
     <>
-      <section className="section faq-section pt-0">
+      <section className="section faq-section pt-8">
         <div className="container-l">
           <h2 className="heading02">Frequently Asked Questions(FAQ's)</h2>
           <div className="faq-container">

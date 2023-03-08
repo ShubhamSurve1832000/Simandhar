@@ -3,7 +3,7 @@ import Image from 'next/image'
 const OnlineCourseSection = () => {
   return (
     <>
-      <section className="ol-course-section">
+      <section className="ol-course-section ">
         <div className="container-l">
           <h2 className="heading02">Buy Hassle-Free Online Courses</h2>
           <div className="course-container">
