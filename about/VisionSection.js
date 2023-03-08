@@ -30,7 +30,7 @@ const VisionSection = () => {
         ]
     };
 
-    const [data, setData] = useState([{ path: '/img/mission.png', title: "Our Mission", desc: "To provide highest standards of learning which can transform lives of students and professionals." }, { path: '/img/mission.png', title: "Our Mission", desc: "To provide highest standards of learning which can transform lives of students and professionals." }, { path: '/img/mission.png', title: "Our Mission", desc: "To provide highest standards of learning which can transform lives of students and professionals." }])
+    const [data, setData] = useState([{ path: '/img/mission.png', title: "Our Mission", desc: "To provide highest standards of learning which can transform lives of students and professionals." }, { path: '/img/vision.png', title: "Our Vision", desc: "To upskill the professionals and make them adapt to continuous learning." }, { path: '/img/purpose.png', title: "Our Purpose", desc: "We believe that education has the ability to transform every individual." }])
     return (
         <section>
             <div className='three-box-grid'>
