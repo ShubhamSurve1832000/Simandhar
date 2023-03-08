@@ -6,7 +6,7 @@
   .banenr-left{
     img{display: block;width: 100%;}
   }
-  .progam-info{padding-left: 9rem;
+  .progam-info{padding-inline: 9rem;
   @include breakpoint(max ,970px){padding-left: 6rem;margin-top: 3rem;}
     .heading02{color: $primary-color;
     @include breakpoint(max,500px){text-align: left;}}
@@ -30,14 +30,14 @@
       &:last-child{border-left: solid 2px #fff;padding-left: 1rem;margin-left: 1rem;}
     }
   }
-}
 
-p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size: 3rem;color: #760B28;transition: ease 0.5s all;width: 100%;text-align: center;display: none;
-  @include breakpoint(max,700px){    display: block;vertical-align: middle;position: relative;}
+
+p.tab-button-mobile{position: relative;
 
   svg{font-size: 6rem;vertical-align: middle;position: absolute;right: 2rem;top: 50%;bottom: 50%;transform: translateY(-50%);transition: .3s ease all;
   &.active{transform: rotate(180deg); transition: .3s ease all;}}
 } 
+}
 @include breakpoint(max,700px){tab-header.active{display: block;}}
 
 .journery-section{.heading02{@include breakpoint(max,767px){text-align: center;}}}
@@ -92,6 +92,7 @@ p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transp
       }
     }
     .right-tab-box{width: calc(100% - 104rem);display: inline-block;vertical-align: middle;background-color: #FFF5F5;border-radius: 3.3rem;padding: 5rem 6.5rem;padding-right: 10rem;
+      @include breakpoint(max ,767px){padding-right: 0; padding: 2rem; }
     @include breakpoint(max,970px){width: 100%;}
       .syllabus-row{margin-top: 3rem;
         &:first-child{margin-top: 0;}
@@ -138,10 +139,7 @@ p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transp
     th{padding: 2rem 1rem;font-size: 2.4rem;font-weight: 700;color: $primary-color;}
     td{padding: 3.5rem;
     @include breakpoint(max,500px){width: auto;display: block;padding: 0;margin: 5px 0;
-    p{width: calc(100% - 95px);
-      display: inline-block;
-      border-left: solid 1px #760B28;
-      padding: 2rem;}}
+    p{width: calc(100% - 95px);display: inline-block;border-left: solid 1px #760B28;padding: 2rem;}}
     }
 
   }
@@ -162,12 +160,16 @@ p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transp
     }
   }
 }
-
-.background-none{.help-section{background-color:transparent;}}
-.help-section{background-color: #FFF5F5;
+.background-none.key-takeways{.help-section{ padding-top: 0;}}
+.background-none{.help-section{background-color:transparent;
+  padding-top: 8rem;
+}}
+  
+  .help-section{background-color: #FFF5F5; padding-top: 8rem;
   
   .help-container{display: grid;grid-template-columns: repeat(4, 1fr);grid-gap: 6.5rem;margin-top: 7.5rem;
-  @include breakpoint(max,500px){grid-template-columns: repeat(2, 1fr);margin-top: 5.5rem;}  
+  @include breakpoint(max,767px){grid-template-columns: repeat(3, 1fr);margin-top: 5.5rem;grid-gap: 1.5rem;}  
+  @include breakpoint(max,500px){grid-template-columns: repeat(2, 1fr);margin-top: 5.5rem;grid-gap: 1.5rem;}  
     dl{text-align: center;
       dt{height: 11.2rem;display: inline-block;width: 11.2rem;
         img{height: 100%;}
@@ -228,7 +230,11 @@ p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transp
 .faq-section{
   .faq-container{margin-top: 3.5rem;
     .faq-row{border-top: solid 1px #000;padding: 3.5rem 6rem;
-      .faq-title{line-height: 4rem;font-size: 3.6rem;color: #000;
+      @include breakpoint(max,767px){padding: 3.5rem 2rem;}
+      .faq-title{line-height: 4rem;font-size: 3.6rem;color: #000;position: relative;
+        &::after{ content: ''; background-image: url("/img/black_up_arrow.png");background-repeat: no-repeat;background-position: center right 2rem;background-size: 50%;position: absolute;width: 3%;height: 90%;right: 0;transform: rotate(90deg); 
+          @include breakpoint(max,767px){width: 5%;}
+          @include breakpoint(max,500px){width: 8%;}}
        
       }
       .faq-toggle-box{margin-top: 2rem;display: none;
@@ -244,22 +250,112 @@ p.mobile-tab {padding: 3rem 0;border: solid 1px #760B28;background-color: transp
       }
       &:last-child{border-bottom: 1px solid #000;}
       &.active{
-        .faq-title{ background-image: url("/img/black_up_arrow.png");background-repeat: no-repeat;background-position: center right 2rem;background-size: 2rem;}
+        .faq-title {position: relative;
+        &::after{transform: rotate(0deg);}
       }
+    }
     }
   }
 }
 
+// CPA BACKER SECTION
+.twoBox{display: grid;grid-template-columns: 70% 30%;align-items: center;grid-gap: 2rem;}
 
 // CMA PAGE DESIGANTION SECTION
-.designation-section{padding: 5rem 0;
+.designation-section{ 
   .designation-list{margin-top: 5rem;padding-right: 5rem;
-    li{margin-bottom: 5rem;}
+    li{margin-bottom: 5rem;
+    &:last-child{margin-bottom: 2rem;}}
   }
 }
 
+// CPA EXAM TAB CPA COURSE DURATION
+.cpa-exam-tab{.section{padding-top: 0;}}
+
+// CPA Prometric Locations
+.cpa-location{section{padding-bottom: 8rem;}}
+
+//US CPA Exam in India Every Month from 2021
+.cpa-exam-tab2{.section{padding: 0;}}
 // CMA exam Section
 .cma-exam-section{
   .exam-section .exam-header{display: block;
-    .heading02{font-size: 6rem;}}
+    .heading02{font-size: 6rem;line-height: 7rem;
+    @include breakpoint(max,500px){text-align: left;font-size: 5rem;}}}
 }
+
+// achiver Section
+// .key-takeways{
+//   .help-section{padding-top: 8rem;}
+// }
+
+// CMA Keytakways
+.background-none {.section.help-section{.container-l{.heading04{font-size: 2.4rem; @include breakpoint(max,500px){text-align: center;}}}}}
+
+// Career Oportunity after CMA
+.background-none{
+  .section{
+    // padding-top: 0;
+    .help-container dl {
+      text-align: center;
+      padding: 0 3.8rem;@include breakpoint(max,767px){padding: 0 2.8rem; }
+  }
+}
+}
+
+// cont-partner-section CMA
+.section.cont-partner-section{padding-top: 8rem;}
+
+//HELP Section CMA
+.cma-help{.heading02{padding-right: 26%;
+  @include breakpoint(max,767px){text-align: center;padding-right: 0;}}}
+// What our Achievers have to say
+.text-center{
+  .achiever-section{
+    padding-top: 0;
+    .heading02{text-align: left;}
+  }
+}
+
+// EA PAGE TAKAEWAYS
+.ea-page{text-align: center;
+  .help-section{
+    .container-l{
+    .help-container {width: 70%;margin: 0 auto;display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 6.5rem;margin-top: 7.5rem;
+      @include breakpoint(max,767px){width: 100%;}
+      @include breakpoint(max,500px){grid-template-columns: repeat(2, 1fr);}
+    }
+    }
+  }
+}
+
+// Curriculum Section One On CMA Page
+.cma-tab .aside-tab-section{padding-bottom: 0;}
+.cma-tab .aside-tab-section .aside-tab-container .left-tab-box{width: 78rem; 
+  @include breakpoint(max ,767px){width: 90%;    padding: 3rem 8rem;}
+}
+.cma-tab .aside-tab-section .aside-tab-container .right-tab-box {width: calc(100% - 78rem);height: 70rem;overflow: auto;
+  @include breakpoint(max,767px){width: 100%;height: 60rem;}
+  .tab-container{height: 50rem;overflow: auto; }
+      p{text-align: center; padding-top: 2rem; color: #696969;
+      &::after{content: "";height: 1.5rem;width: 1.5rem;border-style: solid;border-color: #696969;border-width: 0px 2px 2px 0px;transform: rotate(45deg);transition: border-width 150ms ease-in-out;position: absolute;margin-left: 3rem;margin-top: 0.5rem;}
+      }
+ 
+}
+.cma-tab .aside-tab-section .aside-tab-container .right-tab-box .number{ width: 5.7rem;height: 5.7rem;border-radius: 100%;text-align: center;display: block; font-size: 3.2rem;line-height: 3.7rem;display: flex;justify-content: center;align-items: center; background: #760B28;color: #ffffff;}
+.cma-tab .aside-tab-section .aside-tab-container .right-tab-box .row{display: grid;grid-template-columns: 8% auto;margin-top: 4.2rem;
+  @include breakpoint(max , 767px ){grid-gap: 2rem;grid-template-columns: 8% auto;}}
+
+
+// table section  On CMA Page 
+.tableSection{padding-bottom:8rem ;}
+table {width: 100%;border-collapse: collapse;border: 1px solid #760B28;margin: 0 auto;
+  @include breakpoint(max,500px){border: none;}}
+.strip tr {line-height: 5rem;padding-left: 1.5rem;}
+.strip td {padding: 2.7rem 4rem;text-align: center;min-width: 10rem;font-size: 2rem;line-height: 2.5rem;color: #000000;
+  @include breakpoint(max,500px){min-width: 40rem;padding: 2.7rem 2rem;}}
+.strip th {background-color: #fff;color: #760B28;padding: 4.5rem 4rem;font-size: 2.4rem;line-height: 2.8rem;font-weight: 600;}
+.strip tr:nth-child(odd) {background-color: #FFF5F5;border-bottom: none;}
+.strip tr:nth-child(even) {background-color: #F9EBEB;border-bottom: none;}
+thead th{border-bottom: 1px solid;border-left: 1px solid;}
+tbody td{border-left: 1px solid;}

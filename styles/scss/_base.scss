@@ -12,7 +12,7 @@ a {text-decoration: none;color: initial}
 #page-container {max-width: 1920px;width: 100%;margin: 0 auto;}
 .container-l {max-width: 162rem;width: 90%;margin: 0 auto;}
 .container {max-width: 150rem;width: 90%;margin: 0 auto;}
-.section { padding: 8rem 0;}
+.section { padding: 8rem 0} 
 .flex{display: flex;}
 .align-center{align-items: center;}
 .justify-center{justify-content: center;}
@@ -21,6 +21,7 @@ a {text-decoration: none;color: initial}
 .clear{clear: both;}
 .pb-0{padding-bottom: 0 !important;}
 .pt-0{padding-top: 0 !important;}
+.pt-8{padding-top: 8rem !important;}
 .text-center{text-align: center;}
 .btn-wrap{margin-top: 3.5rem;}
 .resp-img-box{position: relative;}
@@ -59,11 +60,13 @@ a {text-decoration: none;color: initial}
 	@include breakpoint(max, 1023px){font-size: 3.3rem;line-height: 4rem;}
 }
 .heading05{font-weight: 700;font-size: 3.2rem;line-height: 3.7rem;}
+// .heading04{font-weight: 400;font-size: 2.4rem;line-height: 3rem;}
 
 p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	@include breakpoint(max, 767px){font-size: 2.5rem;line-height: 3.5rem;}
 }
-
+.sticky-box a{    font-size: 4rem;
+    color: #000;}
 
 /* Offers */
 .offer_row {padding-block: 1.5rem;background-color: #272727;color: #fff;border: 1px solid #272727;text-align: center;cursor: pointer;
@@ -108,7 +111,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		@include breakpoint(max, 767px){width: 100%;}
 		.slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide>div, .banner-slider, .banner-inner-slider{height: 100%;}
 			.banner-inner-slider{background-repeat: no-repeat;background-size: cover;position: relative; background-position: left bottom;padding-top: 50%;}
-        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 7rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
+        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 6rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
 					@include breakpoint(max, 1023px){top: 5rem;left: 5rem;}
 					@include breakpoint(max, 767px){width: 60%;top: 5rem;left: 3rem;}
             .banner-title {font-size: 4.8rem;font-weight: 500;color: #2C2C2C;line-height: 5.5rem;
@@ -150,8 +153,19 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	&.custom-select{background-image: url("/img/black_down_arrow.png");background-repeat: no-repeat;background-position: right 2rem top;background-size: 2rem;}
 }
 .error-message{color: #f00;font-size: 1.4rem;position: absolute;left: 0;right: 0;text-align: right;}
-.overlay{background-color: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 99;}
+.overlay{background-color: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 100;}
 
+.react-tel-input{display: inline-block;width: auto !important;
+    .form-control {width: 100px !important;border: none !important;border-bottom: solid 1px #000 !important;border-radius: 0 !important;}
+    .flag-dropdown {border: none !important;border-bottom: solid 1px #000 !important;}
+    + input{display: inline-block;width: calc(100% - 100px);padding: 9px;padding-left: 0;}
+  }
+  .download-overlay{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.6);z-index: 9;}
+.download-popup{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9;width: 66rem;
+  @include breakpoint(max, 767px){width: 90%;}
+  .enq-form{width: 100%;position: static;transform: none;}
+  .close-form{display: none;}
+}
 /* usp section */
 .usp-section{padding: 3rem 0;border-bottom: solid 1px #909090;
 		@include breakpoint(max, 767px){padding: 0}
@@ -210,7 +224,9 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		.tab-head-row {height: 57rem;overflow: auto;
 		@include breakpoint(max,767px){height: auto;}}
 			@include breakpoint(max, 767px){padding-right: 0;}
-        p{margin-top: .6rem;}
+        p{margin-top: .6rem;
+		@include breakpoint(max,767px){text-align: center;}
+		}
 				.tab-head-row{
 					@include breakpoint(max, 767px){width: 100%;overflow: hidden;}
 				}
@@ -227,7 +243,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 						}   
             }
         }
-		.tab-button-mobile{display: none;margin: 0 0.5rem;border: solid 1px #000;padding: 1.3rem 2rem;font-size: 3.2rem;font-weight: 400;background: transparent;width: 99%;text-align: left;line-height: 4.2rem;position: relative;margin-top:2rem;
+		.tab-button-mobile{display: none;margin: 0 0.5rem;color:#fff;padding: 1.3rem 3rem;font-size: 3.2rem;font-weight: 400;background: linear-gradient(157deg, rgb(133, 32, 96) 0%, rgb(124, 23, 45) 100%);width: 99%;text-align: left;line-height: 4.2rem;position: relative;margin-top:2rem;
 			span {font-size: 6rem;vertical-align: middle;position: absolute;right: 0rem;top: 40%;bottom: 0%;transform: translateY(-50%); display: inline-block; width: 7rem;transition: 0.3s ease all;
 				&.active{transform: rotate(180deg); transition: .3s ease all;}
 			}
@@ -248,7 +264,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 }
 
 // Dropdown Arrow
-.tab-button-mobile span{font-size: 6rem;vertical-align: middle;position: absolute;right: 0rem;top: 40%;bottom: 0%;transform: translateY(-50%); display: inline-block; width: 7rem;transition: 0.3s ease all;
+.tab-button-mobile span{font-size: 6rem;vertical-align: middle;position: absolute;right: 0;top: 0;bottom: 0;width: 7rem;transition: 0.3s ease all;
 	&.active{transform: rotate(180deg); transition: .3s ease all;}
 }
 
@@ -305,6 +321,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 }
 
 /* video section */
+.video-section{padding-bottom: 0;
 .video-container{margin-top: 2.5rem;display: grid;grid-template-columns: 53.50% auto;grid-column-gap: 2rem;
 	@include breakpoint(max, 1023px){grid-template-columns: 60% auto;}
 	@include breakpoint(max, 767px){display: block;}
@@ -340,6 +357,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 }
 	.video-lgbox.resp-img-box > div{height: 100%;width: 100%; >div{height: 100%; iframe{width: 100%;height: 100%;}}}
 }
+}
 /* achiever section */
 .achiever-section .achiever-container{margin-top: 15rem;margin-top: 15rem;display: grid;grid-template-columns: repeat(3, 1fr);grid-column-gap: 2.6rem;
 	@include breakpoint(max, 767px){display: block;}
@@ -366,10 +384,10 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max, 767px){width: 100%;overflow: hidden;padding-bottom: 10px;}
 		}
     .tab-header{display: grid;grid-template-columns: repeat(3, 1fr) ;
-			@include breakpoint(max, 767px){width: 100%;display: none; &.active{display: block;}}
+			@include breakpoint(max, 767px){width: 100%;display: none;border: solid 1px #760B28;border-bottom: none; &.active{display: block;}}
        .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2rem;color: #760B28;transition: ease .5s all;
-				@include breakpoint(max, 767px){padding: 2rem 3rem;display: block;width: 100%;border: solid 1px #760B28;font-size: 3rem;}
-        &:first-child{border-left: solid 1px #760B28;}
+				@include breakpoint(max, 767px){padding: 2rem 3rem;display: block;width: 100%;border-top:none; font-size: 3rem;}
+        &:first-child{border-left: solid 1px #760B28; @include breakpoint(max,767px){border-left: none;}}
         &[data-headlessui-state=selected], &:hover{background-color: #760B28;color: #fff;}
         }
     }
@@ -398,7 +416,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
         }
     }
-    .tab-button-mobile.tab-btn{padding: 1.5rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size: 3rem;color: #760B28;text-align: center; transition: ease .5s all;position: relative;display: none;
+    .tab-button-mobile.tab-btn{padding: 1.5rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size: 3rem;color: #760B28;text-align: center; transition: ease .5s all;position: relative;display: none;background: linear-gradient(157deg, rgb(133, 32, 96) 0%, rgb(124, 23, 45) 100%);color: #fff;
 	@include breakpoint(max,767px){display: block;}}
 }
 
@@ -451,15 +469,15 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
     .map{position: absolute;left: 44.5%;top: -7%;border: 2px solid #AAAAAA;
 			@include breakpoint(max, 1023px){left: 39.5%;}
 			@include breakpoint(max, 767px){position: static;margin-top: 5rem;}
-        iframe {width: 35.5rem;height: 63rem;display: block;
+        iframe {width: 35.5rem;height: 70rem;display: block;
 					@include breakpoint(max, 767px){border: 0;width: 100%;height: 40rem;}
 				}
 		}
 	.contact_right_box{
 		@include breakpoint(max,500px){margin-top: 4rem;}
-		.heading05{color: #FEF1CE;text-align: center;}
+		.heading05{color: #FEF1CE;}
 		.location-box{margin-top: 2rem;
-			.location-title{text-align: center;color: #FEF1CE;}
+			.location-title{color: #FEF1CE;}
 		}
 	}	
 }
@@ -722,17 +740,24 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 // US CPA :- TAB STURCTURE CSS
 .tab-section{
 	 .tab-header{display: flex;width: 100%;
-	 @include breakpoint(max, 700px){display: block;border-left:solid 1px #760B28;display: none;
+	 @include breakpoint(max, 700px){display: none;border-left:solid 1px #760B28;
 		&.active{display: block;}
 	}
 		 .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2.4rem;color: #760B28;transition: ease .5s all;width: 100%;
-		 @include breakpoint(max, 767px){padding: 3.5rem 3rem;font-size: 3rem;}
+		 @include breakpoint(max, 767px){padding: 1.5rem 3rem;font-size: 3rem;}
 		 &:first-child{border-left: solid 1px #760B28;}
 		 &[data-headlessui-state=selected], &:hover{background-color: #760B28;color: #fff;}
 		 }
+
+		 
 	 }
 	 .tab-container{margin-top: 5.5rem;position: relative;}
 	 .pr-color{color: #760B28;}	
+	 .tab-button-mobile.tab-btn{padding: 1.5rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size:3rem;color: #760B28;transition: ease .5s all;width: 100%;text-align: center;position: relative; display: none;
+	@include breakpoint(max,767px){display: block;background: linear-gradient(157deg, rgb(133, 32, 96) 0%, rgb(124, 23, 45) 100%);
+color: #fff;}
+	}
+	 
 	}
 	.p2 p, .li2 li{font-size: 2.4rem;font-weight: 400;color: #000;line-height: 4.8rem;margin-bottom: 3.5rem;}
 	ul, .li2{padding-left: 4rem;
@@ -745,7 +770,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 
 	// Home Banner Slider
-	.slick-dots{position: absolute;bottom: 5%;left: 0;right: 0;text-align: center;
+	.slick-dots{position: absolute;bottom: 5%;text-align: center;right: 50%;transform: translateX(50%);background: #ffffffdb;display: inline-block;padding: 0.5rem 1rem;border-radius: 1rem;
 		li{display: inline-block;vertical-align: middle;margin: 0 5px;
 			button{width: 1.7rem;height: 1.7rem;color: transparent;font-size: 0px;background-color: #fff;border-radius: 100%;border:solid 1px $primary-color;padding: 0;}
 			&.slick-active{
@@ -757,6 +782,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	// Download Brochure
 	.download-overlay{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.6);z-index: 9;}
 .download-popup{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9;
-	.enq-form{left: 50%;right: 0;transform: translate(-50%,-50%);}
+	.enq-form{left: 50%;right: 0;transform: translate(-50%,-50%);position: absolute;}
 	.close-form{display: none;}
 }
+
