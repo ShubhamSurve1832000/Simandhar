@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function founderSection() {
   return (
-    <section className="section founder-section pb-0">
+    <section className=" founder-section pb-0">
       <div className='founder-container'>
         <div className='founder-info'>
             <h2 className='heading02'>From the Founder's Desk</h2>

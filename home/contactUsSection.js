@@ -31,8 +31,11 @@ export default function ContactUs() {
                             <a className='btn  white-border-btn white-border-btn-arrow'>Register</a>
                         </div>
                     </form>
-                    <div className='contact_right_box'>
-                        <h3 className='heading05'>Headquarters</h3>
+                    <div className='contact_right_box '>
+                        <div className='add_row'>
+                            <span></span>
+                        <h3 className='heading05 '>Headquarters</h3>
+                        </div>
                         <div className='add_row'><span><i><HiOutlineLocationMarker /></i></span>
                             <div><p className=''>Plot Number: 39/A Dr.Subba Rao Colony, Picket, Secunderabad, Telangana 500026</p></div>
                         </div>
@@ -45,8 +48,9 @@ export default function ContactUs() {
                         <div className='add_row'><span><i><HiOutlineMail /></i></span>
                             <div><p className='' ><a href="mailto:info@simandhareducation.com">info@simandhareducation.com</a> </p></div>
                         </div>
-                        <div className='location-box'>
-                           <Link href="/"> <p className='location-title'>Our Locations</p></Link>
+                        <div className='location-box add_row'>
+                            <span></span>
+                           <Link href="/"> <p className='location-title btn white-border-btn white-border-btn-arrow'>Our Locations</p></Link>
                         </div>
                     </div>
                     <div className='map'>
@@ -59,7 +63,7 @@ export default function ContactUs() {
             <div className='red_box'>
                 <div className='container grid'>
                     <h3 className='title'>Simandhar Learn App ( LMS ) is Available
-                        on all Platform</h3>
+                        on all Platforms</h3>
                     <div>
                         <img src="img/app_store_1.png" alt="apple store" />
                         <img src="img/app_store_2.png" alt="apple store" />

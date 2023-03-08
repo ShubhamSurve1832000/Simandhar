@@ -1,24 +1,29 @@
 import Image from 'next/image'
 
-export default function placementSection() {
+export default function placementSection({indexData}) {
   return (
     <section className="section pm-section">
       <div className='container'>
         <h2 className='heading02'>Placements & Alumni</h2>
         <div className='pm-container'>
-            <div className='pm-box'>
+            {
+                indexData.list.map(( data =>{
+            return <div className='pm-box'>
                 <figure>
                     <div className='pm-img resp-img-box'>
-                        <Image src="/img/place_img01.png" layout="fill" className='resp-img'/>
+                        <Image src={data.img} layout="fill" className='resp-img'/>
                     </div>
                     <figcaption>
-                        <h6>Anoushka Baghla</h6>
-                        <p>US CPA License</p>
+                        <h6>{data.name}</h6>
+                        <p>{data.course}</p>
                     </figcaption>
                 </figure>
-                <a href="#" className='btn maroon-border-btn maroon-border-btn-arrow'>View CPA Licensee</a>
+                <a href="#" className='btn maroon-border-btn maroon-border-btn-arrow'>{data.btn}</a>
             </div>
-            <div className='pm-box'>
+            }))
+            }
+            
+            {/* <div className='pm-box'>
                 <figure>
                     <div className='pm-img resp-img-box'>
                         <Image src="/img/place_img02.png" layout="fill" className='resp-img'/>
@@ -41,7 +46,7 @@ export default function placementSection() {
                     </figcaption>
                 </figure>
                 <a href="#" className='btn maroon-border-btn maroon-border-btn-arrow'>View All Toppers</a>
-            </div>
+            </div> */}
         </div>
       </div>
     </section>

@@ -33,7 +33,7 @@ const bannerSection = ({showPopup}) => {
               </div>
             </div>
             <div className='banner-slider'>
-              <div className="banner-inner-slider" style={{backgroundImage: 'url("img/banner_bg.jpg")'}}>
+              <div className="banner-inner-slider" style={{backgroundImage: 'url("img/banner_bg02.png")'}}>
                 <div className="banner-content">
                   <div className="banner-text">
                     <h1 className='banner-title'>Get into <span>Big 4s and MNCs</span> with the most trusted institute of India</h1>

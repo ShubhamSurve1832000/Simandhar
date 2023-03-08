@@ -22,7 +22,7 @@ export default function videoSection() {
                 </Tab.Panels>
             </div>
             <div className='video-thumbbox'>
-                <Tab.List className='thumb-wrap'>
+                <Tab.List className='thumb-wrap custom-scrollbar'>
                  
                     <Tab className='thumb-row'>
                        

@@ -7,7 +7,7 @@ import { RiArrowDropDownLine } from 'react-icons/ri'
 
 
 
-export default function partnerSection() {
+export default function partnerSection({ indexData }) {
 	var partnerSlider = {
 		dots: false,
 		infinite: false,
@@ -32,7 +32,7 @@ export default function partnerSection() {
 		]
 	};
 
-	const data = [{ id: 0, label: "Our Corporate Tie-Ups" }, { id: 1, label: "Our Loan Partners" }, { id: 2, label: "Media Recognitions" }];
+	// const data = [{ id: 0, title: "Our Corporate Tie-Ups" }, { id: 1, title: "Our Loan Partners" }, { id: 2, title: "Media Recognitions" }];
 
 	const [isActive, setActive] = useState(false);
 
@@ -41,7 +41,7 @@ export default function partnerSection() {
 	};
 
 	const [selectedItem, setSelectedItem] = useState(null);
-	const [items, setItem] = useState(data);
+	const [items, setItem] = useState(indexData);
 
 	const handleItemClick = (id) => {
 		selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
@@ -52,11 +52,16 @@ export default function partnerSection() {
 			<Tab.Group>
 				<div className='container'>
 					<div className='tab-head-row'>
-						<p className='tab-button-mobile tab-btn' onClick={showTab}>{selectedItem ? items.find(item => item.id == selectedItem).label : "Select"}<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine /></span></p>
+						<p className='tab-button-mobile tab-btn' onClick={showTab}>
+							{selectedItem ? items.corporateTitle.find(item => item.id == selectedItem).title : "Select"}
+							<span className={'tab-head-box ' + ' ' + (isActive ? 'active' : '')}><RiArrowDropDownLine />
+							</span>
+						</p>
+
 						<Tab.List className={'tab-header tab-head-box ' + ' ' + (isActive ? 'active' : '')}>
-							{items.map(item => (
+							{items.corporateTitle.map(item => (
 								<Tab className="tab-btn" onClick={e => handleItemClick(e.target.id)} id={item.id}>
-									{item.label}
+									{item.title}
 								</Tab>
 							))}
 						</Tab.List>
@@ -64,24 +69,37 @@ export default function partnerSection() {
 					<div className='tab-container'>
 						<div className='tab-box'>
 							<Tab.Panels>
-								<Tab.Panel>
-									<div className='partner-slider'>
+								{
+									items.corporateLogo.map((lists => {
+										return <Tab.Panel>
+											<div className='partner-slider'>
 
-										<Slider {...partnerSlider}>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo02.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo01.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
+												<Slider {...partnerSlider}>
+													{
+														lists.list1.map((logos =>{
+															return	<div className='logo-box resp-img-box'><Image src={logos.img} layout="fill" className='resp-img' /></div>
+
+
+
+												}))
+											}
 											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>
 
+													{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo01.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/co_logo04.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><Image src="/img/co_logo05.jpg" layout="fill" className='resp-img' /></div>
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div> */}
 
-											{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div> */}
-										</Slider>
 
-									</div>
-								</Tab.Panel>
+													{/* <div className='logo-box resp-img-box'><Image src="/img/co_logo03.jpg" layout="fill" className='resp-img' /></div> */}
+												</Slider>
 
-								<Tab.Panel>
+											</div>
+										</Tab.Panel>
+									}))
+								}
+
+								{/* <Tab.Panel>
 									<div className='partner-slider'>
 
 										<Slider {...partnerSlider}>
@@ -94,24 +112,19 @@ export default function partnerSection() {
 										</Slider>
 
 									</div>
-								</Tab.Panel>
+								</Tab.Panel> */}
 
-								<Tab.Panel>
+								{/* <Tab.Panel>
 									<div className='partner-slider'>
-
-										<Slider {...partnerSlider}>
-											{/* <div className='logo-box resp-img-box'><Image src="/img/media_logo06.jpg" layout="fill" className='resp-img' /></div> */}
+										<Slider {...partnerSlider}>											
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo05.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo04.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo03.jpg" layout="fill" className='resp-img' /></div>
 											<div className='logo-box resp-img-box'><Image src="/img/media_logo02.jpg" layout="fill" className='resp-img' /></div>
-											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>
-
-											{/* <div className='logo-box resp-img-box'><Image src="/img/media_logo01.jpg" layout="fill" className='resp-img' /></div> */}
+											<div className='logo-box resp-img-box'><h2 className='heading04'><Link href='/partners'> View More</Link></h2></div>									
 										</Slider>
-
 									</div>
-								</Tab.Panel>
+								</Tab.Panel> */}
 							</Tab.Panels>
 
 						</div >
