@@ -17,21 +17,25 @@
             },
             {
                 "id": 4,
-                "list": "International Recognition"
+                "list": "Upskill in US GAAP & Business Laws"
+            },
+            {
+                "id": 5,
+                "list": "Flexible & Easy to Pass"
             }
         ]
     },
     "cmaPage": {
-        "mainHeding": "US Certified Public Accountant Exam CMA Page",
-        "img": "/img/cpa/banner_video.jpg",
+        "mainHeding": "US Certified Management  Accountant ",
+        "img": "/img/cpa/cma_banner.webp",
         "lists": [
             {
                 "id": 1,
-                "list": "3 Times CPA Watt Sells Awards"
+                "list": "High Level Globally Recognised Certification in Management Accounting"
             },
             {
                 "id": 2,
-                "list": "Best CPA Institute (Awarded by Becker)"
+                "list": "Boost your Career in Management Accounting & Controlling with US CMA Certification"
             },
             {
                 "id": 3,
@@ -39,7 +43,29 @@
             },
             {
                 "id": 4,
-                "list": "International Recognition"
+                "list": "Flexible & Easy to Pass"
+            }
+        ]
+    },
+    "eaPage": {
+        "mainHeding": "Enrolled Agent",
+        "img": "/img/cpa/ea_banner.webp",
+        "lists": [
+            {
+                "id": 1,
+                "list": "EA gives a boost to the credibility and respect amongst the peers."
+            },
+            {
+                "id": 2,
+                "list": "Enrolled Agents are the oldest Tax Experts and have been there since 1884."
+            },
+            {
+                "id": 3,
+                "list": "Client communications are confidential if relating to non-criminal tax matters or proceedings."
+            },
+            {
+                "id": 4,
+                "list": "Ability to help referred clients with their IRS issues."
             }
         ]
     }

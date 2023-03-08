@@ -4,42 +4,42 @@
         "helps": [
             {
                 "id": 1,
-                "img": "/img/cpa/help_icon01.svg",
+                "img": "/img/cpa/help_icon01.webp",
                 "caption": "Consulting Services"
             },
             {
                 "id": 2,
-                "img": "/img/cpa/help_icon02.svg",
+                "img": "/img/cpa/help_icon03.webp",
                 "caption": "End to End Evaluation Assistance"
             },
             {
                 "id": 3,
-                "img": "/img/cpa/help_icon03.svg",
+                "img": "/img/cpa/help_icon03.webp",
                 "caption": "Last Minute Revision"
             },
             {
                 "id": 4,
-                "img": "/img/cpa/help_icon04.svg",
+                "img": "/img/cpa/help_icon04.webp",
                 "caption": "AI Mocks"
             },
             {
                 "id": 5,
-                "img": "/img/cpa/help_icon05.svg",
+                "img": "/img/cpa/help_icon05.webp",
                 "caption": "Live Interactive Classes"
             },
             {
                 "id": 6,
-                "img": "/img/cpa/help_icon06.svg",
+                "img": "/img/cpa/help_icon06.webp",
                 "caption": "Customer First Approach"
             },
             {
                 "id": 7,
-                "img": "/img/cpa/help_icon07.svg",
+                "img": "/img/cpa/help_icon07.webp",
                 "caption": "Course Training"
             },
             {
                 "id": 8,
-                "img": "/img/cpa/help_icon08.svg",
+                "img": "/img/cpa/help_icon08.webp",
                 "caption": "Professional Training"
             }
         ]
@@ -49,88 +49,119 @@
         "helps": [
             {
                 "id": 1,
-                "img": "/img/cpa/help_icon01.svg",
+                "img": "/img/cpa/help_icon01.webp",
                 "caption": "Consulting Services"
             },
             {
                 "id": 2,
-                "img": "/img/cpa/help_icon02.svg",
+                "img": "/img/cpa/help_icon02.webp",
                 "caption": "E-commerce"
             },
             {
                 "id": 3,
-                "img": "/img/cpa/help_icon03.svg",
+                "img": "/img/cpa/help_icon03.webp",
                 "caption": "Financial Planning"
             },
             {
                 "id": 4,
-                "img": "/img/cpa/help_icon04.svg",
+                "img": "/img/cpa/help_icon04.webp",
                 "caption": "Accounting"
             },
             {
                 "id": 5,
-                "img": "/img/cpa/help_icon05.svg",
+                "img": "/img/cpa/help_icon05.webp",
                 "caption": "Taxation"
             },
             {
                 "id": 6,
-                "img": "/img/cpa/help_icon06.svg",
+                "img": "/img/cpa/help_icon06.webp",
                 "caption": "IT & ES"
             },
             {
                 "id": 7,
-                "img": "/img/cpa/help_icon07.svg",
+                "img": "/img/cpa/help_icon07.webp",
                 "caption": "Non-Profit Organizations"
             },
             {
                 "id": 8,
-                "img": "/img/cpa/help_icon08.svg",
+                "img": "/img/cpa/help_icon08.webp",
                 "caption": "Business Valuation & Many more"
             }
         ]
     },
     "cmaPageone": {
-        "mainheading": "Career Opportunities After CMA",
+        "mainheading": "How Simandhar Education helps you to be US CMA ready",       
         "helps": [
             {
                 "id": 1,
-                "img": "/img/cpa/help_icon01.svg",
+                "img": "/img/cpa/help_icon01.webp",
                 "caption": "Consulting Services"
             },
             {
                 "id": 2,
-                "img": "/img/cpa/help_icon02.svg",
+                "img": "/img/cpa/help_icon05.webp",
                 "caption": "E-commerce"
             },
             {
                 "id": 3,
-                "img": "/img/cpa/help_icon03.svg",
+                "img": "/img/cpa/help_icon03.webp",
                 "caption": "Financial Planning"
             },
             {
                 "id": 4,
-                "img": "/img/cpa/help_icon04.svg",
+                "img": "/img/cpa/help_icon04.webp",
                 "caption": "Accounting"
             },
             {
                 "id": 5,
-                "img": "/img/cpa/help_icon05.svg",
+                "img": "/img/cpa/help_icon06.webp",
                 "caption": "Taxation"
             },
             {
                 "id": 6,
-                "img": "/img/cpa/help_icon06.svg",
+                "img": "/img/cpa/help_icon07.webp",
                 "caption": "IT & ES"
             },
             {
-                "id": 7,
-                "img": "/img/cpa/help_icon07.svg",
-                "caption": "Non-Profit Organizations"
+                "id": 8,
+                "img": "/img/cpa/help_icon08.webp",
+                "caption": "Business Valuation & Many more"
+            }
+        ]
+    },
+    "takeaWays": {
+        "mainheading": "Key Takeaways",
+        "description": "Co-Founder and Global Lead Instructor, Simandhar Education",
+        "helps": [
+            {
+                "id": 1,
+                "img": "/img/cpa/key_img1.webp",
+                "caption": "Live Interactive Classes"
             },
             {
-                "id": 8,
-                "img": "/img/cpa/help_icon08.svg",
-                "caption": "Business Valuation & Many more"
+                "id": 2,
+                "img": "/img/cpa/key_img2.webp",
+                "caption": "Recorded Videos"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/key_img3.webp",
+                "caption": "Placement Assistance Program"
+            },
+            {
+                "id": 4,
+                "img": "/img/cpa/key_img4.webp",
+                "caption": "Exam Registration Assistance"
+            },
+            {
+                "id": 5,
+                "img": "/img/cpa/key_img5.webp",
+                "caption": "Comprehensive Study Material"
+            },
+            {
+                "id": 6,
+                "img": "/img/cpa/key_img6.webp",
+                "caption": "Becker Online Test Bank"
             }
         ]
     }

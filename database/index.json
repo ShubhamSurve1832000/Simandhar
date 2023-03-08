@@ -1,0 +1,326 @@
+{
+    "offerRow": {
+        "img": "/img/flash_sale.png",
+        "offerone": "10",
+        "discount": "Discount on All Courses",
+        "promoCode": "10",
+        "availbtn": "Avail Now"
+    },
+    "placementAlumni": {
+        "mainheading": "Placements & Alumni",
+        "list": [
+            {
+                "img": "/img/place_img01.png",
+                "name": "Anoushka Baghla",
+                "course": "US CPA License",
+                "btn": "View CPA License"
+            },
+            {
+                "img": "/img/place_img02.png",
+                "name": "Shrikesh Lahoti",
+                "course": "US CPA, Deloitte, Mumbai",
+                "btn": "View All Placements"
+            },
+            {
+                "img": "/img/place_img03.jpg",
+                "name": "Dhruv Patel",
+                "course": "FAR-98 - BEC-98 - REG-91 - AUD-97",
+                "btn": "View All Toppers"
+            }
+        ]
+    },
+    "corporateTab": {
+        "corporateTitle": [
+            {
+                "id": 0,
+                "title": "Our Corporate Tie-Ups"
+            },
+            {
+                "id": 1,
+                "title": "Our Loan Partners"
+            },
+            {
+                "id": 2,
+                "title": "Media Recognitions"
+            }
+        ],
+        "corporateLogo": [
+            {
+                "id": 0,
+                "list1": [
+                    {
+                        "id": 0,
+                        "img": "/img/co_logo01.jpg"
+                    },
+                    {
+                        "id": 1,
+                        "img": "/img/co_logo02.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/img/co_logo03.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/img/co_logo04.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "img": "/img/co_logo05.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "list1": [
+                    {
+                        "id": 0,
+                        "img": "/img/partners_logo01.jpg"
+                    },
+                    {
+                        "id": 1,
+                        "img": "/img/partners_logo02.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/img/partners_logo03.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/img/partners_logo04.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "list1": [
+                    {
+                        "id": 0,
+                        "img": "/img/media_logo01.jpg"
+                    },
+                    {
+                        "id": 1,
+                        "img": "/img/media_logo02.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/img/media_logo03.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/img/media_logo04.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "img": "/img/media_logo05.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+
+
+    "programTab": {
+        "mainheading": "Our Programmes",
+        "subheading": "Kickstart Your Career in Accounting & Finance",
+        "programTitle": [
+            {
+                "id": 0,
+                "label": "US CPA"
+            },
+            {
+                "id": 1,
+                "label": "US CMA"
+            },
+            {
+                "id": 2,
+                "label": "EA"
+            },
+            {
+                "id": 3,
+                "label": "CIA"
+            },
+            {
+                "id": 4,
+                "label": "Data Analytics"
+            },
+            {
+                "id": 5,
+                "label": "Simandhar Saamarth"
+            }
+        ],
+        "programContent":[
+            {
+                "id":0,
+                "programdesc":"Earn it in 6-9 Months Jobs in BIG 1s and MNCs",
+                "lists":[
+                    {
+                        "id":0,
+                        "list":"2 exams within 9-10 months"
+                    },
+                    {
+                        "id":1,
+                        "list":"Placements Assistance at Big 3s & US-based MNCs"
+                    },
+                    {
+                        "id":2,
+                        "list":"Success coaching and live classes by Experts"
+                    },
+                    {
+                        "id":3,
+                        "list":"Scholarships for students (Pursuing CMA alongside University degree)"
+                    },
+                    {
+                        "id":4,
+                        "list":"Live & recorded sessions"
+                    }
+                ]
+            },
+            {
+                "id":1,
+                "programdesc":"Earn it in 6-9 Months Jobs in BIG 1s and MNCs1",
+                "lists":[
+                    {
+                        "id":0,
+                        "list":"2 exams within 9-10 months"
+                    },
+                    {
+                        "id":1,
+                        "list":"Placements Assistance at Big 3s & US-based MNCs"
+                    },
+                    {
+                        "id":2,
+                        "list":"Success coaching and live classes by Experts"
+                    },
+                    {
+                        "id":3,
+                        "list":"Scholarships for students (Pursuing CMA alongside University degree)"
+                    },
+                    {
+                        "id":4,
+                        "list":"Live & recorded sessions"
+                    }
+                ]
+            },
+            {
+                "id":2,
+                "programdesc":"Earn it in 6-9 Months Jobs in BIG 1s and MNCs2",
+                "lists":[
+                    {
+                        "id":0,
+                        "list":"2 exams within 9-10 months"
+                    },
+                    {
+                        "id":1,
+                        "list":"Placements Assistance at Big 3s & US-based MNCs"
+                    },
+                    {
+                        "id":2,
+                        "list":"Success coaching and live classes by Experts"
+                    },
+                    {
+                        "id":3,
+                        "list":"Scholarships for students (Pursuing CMA alongside University degree)"
+                    },
+                    {
+                        "id":4,
+                        "list":"Live & recorded sessions"
+                    }
+                ]
+            },
+            {
+                "id":3,
+                "programdesc":"Earn it in 6-9 Months Jobs in BIG 1s and MNCs3",
+                "lists":[
+                    {
+                        "id":0,
+                        "list":"2 exams within 9-10 months"
+                    },
+                    {
+                        "id":1,
+                        "list":"Placements Assistance at Big 3s & US-based MNCs"
+                    },
+                    {
+                        "id":2,
+                        "list":"Success coaching and live classes by Experts"
+                    },
+                    {
+                        "id":3,
+                        "list":"Scholarships for students (Pursuing CMA alongside University degree)"
+                    },
+                    {
+                        "id":4,
+                        "list":"Live & recorded sessions"
+                    }
+                ]
+            },
+            {
+                "id":4,
+                "programdesc":"Earn it in 6-9 Months Jobs in BIG 1s and MNCs4",
+                "lists":[
+                    {
+                        "id":0,
+                        "list":"2 exams within 9-10 months"
+                    },
+                    {
+                        "id":1,
+                        "list":"Placements Assistance at Big 3s & US-based MNCs"
+                    },
+                    {
+                        "id":2,
+                        "list":"Success coaching and live classes by Experts"
+                    },
+                    {
+                        "id":3,
+                        "list":"Scholarships for students (Pursuing CMA alongside University degree)"
+                    },
+                    {
+                        "id":4,
+                        "list":"Live & recorded sessions"
+                    }
+                ]
+            },
+            {
+                "id":5,
+                "programdesc":"Earn it in 6-9 Months Jobs in BIG 1s and MNCs5",
+                "lists":[
+                    {
+                        "id":0,
+                        "list":"2 exams within 9-10 months"
+                    },
+                    {
+                        "id":1,
+                        "list":"Placements Assistance at Big 3s & US-based MNCs"
+                    },
+                    {
+                        "id":2,
+                        "list":"Success coaching and live classes by Experts"
+                    },
+                    {
+                        "id":3,
+                        "list":"Scholarships for students (Pursuing CMA alongside University degree)"
+                    },
+                    {
+                        "id":4,
+                        "list":"Live & recorded sessions"
+                    }
+                ]
+            }
+        ]
+    },
+
+
+
+    "education":{
+        "mainheading":"Why Simandhar Education?",
+        "description":"Simandhar Education is India's Most Trusted Training Institute for US CPA, US CMA, Diploma IFRS, and Enrolled Agent.",
+        "list1":"CPA bridge course to meet the shortfall of credits",
+        "list2":"200+ Placement Partners",
+        "list3":"10000+  Students",
+        "list4":"15+  Faculties",
+        "list5":"End-to-end Licensing Support",
+        "img1":"/img/education01.png",
+        "img2":"/img/education02.png"
+
+    }
+}

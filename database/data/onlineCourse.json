@@ -1,0 +1,48 @@
+{
+    "cpaPage": {
+        "mainHeding": "Buy Hassle-Free Online Courses",
+        "course": [
+            {
+                "id": 1,
+                "img": "/img/cpa/course01.jpg",
+                "name": "yogesh",
+                "btnText": "yogi"
+            },
+            {
+                "id": 2,
+                "img": "/img/cpa/course02.jpg",
+                "name": "Rahul",
+                "btnText": "Rahul"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/course03.jpg",
+                "name": "Rohit",
+                "btnText": "Rohit"
+            }
+        ]
+    },
+    "cmaPage": {
+        "mainHeding": "Buy Hassle-Free Online Courses",
+        "course": [
+            {
+                "id": 1,
+                "img": "/img/cpa/course01.jpg",
+                "name": "yogesh",
+                "btnText": "yogi"
+            },
+            {
+                "id": 2,
+                "img": "/img/cpa/course02.jpg",
+                "name": "Rahul",
+                "btnText": "Rahul"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/course03.jpg",
+                "name": "Rohit",
+                "btnText": "Rohit"
+            }
+        ]
+    }
+}

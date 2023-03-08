@@ -7,8 +7,21 @@
         
     },
     "cmaPage":{
-        "mainHeading":"CPA = US equivalent to CA",
-        "description":"A Certified Public Accountant is a professional who has earned the CPA license from any of the 55 state accountancy boards of USA all of which are part of NASBA (National Association of the State Boards of Accountancy). Each state board has the authority to grant CPA license. One must meet all the requirements of the state board including Education, Experience and Examinations."
+        "mainHeading":"Boost Management Career With US CMA Certification",
+        "description":"CMA acronym stands for ‘Certified Management Accountant’. CMA is one of the highest management accounting credentials in the world administered by the IMA (Institute for Management Accountants). Spanned over just 2 exams, CMA’s curriculum uses some of the most advanced testing techniques to test management accounting aspirants all over the world if they’re worthy of the designation CPA. Lakhs of aspirants take US CMA exams every year to grow into Management Accountants, Finance analysts and many other roles."
+        
+    },
+    "eaPage":{
+             "description":"The EA Exam, officially known as the Special Enrollment Examination (SEE), is a three-part exam administered by Prometric on behalf of the Internal Revenue Service. Each part is taken as a separate 100 question exam, and you will have 3.5 hours to answer all questions for that part. The IRS Special Enrollment Exam (SEE) is the easiest of the exams that give you unlimited representation rights to practice before the IRS.The other two are the CPA exam and the Bar exam, both of which have significant educational requirements which must be met before you can sit for the test. That does not mean the EA exam is easy. An enrolled agent, to be considered a tax expert, must “demonstrate special competence in tax matters” by passing three separate exams to become an enrolled agent. Difficulty depends on experience, but the credential is attainable for those willing to put in the effort."    
+    },
+    "cpaPageOne":{
+        "mainHeading":"CPA Course Duration",
+        "description":["An aspirant is required to qualify for all the four parts of CPA in under 18 months from the date of the first test results. CPA being a flexible course, the aspirant is constantly in control of his CPA preparation. The aspirant has all the control throughout CPA. Simandhar's aspirants usually qualify for all four parts in under a year, without any pressure, and earn their CPA license."]
+    },
+    "cpaPageTwo":{
+        "mainHeading":"US CPA Exam in India Every Month from 2021",
+        "description":["NASBA AICPA and Prometric announced good news for all the CPA aspirants: Testing for CPA exam candidates at test centers in India will begin on January 1, 2021. Also, the candidates may begin to use the scheduler on November 2, 2020." ],
+        "descriptionTwo":[ "US CPA aspirants can take the CPA course and exam sections after fulfilling all the required CPA eligibility criteria without restrictions, other than waiting to receive scores from prior attempts of the same section or when there is a major change in the exam. Continuous Testing will replace the existing limited CPA Exam Testing Window model, which only permits candidates to test in India during designated time frames."]
         
     }
 }

@@ -1,0 +1,77 @@
+{
+    "cpaPage":{
+        "mainheading":"US CPA Home",
+        "lists":[
+            {
+                "path":"",
+                "title":"Course Review"
+            },
+            {
+                "path":"",
+                "title":"Our Courses"
+            },
+            {
+                "path":"",
+                "title":"Canada"
+            },
+            {
+                "path":"",
+                "title":"Fees"
+            },
+            {
+                "path":"",
+                "title":"Awards"
+            },
+            {
+                "path":"",
+                "title":"Alumni"
+            },
+            {
+                "path":"",
+                "title":"Jobs"
+            },
+            {
+                "path":"",
+                "title":"Faculty"
+            }
+        ]   
+    },
+    "cmaPage":{
+        "mainheading":"US CMA Home",
+        "lists":[
+            {
+                "path":"",
+                "title":"Course Review"
+            },
+            {
+                "path":"",
+                "title":"Our Courses"
+            },
+            {
+                "path":"",
+                "title":"Syllabus"
+            },
+            {
+                "path":"",
+                "title":"Fees"
+            },
+            {
+                "path":"",
+                "title":"News"
+            },
+            {
+                "path":"",
+                "title":"Alumni"
+            },
+            {
+                "path":"",
+                "title":"Jobs"
+            },
+            {
+                "path":"",
+                "title":"Faculty"
+            }
+        ]      
+    }
+
+}

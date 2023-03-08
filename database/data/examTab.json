@@ -1,0 +1,121 @@
+{
+    "cpaPage": {
+        "tabs": [
+            {
+                "id": 1,
+                "tab": "Eligibility Checks"
+            },
+            {
+                "id": 2,
+                "tab": "Licensing/ Licensure"
+            },
+            {
+                "id": 3,
+                "tab": "Preparation"
+            },
+            {
+                "id": 4,
+                "tab": "Career Opportunities"
+            }
+        ],
+        "description": [
+            {
+                "id": 1,
+                "para": "The CPA Exams are administered by AICPA, the world’s largest accounting body. AICPA offers membership to all the aspirants successfully clearing all 4 CPA exams. CPA license, however is issued by the 55 state boards of accountancy of US that are part of NASBA. Each state board has different eligibility criteria, that needs to be met by the aspirant to take the US CPA exams.",
+                "paraTwo": "Simandhar Education provides free eligibility check that you could use to check if you’re eligible to take the prestigious US CPA certification.",
+                "button": "Know Your Eligibility",
+                "title": "General Rules of Thumb :",
+                "lists": [
+                    {
+                        "id": 1,
+                        "list": "Master’s Degree in any of the streams of Commerce, Accounting or Finance"
+                    },
+                    {
+                        "id": 2,
+                        "list": "An aspirant needs 120 credits to take the US CPA exams and 150 credits to get his CPA license"
+                    },
+                    {
+                        "id": 3,
+                        "list": "It’s considered that one year of University education in India is equal to 30 credits of US education"
+                    },
+                    {
+                        "id": 4,
+                        "list": "In some cases, first division graduates of a three-year degree from NAAC-A accredited universities of India are qualified to take the US CPA exams too."
+                    }
+                ],
+                "lists1":[]
+            },
+            {
+                "id": 2,
+                "para": "The NASBA (National Association of State Boards of Accountancy) and the state board of accountancy governs the eligibility rules of CPA. The CPA exam requirements vary by state jurisdiction. Every state board of accountancy has a different set of requirements, but most states have a core set of qualifications for a candidate to be eligible for the CPA exam.",
+                "paraTwo": "Besides the above requirements, the candidate must have a bachelor’s degree in Commerce/Accounting/Business with any of the below qualifications:",
+                "button": "Know Your Eligibility",
+                "title": "Let’s go through the CPA license requirements.",
+                "lists": [
+                    {
+                        "id": 1,
+                        "list": "In general, many states ask for 150 credit hours in some specific courses from a university or an accredited institute under NASBA."
+                    },
+                    {
+                        "id": 2,
+                        "list": "The candidate should pass the Ethics exam."
+                    },
+                    {
+                        "id": 3,
+                        "list": "Must have 2,000 hours of work experience in taxation, auditing, accounting and management consultancy (need not be under a CPA supervisor, Mr.Sripal Jain (CA,CPA) can verify for you)."
+                    },
+                    {
+                        "id": 4,
+                        "list": "Age limit: 18+ years."
+                    }
+                ],
+                "lists1": [
+                    {
+                        "id": 1,
+                        "list": "In general, many states ask for 150 credit hours in some specific courses from a university or an accredited institute under NASBA."
+                    },
+                    {
+                        "id": 2,
+                        "list": "The candidate should pass the Ethics exam."
+                    },
+                    {
+                        "id": 3,
+                        "list": "Must have 2,000 hours of work experience in taxation, auditing, accounting and management consultancy (need not be under a CPA supervisor, Mr.Sripal Jain (CA,CPA) can verify for you)."
+                    },
+                    {
+                        "id": 4,
+                        "list": "Age limit: 18+ years."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "para": "The NASBAccc (National Association of State Boards of Accountancy) and the state board of accountancy governs the eligibility rules of CPA. The CPA exam requirements vary by state jurisdiction. Every state board of accountancy has a different set of requirements, but most states have a core set of qualifications for a candidate to be eligible for the CPA exam.",
+                "paraTwo": "Simandhar Education provides free eligibility check that you could use to check if you’re eligible to take the prestigious US CPA certification.",
+                "button": "Know Your Eligibility",
+                "title": "General Rules of Thumb :",
+                "lists": [
+                    {
+                        "id": 1,
+                        "list": "Master’s Degree in any of the streams of Commerce, Accounting or Finance"
+                    },
+                    {
+                        "id": 2,
+                        "list": "An aspirant needs 120 credits to take the US CPA exams and 150 credits to get his CPA license"
+                    },
+                    {
+                        "id": 3,
+                        "list": "It’s considered that one year of University education in India is equal to 30 credits of US education"
+                    },
+                    {
+                        "id": 4,
+                        "list": "In some cases, first division graduates of a three-year degree from NAAC-A accredited universities of India are qualified to take the US CPA exams too."
+                    }
+                ],
+                "lists1":[]
+            }
+          
+        ]
+    }
+}
+
