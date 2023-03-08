@@ -7,6 +7,8 @@ import VisionSection from '../about/VisionSection';
 import PrinceSection from '../about/PrinceSection';
 import PartnersSection from '../about/PartnersSection';
 import RightStep from '../about/RightStep';
+import Header from '../components/header'
+
 
 const aboutUS = () => {
   return (
@@ -14,6 +16,7 @@ const aboutUS = () => {
        <Head>
         <title>About Us - Simandhar Education</title>
       </Head>
+<Header />      
 <AboutUsBanner />
 <ExpPlaceInfo />
 <TESeducation/>
