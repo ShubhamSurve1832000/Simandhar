@@ -391,7 +391,7 @@ table {width: 100%;border-collapse: collapse;margin: 0 auto;
   // @include breakpoint(max,500px){border: none;}
 }
 .strip tr {line-height: 5rem;padding-left: 1.5rem;}
-.strip td {padding: 2.7rem 4rem;text-align: center;min-width: 10rem;font-size: 2rem;line-height: 2.5rem;color: #000000;
+.strip td {padding: 2.7rem 4rem;text-align: center;min-width: 10rem;font-size: 2.4rem;line-height: 2.5rem;color: #000000;
   @include breakpoint(max,500px){min-width: 40rem;padding: 2.7rem 2rem;}}
 .strip th {background-color: #fff;color: #760B28;padding: 4.5rem 4rem;font-size: 2.4rem;line-height: 2.8rem;font-weight: 600;}
 .strip tr:nth-child(odd) {background-color: #FFF5F5;border-bottom: none;}
@@ -425,6 +425,18 @@ tbody td{border-left: 1px solid;}
         li{font-size: 3.2rem;font-weight: 700;padding-bottom: 2rem;}}
       }}
     }
+  }
+}
+
+// EA video Section
+.ea-video-section{
+  section{padding-top: 0;}
+}
+
+// EA PAGE CONTENT PARTNER SECTION
+.ea-content-section{
+  .cont-partner-section{
+    .content-box{.read-more{display: none;}}
   }
 }
 
