@@ -1,4 +1,8 @@
-.read-more{color: #760B28;}
+.read-more{color: #760B28;font-weight: 600;
+&::after{
+  content: ">";
+}
+}
 .background-gradient{background: linear-gradient(90deg, rgb(118, 11, 40) 0%, rgb(136, 35, 111) 100%);;}
 
 
@@ -138,7 +142,8 @@ p.tab-button-mobile{position: relative;
     }
   }
     th{padding: 2rem 1rem;font-size: 2.4rem;font-weight: 700;color: $primary-color;}
-    td{padding: 3.5rem;
+    td{padding: 3.5rem; 
+      p{ span{strong{font-weight: bold;display: block;}}}
     @include breakpoint(max,500px){width: auto;display: block;padding: 0;margin: 5px 0;
     p{width: calc(100% - 95px);display: inline-block;border-left: solid 1px #760B28;padding: 2rem;}}
     }
@@ -264,7 +269,7 @@ p.tab-button-mobile{position: relative;
 }
 
 // CPA BACKER SECTION
-.twoBox{display: grid;grid-template-columns: 70% 30%;align-items: center;grid-gap: 2rem;padding-top: 5rem; 
+.twoBox{display: grid;grid-template-columns:59% 34%;align-items: center;grid-gap: 7rem;padding-top: 5rem; 
   @include breakpoint(max ,500px){grid-template-columns: 1fr;}}
 
 // CMA PAGE DESIGANTION SECTION
@@ -370,7 +375,7 @@ p.tab-button-mobile{position: relative;
   .tab-container{height: 50rem;overflow: auto;
     h3.heading05{color: $primary-color;}  
   }
-      p{text-align: center; padding-top: 2rem; color: #696969;
+     .scroll-down-arrow{text-align: center; padding-top: 2rem; color: #696969;
       &::after{content: "";height: 1.5rem;width: 1.5rem;border-style: solid;border-color: #696969;border-width: 0px 2px 2px 0px;transform: rotate(45deg);transition: border-width 150ms ease-in-out;position: absolute;margin-left: 3rem;margin-top: 0.5rem;}
       }
  
@@ -471,8 +476,11 @@ tbody td{border-left: 1px solid;}
   
   
 }
+
+// CIA HELP SECTION KEY TAKEWAYS
 .cia-help-section{text-align:center;
 .help-section .help-container{display: block;
+  
   dl{display: inline-block;vertical-align: top;width: 33.33%;
     @include breakpoint (max,767px){width: 50%;
     &:nth-child(3){margin-top: 6rem;}}
@@ -480,11 +488,9 @@ tbody td{border-left: 1px solid;}
   }
   // dl:nth-child(4), dl:nth-child(5){margin-top: 6rem;}
 }
+.container-l{.heading02{padding-right: 0;}}
 }
 
-.cia-tab {
-  .section{padding-top: 0;}
-}
 
 .banner-ciaPage{
   .section{padding: 0;}
