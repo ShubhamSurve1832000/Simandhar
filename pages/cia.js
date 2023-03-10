@@ -10,8 +10,9 @@ import TableSection from '../CPA/ciaTableone'
 import Trainer from '../CPA/trainer'
 import CiaTabelTwo from '../CPA/ciaTabelTwo'
 import CiaTabelThree from '../CPA/CiaTabelThree'
-
 import FaqSection from '../CPA/FaqSection'
+import Gallery from '../CPA/Gallery'
+
 
 import bannerData from '../database/data/banner.json'
 import examData from '../database/data/exam.json'
@@ -19,6 +20,8 @@ import helpData from '../database/data/helpSection.json'
 import CurriculumSectiononeData from '../database/data/curriculumsectionOne.json'
 import contentPartnerData from '../database/data/contentSection.json'
 import trainerData from '../database/data/trainerData.json'
+import galleryData from '../database/data/gallerySection.json'
+
 
 const cia = () => {
   return (
@@ -38,6 +41,9 @@ const cia = () => {
       </div>
       <div className='background-none key-takeways pt-8 cia-help-section' >
         <HelpSection helpData={helpData.ciaPage} />
+      </div>
+      <div className='cia-gallery'>
+      <Gallery galleryData={galleryData.eaGallery} />
       </div>
       <div className='cia-tab cma-tab'>
         <CurriculumSectionone CurriculumSectiononeData={CurriculumSectiononeData.cmaPage} />

@@ -35,7 +35,7 @@ const CurriculumSectionone = ({ CurriculumSectiononeData, showData }) => {
 
 
               </Tab.Panels>
-              <p>Scroll to view more </p>
+              <p className='scroll-down-arrow'> Scroll to view more </p>
             </div>
           </Tab.Group>
         </div>
