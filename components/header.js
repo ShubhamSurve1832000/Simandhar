@@ -181,7 +181,7 @@ export default function header({showData,showData1}) {
                   <Link href='/us-cpa' className='nav-title'>US CPA</Link>
                   <Link href='/us-cma' className='nav-title'>US CMA</Link>
                   <Link href='/ea' className='nav-title'>EA</Link>
-                  <Link href='' className='nav-title'>CIA</Link>
+                  <Link href='/cia' className='nav-title'>CIA</Link>
                   <Link href='' className='nav-title'>IFRS</Link>
                   <Link href='' className='nav-title'>Data Analytics</Link>
                   <Link href='' className='nav-title'>Simandhar Saamarth</Link>
