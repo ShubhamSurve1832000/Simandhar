@@ -22,6 +22,8 @@ a {text-decoration: none;color: initial}
 .pb-0{padding-bottom: 0 !important;}
 .pt-0{padding-top: 0 !important;}
 .pt-8{padding-top: 8rem !important;}
+.pb-8{padding-bottom: 8rem;}
+.mt-4{margin-top: 4rem;}
 .text-center{text-align: center;}
 .btn-wrap{margin-top: 3.5rem;}
 .resp-img-box{position: relative;}
@@ -485,7 +487,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 
 .red_box{padding: 14.2rem 0 6.2rem 0;background: rgb(118, 11, 40);
-	background: linear-gradient(106deg, rgba(118, 11, 40, 1) 0%, rgba(129, 28, 75, 1) 100%);
+	background: linear-gradient(90deg, rgb(118, 11, 40) 0%, rgb(136, 35, 111) 100%);
   .grid{display: grid;grid-template-columns: 40% auto;justify-content: space-between;align-items: center;
 			@include breakpoint(max, 767px){display: block;display: block;text-align: center;}
 		}
@@ -751,7 +753,13 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 
 		 
 	 }
-	 .tab-container{margin-top: 5.5rem;position: relative;}
+	 .tab-container{margin-top: 5.5rem;position: relative;
+		.tab-box{
+			ul{padding-bottom: 2rem;}
+			&:nth-child(3){
+				.li2 , .pr-color{display: none;}
+			}}
+	}
 	 .pr-color{color: #760B28;}	
 	 .tab-button-mobile.tab-btn{padding: 1.5rem 0;border: solid 1px #760B28;background-color: transparent;font-weight: 500;font-size:3rem;color: #760B28;transition: ease .5s all;width: 100%;text-align: center;position: relative; display: none;
 	@include breakpoint(max,767px){display: block;background: linear-gradient(157deg, rgb(133, 32, 96) 0%, rgb(124, 23, 45) 100%);

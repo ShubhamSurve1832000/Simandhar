@@ -1,10 +1,6 @@
 
 // Header
-header#header {
-    top: 0;
-    position: sticky;
-    z-index: 99;
-    background: #fff;
+header#header {top: 0;position: sticky;z-index: 99;background: #fff;
 }
 .menu-btn{display: none;}
 .close-menu{display: none;}
@@ -34,7 +30,7 @@ header#header {
     &.hf-container{max-width: 175rem;width: 96%;margin: 0 auto;}
     .left_nav{display: flex;
         align-items: center;
-        width: 127.3rem;
+        width: 130.3rem;
         justify-content: space-between;
         @include breakpoint(max,767px){margin-right: 10rem;float: right;    width: 50%;}
         @include breakpoint(max,500px){margin-right: 10rem;float: right;    width: 65%;}
@@ -151,7 +147,7 @@ header#header {
                 @include breakpoint(max,767px){margin-left: 1.5rem;}
                 svg{transition: .5s ease all;}
                 } }
-        .program-scroll { width: 75.2%;
+        .program-scroll { width: 76.2%;
             @include breakpoint(max,767px){position: absolute;background: #fff;top: 100%;width: 100%;display: none;
                 &.active{display: block;}
             }
@@ -185,7 +181,7 @@ header#header {
             .nav-title1{font-size: 2rem;padding: 3rem 4.3rem;vertical-align: middle;font-weight: 500;width: max-content;
             @include breakpoint(max,767px){padding: 1.7rem 2.4rem;text-align: center;width: 100%;}
             @include breakpoint(max ,500px){padding: 2.5rem 0.4rem;font-size: 2.4rem;}}
-        .nav-title{font-size: 2rem;padding: 3.2rem 4.3rem;vertical-align: middle;font-weight: 500;width: max-content;
+        .nav-title{font-size: 2rem;padding: 3.2rem 4.4rem;vertical-align: middle;font-weight: 500;width: max-content;
         @include breakpoint(max , 767px){display: block;width: 100%;font-size: 2.4rem;padding: 1.7rem 1.9rem;}    
             span{vertical-align: inherit;margin-left: 3.5rem;
                 @include breakpoint(max,767px){margin-left: 1.5rem;}}
