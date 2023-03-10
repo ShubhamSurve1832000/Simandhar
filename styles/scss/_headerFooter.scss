@@ -37,7 +37,7 @@ header#header {top: 0;position: sticky;z-index: 99;background: #fff;
     .navbar_list{display: flex;justify-content: space-between;align-items: center;padding-left: 0;         
        @include breakpoint(max,767px){display: block;}
         li{margin-inline: 3.6rem ;list-style: none;font-size: 2rem;font-family: 'Space Grotesk';vertical-align: middle;font-weight: 500;cursor: pointer;position: relative;
-            &.active{color: $primary-color;}
+            &.active a{color: $primary-color;}
             a{
             &:hover{color: $primary-color;}}
         @include breakpoint(max,1279px){margin-inline: 2.6rem; }

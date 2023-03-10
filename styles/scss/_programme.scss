@@ -91,7 +91,7 @@ p.tab-button-mobile{position: relative;
       .tab-header{margin-top: 2.4rem;}
       .heading02, p{color: #fff;text-align: left;}
       .tab-btn{padding: 2.5rem 0;border: none;border-top: solid 1px #C07589;border-top: solid 1px #C07589;color: #C07589;font-size: 3.6rem;line-height: 4rem;list-style: none;background-color: transparent;width: 100%;display: block;text-align: left;
-        &[data-headlessui-state=selected], &:hover{color: #fff;font-weight: 500;background-image: url("/img/up_arrow.svg");background-repeat: no-repeat;background-position: center right 3rem;}
+        &[data-headlessui-state=selected], &:hover{color: #fff;font-weight: 500;background-image: url("/img/arrow_white.svg");background-repeat: no-repeat;background-position: center right 3rem;}
       }
     }
     .right-tab-box{width: calc(100% - 104rem);display: inline-block;vertical-align: middle;background-color: #FFF5F5;border-radius: 3.3rem;padding: 5rem 6.5rem;padding-right: 10rem;
