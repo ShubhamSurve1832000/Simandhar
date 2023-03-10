@@ -1,0 +1,16 @@
+{
+    "eaGallery":[
+        {
+            "id":1,
+            "path":"/img/cpa/gallery_img01.webp"
+        },
+        {
+            "id":2,
+            "path":"/img/cpa/gallery_img02.webp"
+        },
+        {
+            "id":3,
+            "path":"/img/cpa/gallery_img03.webp"
+        }
+    ]
+}

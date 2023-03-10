@@ -20,8 +20,14 @@
     },
     "cpaPageTwo":{
         "mainHeading":"US CPA Exam in India Every Month from 2021",
-        "description":["NASBA AICPA and Prometric announced good news for all the CPA aspirants: Testing for CPA exam candidates at test centers in India will begin on January 1, 2021. Also, the candidates may begin to use the scheduler on November 2, 2020." ],
+        "description":["NASBA AICPA and Prometric announced good news for all the CPA aspirants: Testing for CPA exam candidates at test centers in India will begin on January 1, 2021. Also, the candidates may begin to use the scheduler on November 2, 2020.     US CPA aspirants can take the CPA course and exam sections after fulfilling all the required CPA eligibility criteria without restrictions, other than waiting to receive scores from prior attempts of the same section or when there is a major change in the exam. Continuous Testing will replace the existing limited CPA Exam Testing Window model, which only permits candidates to test in India during designated time frames." ],
         "descriptionTwo":[ "US CPA aspirants can take the CPA course and exam sections after fulfilling all the required CPA eligibility criteria without restrictions, other than waiting to receive scores from prior attempts of the same section or when there is a major change in the exam. Continuous Testing will replace the existing limited CPA Exam Testing Window model, which only permits candidates to test in India during designated time frames."]
         
-    }
+    },
+    "ciaPage": {
+        "description": "Earning the Certified internal auditor (CIA) Certification make you grow up the corporate ladder in Audit field. Considering the increasing demand for Internal auditors’ profile globally, the Certified internal auditor qualification has become a single-handed recognised certification in the world. At Simandhar Education, we will guide you through entire registration process with IIA USA (Institute of Internal Auditors, USA) and ensure you're ready for CIA exam."
+    },
+        "ciaPageone":{
+        "mainHeading":"What is Internal Auditing?",
+        "description":"The Institute of Internal Auditors (IIA) has developed the globally accepted definition of internal auditing, as follows: Internal Auditing is an independent, objective assurance and consulting activity designed to add value and improve an organization's operations. It helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control, and governance processes."}
 }

@@ -68,5 +68,35 @@
                 "list": "Ability to help referred clients with their IRS issues."
             }
         ]
+    },
+    "ciaPage": {
+        "mainHeding": "CIA Course",
+        "img": "/img/cpa/cia_banner.webp",
+        "lists": [
+            {
+                "id": 1,
+                "list": "Global recognition"
+            },
+            {
+                "id": 2,
+                "list": "Higher earning potential"
+            },
+            {
+                "id": 3,
+                "list": "Greater learning with Institute of Internal Auditor membership"
+            },
+            {
+                "id": 4,
+                "list": "Skill upgrades"
+            },
+            {
+                "id": 5,
+                "list": "Great career opportunities"
+            },
+            {
+                "id": 6,
+                "list": "Job security and chances of becoming the Chief Internal Auditor in the Corporate ladder"
+            }
+        ]
     }
 }

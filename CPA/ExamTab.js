@@ -33,6 +33,10 @@ const ExamTab = ({ tabData }) => {
             {tabData.description.map((desc => {
               return <>
                 <Tab.Panel className='tab-box'>
+                <h3 className="heading05">{desc.mainheading}</h3>
+
+                <p className="med-font">{desc.title1}</p>
+
                   <p>{desc.para}</p>
                   <p className="med-font">{desc.title}</p>
                   <ul className='li2'>
@@ -47,6 +51,7 @@ const ExamTab = ({ tabData }) => {
                       return <li>{items.list}</li>
                     }))}
                   </ul>
+                  <p>{desc.paraone}</p>
                   <a href="javascript:;" className="btn maroon-btn maroon-btn-arrow mt-35">{desc.button}</a>
                 </Tab.Panel>
               </>

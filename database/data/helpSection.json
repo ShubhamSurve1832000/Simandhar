@@ -9,7 +9,7 @@
             },
             {
                 "id": 2,
-                "img": "/img/cpa/help_icon03.webp",
+                "img": "/img/cpa/help_icon02.webp",
                 "caption": "End to End Evaluation Assistance"
             },
             {
@@ -162,6 +162,37 @@
                 "id": 6,
                 "img": "/img/cpa/key_img6.webp",
                 "caption": "Becker Online Test Bank"
+            }
+        ]
+    },
+    "ciaPage": {
+        "mainheading": "Key Takeaways",
+        "description": "Here we have enlisted the pivotal reasons of why one should pursue the Guidance for CIA certification ",
+        "helps": [
+            {
+                "id": 1,
+                "img": "/img/cpa/key_img1.webp",
+                "caption": "Live Interactive Classes"
+            },
+            {
+                "id": 2,
+                "img": "/img/cpa/key_img2.webp",
+                "caption": "Recorded Videos"
+            },
+            {
+                "id": 3,
+                "img": "/img/cpa/key_img3.webp",
+                "caption": "Placement Assistance Program"
+            },
+            {
+                "id": 4,
+                "img": "/img/cpa/key_img6.webp",
+                "caption": "Exam Registration Assistance"
+            },
+            {
+                "id": 5,
+                "img": "/img/cpa/key_img5.webp",
+                "caption": "Comprehensive Study Material "
             }
         ]
     }

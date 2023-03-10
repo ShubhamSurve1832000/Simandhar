@@ -4,8 +4,8 @@ const tableSection = () => {
     return (
         <>
 
-            <section className=' tableSection custom-scrollbar'>
-                <div className='container-l'>
+            <section className=' tableSection '>
+                <div className='container-l custom-scrollbar'>
                     <table cellpadding="0" cellspacing="0" class="strip">
                         <thead>
                             <tr>

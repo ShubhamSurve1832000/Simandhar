@@ -22,9 +22,12 @@
             {
                 "id": 1,
                 "para": "The CPA Exams are administered by AICPA, the world’s largest accounting body. AICPA offers membership to all the aspirants successfully clearing all 4 CPA exams. CPA license, however is issued by the 55 state boards of accountancy of US that are part of NASBA. Each state board has different eligibility criteria, that needs to be met by the aspirant to take the US CPA exams.",
+                "paraone":"",
                 "paraTwo": "Simandhar Education provides free eligibility check that you could use to check if you’re eligible to take the prestigious US CPA certification.",
                 "button": "Know Your Eligibility",
                 "title": "General Rules of Thumb :",
+                "title1": "",
+                "mainheading":"",
                 "lists": [
                     {
                         "id": 1,
@@ -48,9 +51,12 @@
             {
                 "id": 2,
                 "para": "The NASBA (National Association of State Boards of Accountancy) and the state board of accountancy governs the eligibility rules of CPA. The CPA exam requirements vary by state jurisdiction. Every state board of accountancy has a different set of requirements, but most states have a core set of qualifications for a candidate to be eligible for the CPA exam.",
+                "paraone":"",
                 "paraTwo": "Besides the above requirements, the candidate must have a bachelor’s degree in Commerce/Accounting/Business with any of the below qualifications:",
                 "button": "Know Your Eligibility",
                 "title": "Let’s go through the CPA license requirements.",
+                "title1": "",
+                "mainheading":"",
                 "lists": [
                     {
                         "id": 1,
@@ -90,26 +96,65 @@
             },
             {
                 "id": 3,
-                "para": "The NASBAccc (National Association of State Boards of Accountancy) and the state board of accountancy governs the eligibility rules of CPA. The CPA exam requirements vary by state jurisdiction. Every state board of accountancy has a different set of requirements, but most states have a core set of qualifications for a candidate to be eligible for the CPA exam.",
-                "paraTwo": "Simandhar Education provides free eligibility check that you could use to check if you’re eligible to take the prestigious US CPA certification.",
+                "para": "Simandhar Education has its own CPA exam review, taught by India’s best CPA instructors like Sripal Jain (CA, CGMA, US CPA), Surinder Kaur (CPA), Srikanth Tadikonda (CMA, CPA), Dhanashree Kshirsagar (CA, CPA), Heena Vithlani (CA,CPA,IFRS with ACCA), Karan Nathvani (CA,MBA-IIM Indore, CISA, CCSK) Amit Kumar Gupta (ACA,ACS,CMA) Sudha Murthy (CA) and Suraj Lakhotia (CA, CIMA). Simandhar has helped hundreds of CPA aspirants clear their CPA exams in India.",
+                "paraone":"Simandhar CPA LMS coupled with Becker CPA review makes sure that you get all the nourishment required to tackle your CPA exams. The combination ensures that you leave no stone unturned. Along with the regular classes, Simandhar extends support to aspirants through revision classes that have been a hit for a long time among the Indian CPA fraternity.",
+                "paraTwo": "",
                 "button": "Know Your Eligibility",
                 "title": "General Rules of Thumb :",
+                "title1": "General Rules of Thumb :",
+                "mainheading":"Simandhar + Becker",
+                "lists": [],
+                "lists1":[]
+            },
+            {
+                "id": 4,
+                "para": "",
+                "paraone":"",
+                "paraTwo": "With diverse industry relations and corporate tie-ups, Simandhar Education provides placement assistance to all its CPA learners.",
+                "button": "Know Your Eligibility",
+                "title": "Career opportutities",
+                "title1": "",
+                "mainheading":"",
                 "lists": [
                     {
                         "id": 1,
-                        "list": "Master’s Degree in any of the streams of Commerce, Accounting or Finance"
+                        "list": "Consulting Services"
                     },
                     {
                         "id": 2,
-                        "list": "An aspirant needs 120 credits to take the US CPA exams and 150 credits to get his CPA license"
+                        "list": "Assurance Services"
                     },
                     {
                         "id": 3,
-                        "list": "It’s considered that one year of University education in India is equal to 30 credits of US education"
+                        "list": "Financial Planning"
                     },
                     {
                         "id": 4,
-                        "list": "In some cases, first division graduates of a three-year degree from NAAC-A accredited universities of India are qualified to take the US CPA exams too."
+                        "list": "International Accounting"
+                    },
+                    {
+                        "id": 5,
+                        "list": "Information Technology Services"
+                    },
+                    {
+                        "id": 6,
+                        "list": "Forensic Accounting"
+                    },
+                    {
+                        "id": 7,
+                        "list": "Litigation Services"
+                    },
+                    {
+                        "id": 8,
+                        "list": "Non-Profit Organizations"
+                    },
+                    {
+                        "id": 9,
+                        "list": "Taxation Services"
+                    },
+                    {
+                        "id": 10,
+                        "list": "Business Valuation And Many more"
                     }
                 ],
                 "lists1":[]

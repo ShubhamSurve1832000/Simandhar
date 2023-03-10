@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Tab } from "@headlessui/react"
 
-const CurriculumSectionone = ({ CurriculumSectiononeData }) => {
+const CurriculumSectionone = ({ CurriculumSectiononeData, showData }) => {
   return (
     <>
       <section className="section aside-tab-section">
@@ -27,11 +27,11 @@ const CurriculumSectionone = ({ CurriculumSectiononeData }) => {
                             <div className="heading05">{list.txt}</div>
                           </div></>
                       }))}
-
-                     
                     </Tab.Panel>
                   </>
                 }))}
+
+
 
 
               </Tab.Panels>
