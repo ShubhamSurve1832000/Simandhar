@@ -1,7 +1,5 @@
-.read-more{color: #760B28;font-weight: 600;
-&::after{
-  content: ">";
-}
+.read-more{color: #760B28;font-weight: 600;position: relative;
+&::after{  content: ">";position: absolute;top: 0;padding-left: 1rem;}
 }
 .background-gradient{background: linear-gradient(90deg, rgb(118, 11, 40) 0%, rgb(136, 35, 111) 100%);;}
 
