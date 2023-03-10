@@ -22,6 +22,7 @@ const ExamSection = ({ examData, showStrip }) => {
 
           </div>
           <p className='pr-color'>{examData.description}</p>
+          <p className='pr-color'>{examData.descriptionTwo}</p>
         </div>
       </section>
 
