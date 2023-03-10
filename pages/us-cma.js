@@ -48,7 +48,9 @@ export default function CMA() {
       </div>
       <div className='background-none '> <HelpSection helpData={helpData.takeaWays} /></div>
       <div className='text-center'> <AchieversSection achieverData={achieverData.cmaPage}  /></div>
+      <div className='cma-table'>
       <TableSection />
+      </div>
       <FaqSection/>
 
       

@@ -19,10 +19,10 @@ import OfferSection from '../home/OfferSection'
 import Header from '../components/header'
 
 
-
 // Data
 import indexData from '../database/index.json'
 import achieverData from '../database/data/achieversSection.json'
+import videoData from '../database/data/videoSection.json'
 
 
 
@@ -47,15 +47,11 @@ console.log('mrRef',myRef.current)
         <Programm indexData={indexData.programTab} />
         <Placement indexData={indexData.placementAlumni} />
         <Founder />
-        <Video />
+        <Video videoData={videoData.homePage} />
         <AchieversSection achieverData={achieverData.homePage} showData={true}/>
         <Partner ref={myRef} indexData={indexData.corporateTab} />
         <Award />
         <ContactUs />
-        
-
-     
-       
       </Format>
       
     </>

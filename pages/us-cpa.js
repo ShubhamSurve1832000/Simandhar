@@ -17,6 +17,8 @@ import ExamTab from '../CPA/ExamTab'
 import Header from '../components/header'
 import DesignationSection from '../CPA/DesignationSection'
 import BeckerSection from '../CPA/BeckerSection'
+import CpaTableOne from '../CPA/CpaTableOne'
+import CpaTableTwo from '../CPA/CpaTableTwo'
 
 // import Exam from './examSection'
 // import Journery from './journerySection'
@@ -38,7 +40,7 @@ import achieverData from '../database/data/achieversSection.json'
 import examData from '../database/data/exam.json'
 import tabData from '../database/data/examTab.json'
 import beckerData from '../database/data/beckerData.json'
-
+import curriculumData from '../database/data/CurriculumData.json'
 
 
 
@@ -61,24 +63,29 @@ export default function CPA() {
           <ExamTab tabData={tabData.cpaPage} />
           <JournerySection journeyData={journeyData.cpaPage} />
           <OnlineCourseSection />
-          <CurriculumSection />
+          <CurriculumSection curriculumData={curriculumData.cpaPage} showData={true}/>
+          <CpaTableTwo />
+          <CpaTableOne />
           <div className='cpa-exam-tab'>
           <ExamSection examData={examData.cpaPageOne} showStrip={false} />
           </div>
           <div className='cpa-location'><DesignationSection contentPartnerData={contentPartnerData.prometric} />
           </div>
-
+          <div className='cpa-program-table'>
           <ProgrammTableSection />
+          </div>
           <ContentPartnerSection contentPartnerData={contentPartnerData.cpaPage} />
           <HelpSection helpData={helpData.cpaPage} />
           <CareerSection />
-          <AchieversSection achieverData={achieverData.cpaPage} showData={true} />
+          <AchieversSection achieverData={achieverData.homePage} showData={true} />
           <PlacementSection />
           <div className='cpa-exam-tab2'>
           <ExamSection examData={examData.cpaPageTwo} showStrip={false} paraTwo={true} />
           </div>
           <BeckerSection beckerData={beckerData.Becker}  />
+          <div className='globle-accounting'>
           <DesignationSection contentPartnerData={contentPartnerData.Locations} shortHeading={true} />
+          </div>
           <FaqSection />
           
         </main>
