@@ -39,20 +39,23 @@ export default function EA() {
       {/* <CpaProgram /> */}
       <BannerSection bannerData={bannerData.eaPage} />
       <div className='cma-exam-section'>
-      <ExamSection examData={examData.eaPage} /></div>
+        <ExamSection examData={examData.eaPage} /></div>
       <div className='background-none ea-page'> <HelpSection helpData={helpData.takeaWays} /></div>
       <Gallery galleryData={galleryData.eaGallery} />
-    <div className='ea-curriculum'>
-      <CurriculumSection curriculumData={curriculumData.eaPage}/>
-    </div>
-      
-      <ContentPartnerSection contentPartnerData={contentPartnerData.eaPage} showData={true}/>
+      <div className='ea-curriculum'>
+        <CurriculumSection curriculumData={curriculumData.eaPage} />
+      </div>
+      <div className='ea-content-section'>
+        <ContentPartnerSection contentPartnerData={contentPartnerData.eaPage} showData={true} />
+      </div>
       <EaCourseTable />
       <div className='text-center'> <AchieversSection achieverData={achieverData.eaPage} showData={false} /></div>
-      <Video videoData={videoData.eaPage} />
-      <FaqSection/>
+      <div className='ea-video-section'>
+        <Video videoData={videoData.eaPage} />
+      </div>
+      <FaqSection />
 
-      
+
 
     </>
   )
