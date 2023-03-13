@@ -35,7 +35,7 @@ a {text-decoration: none;color: initial}
 	// select{position: relative;}
 	// &:after{content: '';position: absolute;right: 2rem;background-image:url("/img/cross_arrow_white.svg");width: 2rem;height: 2rem;background-size: contain;background-repeat: no-repeat;transform: rotate(90deg);}
 }
-.title01{font-size: 2.4rem;font-weight: 500;color: $primary-color;}
+.title01{font-size: 2.4rem;font-weight: 500;color: $primary-color;line-height: 3.5rem;}
 .row-reverse{flex-direction: column-reverse !important;}
 .hf-container{max-width: 175rem;width: 96%;margin: 0 auto;}
 
@@ -113,7 +113,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		@include breakpoint(max, 767px){width: 100%;}
 		.slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide>div, .banner-slider, .banner-inner-slider{height: 100%;}
 			.banner-inner-slider{background-repeat: no-repeat;background-size: cover;position: relative; background-position: left bottom;padding-top: 50%;}
-        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 6rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
+        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 7rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
 					@include breakpoint(max, 1023px){top: 5rem;left: 5rem;}
 					@include breakpoint(max, 767px){width: 60%;top: 5rem;left: 3rem;}
             .banner-title {font-size: 4.8rem;font-weight: 500;color: #2C2C2C;line-height: 5.5rem;
@@ -154,7 +154,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 	select{font-weight: 500;appearance: none;background: transparent}
 	&.custom-select{background-image: url("/img/black_down_arrow.png");background-repeat: no-repeat;background-position: right 2rem top;background-size: 2rem;}
 }
-.error-message{color: #f00;font-size: 1.4rem;position: absolute;left: 0;right: 0;text-align: right;}
+.error-message{color: #f00;font-size: 2rem;position: absolute;top:100%;left: 0;right: 0;text-align: right;    padding-top: 0.5rem;}
 .overlay{background-color: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 100;}
 
 .react-tel-input{display: inline-block;width: auto !important;
