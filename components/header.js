@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 // import { useRouter } from 'next/router'
 import { usePathname } from 'next/navigation'
@@ -7,13 +8,34 @@ import { CgProfile } from 'react-icons/cg'
 import { BsCart2 } from 'react-icons/bs'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { IoCaretForward } from 'react-icons/io5'
-import React, { useState } from 'react'
 import Slider from 'react-slick'
 import CpaProgram from '../components/CpaProgram'
 import programData from '../database/data/program.json'
 
 
+function useScrollDirection() {
+	const [scrollDirection, setScrollDirection] = useState(null);
 
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    }
+  }, [scrollDirection]);
+
+  return scrollDirection;
+
+};
 
 // function MyComponent (props) {
 //   const [isActive, setActive] = useState(false);
@@ -33,6 +55,7 @@ import programData from '../database/data/program.json'
 // }
 
 export default function header({showData,showData1}) {
+  const scrollDirection = useScrollDirection();
   var programSlider = {
     dots: false,
     infinite: false,
@@ -93,7 +116,7 @@ export default function header({showData,showData1}) {
   return (
 
     <>
-      <header   className="header" id="header">
+      <header   className={`header ${ scrollDirection === "down" ? "active" : " "}`} id="header">
         <nav className='navbar hf-container'>
           <div className='logo_img  resp-img-box'>
             <Link href="/"> <Image src='/img/logo.png' layout="fill" className='resp-img' alt='Simandhar logo' />
@@ -146,8 +169,8 @@ export default function header({showData,showData1}) {
             </div>
             <div className='btn01'><button className='btn'>Buy Courses</button></div>
             <div className='profile-icon'>
-              <span><i className='profile'> <CgProfile /></i></span>
               <span><i className='cart'> <BsCart2 /></i></span>
+              <span><h3 className='profile'>Login </h3></span>
             </div>
           </div>
           <div className='clear'></div>
@@ -182,9 +205,9 @@ export default function header({showData,showData1}) {
                   <Link href='/us-cma' className='nav-title'>US CMA</Link>
                   <Link href='/ea' className='nav-title'>EA</Link>
                   <Link href='/cia' className='nav-title'>CIA</Link>
-                  <Link href='' className='nav-title'>IFRS</Link>
-                  <Link href='' className='nav-title'>Data Analytics</Link>
-                  <Link href='' className='nav-title'>Simandhar Saamarth</Link>
+                  <Link href='/ifrs' className='nav-title'>IFRS</Link>
+                  <Link href='/dataAnalytics' className='nav-title'>Data Analytics</Link>
+                  <Link href='/saamarth' className='nav-title'>Simandhar Saamarth</Link>
                   <Link href='' className='more_dropdown nav-title' onClick={showDwnPopup1}>
                     More
                     <span><i><RiArrowDropDownLine /></i></span>
