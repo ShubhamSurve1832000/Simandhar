@@ -113,7 +113,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		@include breakpoint(max, 767px){width: 100%;}
 		.slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide>div, .banner-slider, .banner-inner-slider{height: 100%;}
 			.banner-inner-slider{background-repeat: no-repeat;background-size: cover;position: relative; background-position: left bottom;padding-top: 50%;}
-        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 7rem;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
+        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 8.9%;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
 					@include breakpoint(max, 1023px){top: 5rem;left: 5rem;}
 					@include breakpoint(max, 767px){width: 60%;top: 5rem;left: 3rem;}
             .banner-title {font-size: 4.8rem;font-weight: 500;color: #2C2C2C;line-height: 5.5rem;
@@ -160,7 +160,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 .react-tel-input{display: inline-block;width: auto !important;
     .form-control {width: 100px !important;border: none !important;border-bottom: solid 1px #000 !important;border-radius: 0 !important;}
     .flag-dropdown {border: none !important;border-bottom: solid 1px #000 !important;}
-    + input{display: inline-block;width: calc(100% - 100px);padding: 9px;padding-left: 0;}
+    + input{display: inline-block;width: calc(100% - 100px);padding: 8px;padding-left: 0;}
   }
   .download-overlay{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.6);z-index: 9;}
 .download-popup{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9;width: 66rem;
@@ -742,7 +742,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 // US CPA :- TAB STURCTURE CSS
 .tab-section{
 	 .tab-header{display: flex;width: 100%;
-	 @include breakpoint(max, 700px){display: none;border-left:solid 1px #760B28;
+	 @include breakpoint(max, 767px){display: none;border-left:solid 1px #760B28;
 		&.active{display: block;}
 	}
 		 .tab-btn{padding: 3.5rem 0;border: solid 1px #760B28;border-left: none;background-color: transparent;font-weight: 500;font-size: 2.4rem;color: #760B28;transition: ease .5s all;width: 100%;
