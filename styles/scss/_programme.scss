@@ -366,9 +366,11 @@ p.tab-button-mobile{position: relative;
 // Curriculum Section One On CMA Page
 .cma-tab .aside-tab-section{padding-bottom: 0;}
 .cma-tab .aside-tab-section .aside-tab-container .left-tab-box{width: 78rem; 
+  @include breakpoint(max ,800px){width: 100%;padding: 3rem 5rem;}
   @include breakpoint(max ,767px){width: 100%;padding: 3rem 5rem;}
 }
 .cma-tab .aside-tab-section .aside-tab-container .right-tab-box {width: calc(100% - 78rem);height: 70rem;overflow: auto;
+  @include breakpoint(max,800px){width: 100%;}
   @include breakpoint(max,767px){width: 100%;}
   .tab-container{height: 50rem;overflow: auto;
     h3.heading05{color: $primary-color;}  
