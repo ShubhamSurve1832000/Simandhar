@@ -366,11 +366,11 @@ p.tab-button-mobile{position: relative;
 // Curriculum Section One On CMA Page
 .cma-tab .aside-tab-section{padding-bottom: 0;}
 .cma-tab .aside-tab-section .aside-tab-container .left-tab-box{width: 78rem; 
-  @include breakpoint(max ,800px){width: 100%;padding: 3rem 5rem;}
+  @include breakpoint(max ,970px){width: 100%;padding: 3rem 5rem;}
   @include breakpoint(max ,767px){width: 100%;padding: 3rem 5rem;}
 }
 .cma-tab .aside-tab-section .aside-tab-container .right-tab-box {width: calc(100% - 78rem);height: 70rem;overflow: auto;
-  @include breakpoint(max,800px){width: 100%;}
+  @include breakpoint(max,970px){width: 100%;}
   @include breakpoint(max,767px){width: 100%;}
   .tab-container{height: 50rem;overflow: auto;
     h3.heading05{color: $primary-color;}  
@@ -395,7 +395,7 @@ table {width: 100%;border-collapse: collapse;margin: 0 auto;
 .strip tr {line-height: 5rem;padding-left: 1.5rem;}
 .strip td {padding: 2.7rem 4rem;text-align: center;min-width: 10rem;font-size: 2.4rem;line-height: 2.5rem;color: #000000;
   @include breakpoint(max,500px){min-width: 40rem;padding: 2.7rem 2rem;}}
-.strip th {background-color: #fff;color: #760B28;padding: 4.5rem 4rem;font-size: 2.4rem;line-height: 2.8rem;font-weight: 600;}
+.strip th {background-color: #fff;color: #760B28;padding: 4.5rem 4rem;font-size: 2.4rem;line-height: 2.8rem;font-weight: 600;vertical-align: middle;}
 .strip tr:nth-child(odd) {background-color: #FFF5F5;border-bottom: none;}
 .strip tr:nth-child(even) {background-color: #F9EBEB;border-bottom: none;}
 thead th{border-bottom: 1px solid;border-left: 1px solid;}
@@ -507,3 +507,127 @@ tbody td{border-left: 1px solid;}
 .banner-ciaPage{
   .section{padding: 0;}
 }
+
+// Banner Section DATA Analytics
+.da-banner{
+  .program-banner { @include breakpoint (max,970px){ display: block;;}
+  .title01{color: #000;padding-right: 6rem;line-height: 4.8rem;font-weight: 400;}  
+}
+}
+// DA Exam Section
+.da-exam{
+  section{padding-top: 0;}
+}
+
+// DA Achiever Section
+.da-achievers{
+  .achiever-section{
+    .title01{color: #000;}
+    .achiever-container{
+      .achiever-box {background-color: #760B28;
+        figcaption{
+          .rm-btn{color: #fff;}
+        }
+      &:nth-child(even) figcaption p .rm-btn {color:  #fff;}
+      }
+    }
+    .btn-wrap.text-center{display: none;}
+  }
+}
+
+// DA UPCOMING BATCHES 
+
+.batches-section{
+  .two-box-row {display: grid;grid-template-columns: 1fr 1fr;background-color: #FEE5E5;border-radius: 33px;padding:0 6.3rem;grid-gap: 2.9rem;margin-top: 5rem; 
+    @include breakpoint(max,970px){display: block; padding-bottom: 5rem;}
+    @include breakpoint(max,767px){padding: 3rem 3.3rem;}
+    .right-box{
+      .grid-row{display: flex;grid-gap: 3.8rem;align-items: center;padding-top: 4rem; 
+        @include breakpoint(max,970px){justify-content:center;}
+        @include breakpoint(max,500px){flex-direction: column;text-align: center;grid-gap: 3rem;padding-top: 3rem;}
+        .date-circle{position: relative;width: 17.9rem;height: 17.9rem;background:$primary-color;border-radius: 50%;padding: 3rem; 
+          .date-box{position: absolute;display: flex;flex-direction: column;text-align: center;top: 50%;left: 3rem;transform: translateY(-50%);right: 3rem;background: #fff;border-radius: 8px; 
+            .month-row{font-size: 2.4rem;padding: 0.6rem 2.7rem;border-bottom: 2px solid $primary-color;font-weight: 700;color: $primary-color;}
+            .date-row{font-size: 6.4rem;padding: 1rem 3.4rem;font-weight: 700;color: $primary-color;}
+          }
+        }
+        .batch-content{
+          .heading03{color: $primary-color;border-bottom: 1px solid $primary-color;padding-bottom: 1.8rem;font-weight: 700;}
+          .heading05{margin-top: 3rem;width: max-content;font-weight: 400;
+          @include breakpoint(max,500px){width: auto;line-height: 4rem;}}
+          .download-schedule{margin-top: 4rem;}
+        }
+      }
+    }
+  }
+}
+
+// Data Analytics Section
+.analytics-section{background-color: #FFF5F5;
+  .heading04{margin-top: 5rem;color: $primary-color;}
+  .key-topics-flex{display: flex;text-align: center;border: 1px solid;margin-top:4rem;
+    @include breakpoint(max,767px){display: block;}
+    .box{border: 1px solid;padding: 4rem 9rem;
+      @include breakpoint(max,970px){padding: 4rem 2rem;}}
+  }
+  .skills-list{margin-top: 8rem;
+    .heading04{color: $primary-color;}
+    ul{padding-left: 0;margin-top:4rem;
+      li.heading05{display: flex;grid-gap: 3.5rem; padding-bottom: 2rem;width: max-content;align-items: center;
+        @include breakpoint(max,970px){width: 100%;display: grid;grid-template-columns: 4% 94%;}
+        .count{width: 4.7rem;height: 4.7rem;border-radius: 100%;text-align: center;font-size: 3.2rem;line-height: 3.7rem;display: flex;justify-content: center;align-items: center;background: #000;color: #fff; }
+      }
+    }
+  }
+}
+
+// ifrs page 
+.banner-ifrsPage{
+  .program-banner {display: block;
+    .banenr-left {    width: 56%;float: left;margin-right: 5%;margin-bottom: 2%;}
+ }
+}
+
+.ifrs-exam-section{
+.exam-section{
+  .exam-header{display: none;}
+  p{margin-bottom:0; &:nth-child(2){margin-bottom: 3.5rem;}}
+}
+}
+
+.ifrs-help-section{
+.heading02{text-align: center;padding-right: 0;}
+.heading04{text-align: center;}
+.help-container{grid-template-columns: repeat(3, 1fr);}
+}
+
+.ifrs-gallery-page{
+.gallery-section {margin-top: 0;}
+}
+.ifsr-achiever{
+.section{padding: 0;
+  .achiever-section .achiever-container .achiever-box figcaption p .rm-btn{display: none;}
+}
+.pt-8{padding-top: 0;}
+}
+
+// saamarth page 
+.banner-saamarthPage{
+  .pr-color{font-size: 2.8rem;line-height: 3.4rem;font-weight: 500;}
+}
+
+.saamarthPage-table{
+  .strip th:nth-child(odd){background-color: #760B28;color: #ffffff;}
+  .strip th:nth-child(even){background-color: #5A0F24;color: #ffffff;}
+  .Download-btn{text-align: center;padding: 3rem;}
+}
+
+.saamarthPage-tabletwo{
+  .strip tr{background: none;}
+}
+
+.saamarthPagepartner{
+  .section.cont-partner-section{padding: 0;}
+}
+
+// 

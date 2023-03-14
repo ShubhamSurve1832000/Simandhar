@@ -113,7 +113,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		@include breakpoint(max, 767px){width: 100%;}
 		.slick-slider, .slick-list, .slick-track, .slick-slide, .slick-slide>div, .banner-slider, .banner-inner-slider{height: 100%;}
 			.banner-inner-slider{background-repeat: no-repeat;background-size: cover;position: relative; background-position: left bottom;padding-top: 50%;}
-        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 8.9%;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
+        .banner-content {width: 62rem;position: absolute;top: 14rem;left: 14rem;bottom: 8.6%;display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
 					@include breakpoint(max, 1023px){top: 5rem;left: 5rem;}
 					@include breakpoint(max, 767px){width: 60%;top: 5rem;left: 3rem;}
             .banner-title {font-size: 4.8rem;font-weight: 500;color: #2C2C2C;line-height: 5.5rem;
@@ -150,7 +150,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 }
 .close-form{position: absolute !important;top: 50%;transform: translateY(-50%);background-color: transparent;border: none;left: -3.1rem;width: 6.2rem;}
 .input-box{margin-top: 3.5rem;position: relative;
-	input, select{width: 100%;display: block;border: none;border-bottom: solid 1px #000;font-size: 2rem;line-height: 2.7rem;color: #000;@include placeholder(#000);padding-bottom: .6rem;}
+	input, select{width: 100%;display: block;border: none;border-bottom: solid 1px #000;font-size: 2rem;line-height: 2.7rem;color: #000;@include placeholder(#000);padding-bottom: .6rem;font-weight: 500;}
 	select{font-weight: 500;appearance: none;background: transparent}
 	&.custom-select{background-image: url("/img/black_down_arrow.png");background-repeat: no-repeat;background-position: right 2rem top;background-size: 2rem;}
 }
@@ -160,7 +160,10 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 .react-tel-input{display: inline-block;width: auto !important;
     .form-control {width: 100px !important;border: none !important;border-bottom: solid 1px #000 !important;border-radius: 0 !important;}
     .flag-dropdown {border: none !important;border-bottom: solid 1px #000 !important;}
-    + input{display: inline-block;width: calc(100% - 100px);padding: 8px;padding-left: 0;}
+    + input{display: inline-block;width: calc(100% - 100px);padding: 8px;padding-left: 0;
+	@include breakpoint (max,970px){padding: 10px 0;}
+
+}
   }
   .download-overlay{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.6);z-index: 9;}
 .download-popup{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9;width: 66rem;
@@ -255,8 +258,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max, 1500px){padding: 3rem 5rem;padding-right: 38%;}
 			@include breakpoint(max, 1023px){background-position: top right 50%;}
 			@include breakpoint(max, 767px){padding: 5rem;margin-top: 2rem;padding-bottom: 50%;background-position: bottom right;background-size: 109%, auto;}
-        .heading04{color: #760B28;}
-        ul{padding-left: 2.5rem; list-style: disc;
+        .heading04{color: #760B28;padding-right: 9rem;}
+        ul{padding-left: 2.5rem; list-style: disc;height: 38rem;
             li{color: #000;font-weight: 500;font-size: 2.4rem;line-height: 3.2rem;margin-top: 3rem;
 		@include breakpoint(max, 767px){font-size: 2.5rem;line-height: 3.5rem;}
 		}
