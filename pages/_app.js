@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
   
     <StickyComponents showPopup={showPopup} isactive={isActive}/>
     <FormComponents isactive={isActive} showPopup={showPopup}/>
-    <a href='#' className='chat-icon'><Image src="/img/chat.svg" alt="" width={122} height={135} /></a>
+    <a href='#' className='chat-icon'><Image src="/img/chat.webp" alt="" width={122} height={135} /></a>
     <Component {...pageProps} showPopup={showPopup}/> 
     <Footer />
     </Format>
