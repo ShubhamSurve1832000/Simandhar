@@ -56,32 +56,7 @@ function useScrollDirection() {
 
 export default function header({showData,showData1}) {
   const scrollDirection = useScrollDirection();
-  var programSlider = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1
-          // initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          variableWidth: true,
-        }
-      }
-    ]
-  };
+
 
   const [isActive, setActive] = useState(false);
   const showMenu = () => {
@@ -201,13 +176,13 @@ export default function header({showData,showData1}) {
                 <div className='programs'>
                   {/* <Slider {...programSlider}> */}
 
-                  <Link href='/us-cpa' className='nav-title'>US CPA</Link>
-                  <Link href='/us-cma' className='nav-title'>US CMA</Link>
-                  <Link href='/ea' className='nav-title'>EA</Link>
-                  <Link href='/cia' className='nav-title'>CIA</Link>
-                  <Link href='/ifrs' className='nav-title'>IFRS</Link>
-                  <Link href='/dataAnalytics' className='nav-title'>Data Analytics</Link>
-                  <Link href='/saamarth' className='nav-title'>Simandhar Saamarth</Link>
+                  <Link href='/us-cpa' className={pathname =='/us-cpa' ? "nav-title active" :" nav-title"}>US CPA</Link>
+                  <Link href='/us-cma' className={pathname =='/us-cma' ? "nav-title active" :" nav-title"}>US CMA</Link>
+                  <Link href='/ea' className={pathname =='/ea' ? "nav-title active" :" nav-title"}>EA</Link>
+                  <Link href='/cia' className={pathname =='/cia' ? "nav-title active" :" nav-title"}>CIA</Link>
+                  <Link href='/ifrs' className={pathname =='/ifrs' ? "nav-title active" :" nav-title"}>IFRS</Link>
+                  <Link href='/dataAnalytics' className={pathname =='/dataAnalytics' ? "nav-title active" :" nav-title"}>Data Analytics</Link>
+                  <Link href='/saamarth' className={pathname =='/saamarth' ? "nav-title active" :" nav-title"}>Simandhar Saamarth</Link>
                   <Link href='' className='more_dropdown nav-title' onClick={showDwnPopup1}>
                     More
                     <span><i><RiArrowDropDownLine /></i></span>

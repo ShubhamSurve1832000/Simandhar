@@ -20,9 +20,9 @@ const StickyComponents = ({isactive, showPopup}) => {
   return (
     <>
     <div class="sticky-box">
-        <a href="#" className='resp-img-box'><BsTelephone /></a>
-        <a href="#" className='resp-img-box'><TfiEmail /></a>
-        <a href="#" className='wa-icon resp-img-box'><Image src="/img/whatsapp.png" alt="" layout="fill" className='resp-img' /></a>
+        <a href="tel:07780273388" className='resp-img-box'><BsTelephone /></a>
+        <a href="mailto: info@simandhareducation.com" className='resp-img-box'><TfiEmail /></a>
+        <a href="https://wa.me/07780273388" className='wa-icon resp-img-box' target="_blank"><Image src="/img/whatsapp.png" alt="" layout="fill" className='resp-img' /></a>
        
         <button className={'enq-btn resp-img-box' + ' ' + (isactive ? 'active' : '')} onClick={showPopup}  ref={buttonNameRef}>
           <Image src="/img/enquire_now.svg" alt="" layout="fill" className='resp-img' />
