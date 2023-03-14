@@ -52,20 +52,21 @@ a {text-decoration: none;color: initial}
 	@include breakpoint(max, 1023px){font-size: 8.6rem;line-height: 9.2rem;}
 }
 .heading02{font-weight: 700;font-size: 6.4rem;color: #2C2C2C;line-height: 7.4rem;
-	@include breakpoint(max, 1023px){font-size: 4.4rem;line-height: 5rem;}
+	@include breakpoint(max, 1023px){font-size: 6rem;line-height: 6.5rem;}
 	@include breakpoint(max, 500px){text-align: center;}
 }
 .heading03{font-weight: 700;font-size: 4.8rem;color: #2C2C2C;line-height: 5.5rem;
-	@include breakpoint(max, 767px){font-size: 4.2rem;line-height: 5rem;}
+	@include breakpoint(max, 767px){font-size: 4.4rem;line-height: 5rem;}
 }
 .heading04{font-weight: 700;font-size: 3.6rem;line-height: 4.8rem;
 	@include breakpoint(max, 1023px){font-size: 3.3rem;line-height: 4rem;}
+	@include breakpoint(max, 500px){font-size: 3.5rem;line-height: 4.2rem;}
 }
 .heading05{font-weight: 700;font-size: 3.2rem;line-height: 3.7rem;}
 // .heading04{font-weight: 400;font-size: 2.4rem;line-height: 3rem;}
 
 p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
-	@include breakpoint(max, 767px){font-size: 2.5rem;line-height: 3.5rem;}
+	@include breakpoint(max, 767px){font-size: 3rem;line-height: 3.9rem;} //font size updated
 }
 .sticky-box a{    font-size: 4rem;
     color: #000;}
@@ -87,7 +88,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
         h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;}}
     .offer_box5{padding: 1.6rem 4.6rem;color: #040404; background-color: #fff;border-radius: 3.3rem;display: inline-block;margin-left: 3.8rem;vertical-align: middle;
         @include breakpoint(max,500px){margin-left: 2rem;padding: 1.6rem 3.6rem;}
-        h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;}}
+        h3{font-size: 2rem;font-family: 'Space Grotesk';font-weight: 500;
+		@include breakpoint(max,500px){font-size: 2.5rem;}}}
 }
 
 
@@ -203,7 +205,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
             .edu-row{margin-top: 2rem;
 							@include breakpoint(max, 767px) {margin-top: 1.5rem;}
                 .edu-tab{background-color: #760B28;border-radius: 3.3rem;padding: 3rem;color: #fff;font-size: 2.4rem;font-weight: 700;line-height: 2.8rem;
-									@include breakpoint(max, 1023px){padding: 2rem;font-size: 2.2rem;}
+									@include breakpoint(max, 1023px){padding: 2.5rem;font-size: 2.8rem;}
 								}            
                  &:first-child{display: grid;grid-template-columns: 57% 1fr;grid-column-gap: 2rem;
 									@include breakpoint(max, 767px){grid-column-gap: 1.5rem;}
@@ -261,7 +263,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
         .heading04{color: #760B28;padding-right: 9rem;}
         ul{padding-left: 2.5rem; list-style: disc;height: 38rem;
             li{color: #000;font-weight: 500;font-size: 2.4rem;line-height: 3.2rem;margin-top: 3rem;
-		@include breakpoint(max, 767px){font-size: 2.5rem;line-height: 3.5rem;}
+		@include breakpoint(max, 767px){font-size: 2.8rem;line-height: 3.5rem;}
 		}
         }
         .btn{margin-top: 3.5rem}
@@ -317,7 +319,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 			@include breakpoint(max, 767px){width: 100%;background: #fff;padding: 3rem;}
 			.founder-innerbox{width: 82%;
 				@include breakpoint(max, 1023px){width: 100%;}
-				p{font-size: 2.4rem;line-height: 3.8rem;margin-top: 1rem;color: #000}
+				p{font-size: 2.4rem;line-height: 3.8rem;margin-top: 1rem;color: #000;
+					@include breakpoint(max,500px){font-size: 3rem;margin-top: 2rem;} }
 				.heading05 + p{color: #2c2c2c;}
 				.heading04{Color: #760B28;margin: 3.5rem 0}
 			}
@@ -347,9 +350,10 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 								@include breakpoint(max, 767px){width: 65%;}
 									.heading06{font-size: 2.4rem;font-weight: 500;color: #000000;line-height: 3.7rem;
 										@include breakpoint(max, 1023px){font-size: 2.2rem;line-height: 2.7rem;}
-										@include breakpoint(max, 767px){font-size: 2.5rem;line-height: 3rem;}
+										@include breakpoint(max, 767px){font-size: 2.7rem;line-height: 3rem;}
 									}
-									span{display: block;color: #909090;font-weight: 400;font-size: 1.6rem;line-height: 2.4rem;}
+									span{display: block;color: #909090;font-weight: 400;font-size: 1.6rem;line-height: 2.4rem;
+									@include breakpoint(max,500px){font-size: 2rem;}}
 							}
 					
            
@@ -378,7 +382,8 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
             &:after{content: '>';margin-left: 5px;display: inline-block;vertical-align: middle;}
             }          
         }
-        span{color: #fff;font-size: 2.4rem;font-weight: 500;display: block;line-height: 3.1rem;}
+        span{color: #fff;font-size: 2.4rem;font-weight: 500;display: block;line-height: 3.1rem;
+		@include breakpoint(max,500px){font-size: 2.6rem;}}
         }
     }
 }

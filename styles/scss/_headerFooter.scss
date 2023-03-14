@@ -60,7 +60,7 @@ header#header {top: 0;position: sticky;z-index: 99;background: #fff;
     &:hover{color: #fff; border-color: #fff;background-color: $primary-color;} }
    .profile-icon{
     .profile{font-size: 2.5rem;vertical-align: middle;display: inline-block;cursor: pointer;}
-    span:last-child{margin-left: 6.5rem;margin-right: 4.4rem;
+    span:last-child{margin-left: 6.5rem;margin-right: 4.4rem;font-weight: 500;
     @include breakpoint(max,970px){margin-left: 2.5rem;margin-right: 1.4rem}}
    }
     span i{font-size: 3rem;vertical-align: middle;
@@ -148,7 +148,7 @@ header#header {top: 0;position: sticky;z-index: 99;background: #fff;
         }    
         .nav-title1{font-size: 2rem;color: #fff;padding: 1.7rem 4.4rem;vertical-align: middle;font-weight: 500;width: max-content;pointer-events: none;
             @include breakpoint(max,767px){padding: 1.7rem 2.4rem;pointer-events: initial;width: 100%;text-align: center; } 
-            @include breakpoint(max,500px){padding: 2.5rem 0.4rem;font-size: 2.4rem;} 
+            @include breakpoint(max,500px){padding: 2rem 0.4rem;font-size: 3.6rem;} 
             span{vertical-align: sub;margin-left: 3.5rem;
                 @include breakpoint(max,767px){margin-left: 1.5rem;}
                 svg{transition: .5s ease all;}
