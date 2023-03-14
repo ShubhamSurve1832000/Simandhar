@@ -315,7 +315,7 @@ p , li{font-size: 2rem;font-weight: 400;color: #2C2C2C;line-height: 3.1rem;
 		.founder-info{width: 45%;padding-bottom: 7rem;
 			@include breakpoint(max, 1023px){width: 50%;}
 			@include breakpoint(max, 767px){width: 100%;background: #fff;padding: 3rem;}
-			.founder-innerbox{width: 80%;
+			.founder-innerbox{width: 82%;
 				@include breakpoint(max, 1023px){width: 100%;}
 				p{font-size: 2.4rem;line-height: 3.8rem;margin-top: 1rem;color: #000}
 				.heading05 + p{color: #2c2c2c;}
