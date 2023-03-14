@@ -24,7 +24,7 @@ const CareerSection = () => {
                 International Credibility
               </div>
               <div className="career-content">
-                CPAs enjoy internationally recognition for their expertise and high standards.
+              CPAs enjoy international recognition for their expertise and high standards.
               </div>
             </div>
             <div className="career-box">

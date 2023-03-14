@@ -16,16 +16,6 @@ const Gallery = ({ galleryData }) => {
                                 )
                             }))
                         }
-
-                        {/* <div className='gallery-img'>
-                            <Image src='/img/cpa/gallery_img01.webp' layout="fill" alt='' className='resp-img' />
-                        </div>
-                        <div className='gallery-img'>
-                            <Image src='/img/cpa/gallery_img02.webp' layout="fill" alt='' className='resp-img' />
-                        </div>
-                        <div className='gallery-img'>
-                            <Image src='/img/cpa/gallery_img03.webp' layout="fill" alt='' className='resp-img' />
-                        </div> */}
                     </div>
                 </div>
             </section>
