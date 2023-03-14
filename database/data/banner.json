@@ -5,7 +5,7 @@
         "lists": [
             {
                 "id": 1,
-                "list": "3 Times CPA Watt Sells Awards"
+                "list": "3 CPA Watt Sells Award Winners"
             },
             {
                 "id": 2,
@@ -96,6 +96,60 @@
             {
                 "id": 6,
                 "list": "Job security and chances of becoming the Chief Internal Auditor in the Corporate ladder"
+            }
+        ]
+    },
+    "daPage": {
+        "mainHeding": "About Data Analytics",
+        "img": "/img/cpa/cia_banner.webp",
+        "lists": [         ]
+    },
+    "ifrsPage": {
+        "mainHeding": "International Financial Reporting Standards",
+        "img": "/img/ifrs_banner.png",
+        "lists": [
+            {
+                "id": 1,
+                "list": "The programme is based on the ‘Diploma in IFRS’ from ACCA syllabus."
+            },
+            {
+                "id": 2,
+                "list": "It aims to prepare participants for the Diploma IFRS examination conducted by ACCA."
+            },
+            {
+                "id": 3,
+                "list": "The programme covers 75 hours of intensive and interactive Live Online training backed by recording of each and every session."
+            },
+            {
+                "id": 4,
+                "list": "Sessions will be held during the weekends and will not only cover the topic but also differences between IFRS, US GAAP, Ind AS wherever applicable."
+            },
+            {
+                "id": 5,
+                "list": "Monitoring test and mock examination shall be conducted to help students prepare well for the examination."
+            }
+        ]
+    },
+    "saamarthPage": {
+        "mainHeding": "Simandhar Saamarth Workshop",
+        "para":"Making you job-ready to help you get your dream job in Big 4s",
+        "img": "/img/saamarth_banner.png",
+        "lists": [
+            {
+                "id": 1,
+                "list": "Strong foundation of basic accounting concepts."
+            },
+            {
+                "id": 2,
+                "list": "Knowledge of uS GAAP, US GAAS, IFRS and US Tax"
+            },
+            {
+                "id": 3,
+                "list": "Interview preparation and mock interviews"
+            },
+            {
+                "id": 4,
+                "list": "Practical assessments and case studies"
             }
         ]
     }

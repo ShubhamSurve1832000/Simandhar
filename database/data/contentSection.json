@@ -49,7 +49,6 @@
                 "id": 2,
                 "img":"/img/cpa/simdhan_logo.png",
                 "para":"We believe that education has the ability to transform every individual. Today's students just don’t need information to be educated; they need an overall transformation to be successful in life.",
-                
                 "btn":"Download Prospectus"
             }        
         ],
@@ -126,6 +125,22 @@
                 "id": 6,
                 "list": "Authority to practice Public Accountancy all over the world (in India as well)"
             }
+        ]
+    },"ifrsPage": {
+        "mainHeading": "Prepare with India's Trusted Institute",
+        "repeats": [
+            {
+                "id": 2,
+                "img":"/img/cpa/simdhan_logo.png",
+                "para":"We believe that education has the ability to transform every individual. Today's students just don’t need information to be educated; they need an overall transformation to be successful in life.",
+                
+                "btn":"Download Prospectus"
+            }        
+        ],
+        "lists":[
+            {"id":0,"list":"We are the Channel Partner of AICPA"},
+            {"id":1,"list":" Official partners of Becker Professional Education"},
+            {"id":2,"list":" Approved partner of the Fast Forward Academy for Enrolled Agent in India"}
         ]
     }
 }

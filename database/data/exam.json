@@ -27,7 +27,16 @@
     "ciaPage": {
         "description": "Earning the Certified internal auditor (CIA) Certification make you grow up the corporate ladder in Audit field. Considering the increasing demand for Internal auditors’ profile globally, the Certified internal auditor qualification has become a single-handed recognised certification in the world. At Simandhar Education, we will guide you through entire registration process with IIA USA (Institute of Internal Auditors, USA) and ensure you're ready for CIA exam."
     },
-        "ciaPageone":{
+    "ciaPageone":{
         "mainHeading":"What is Internal Auditing?",
-        "description":"The Institute of Internal Auditors (IIA) has developed the globally accepted definition of internal auditing, as follows: Internal Auditing is an independent, objective assurance and consulting activity designed to add value and improve an organization's operations. It helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control, and governance processes."}
+        "description":"The Institute of Internal Auditors (IIA) has developed the globally accepted definition of internal auditing, as follows: Internal Auditing is an independent, objective assurance and consulting activity designed to add value and improve an organization's operations. It helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control, and governance processes."   
+    },
+    "daPage":{
+        "description": "Earning the Certified internal auditor (CIA) Certification make you grow up the corporate ladder in Audit field. Considering the increasing demand for Internal auditors’ profile globally, the Certified internal auditor qualification has become a single-handed recognised certification in the world. At Simandhar Education, we will guide you through entire registration process with IIA USA (Institute of Internal Auditors, USA) and ensure you're ready for CIA exam."
+    },"ifrsPage": {
+        "mainHeading":"",
+        "description": ["International Financial Reporting Standards (IFRS), issued by the International Accounting Standards Board (IASB), is rapidly becoming a benchmark for the accounting world. With a growing number of countries opting for IFRS, the numbers of finance professionals with qualification in IFRS is also increasing globally. The Indian Accounting Standards (Ind AS), notified in 2014, have converged with IFRS, which marked a paradigm shift in the regulatory and reporting landscape for companies in India."],
+        "descriptionTwo":["Diploma in IFRS (Diploma IFRS) from the Association of Certified Chartered Accountants is one such qualification which provides detailed conceptual insights into IFRS. It is widely recognised in India and around the world and is useful for finance professionals working or intending to work in an environment requiring accounting and reporting using IFRS/ Ind AS. The programmed is designed to develop an individual’s knowledge of IFRS by providing an understanding of the concepts, principles and application in the international marketplace."]
+
+    }
 }

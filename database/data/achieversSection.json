@@ -40,18 +40,18 @@
             },
             {
                 "id": 2,
-                "img": "/img/ashwiniNathan.jpg",
-                "para": "I'm thrilled to share that I have cleared all 4 parts of the US CPA examination. It's been a challenging journey and a lot of ups and downs from deciding to quit my job to studying full time and.",
+                "img": "/img/raghavPrassana.png",
+                "para": "Top-notch quality of student service. Truly a student development oriented organization. The placements and the value adds are impeccable. Great place! Wonderful staff! I definitely recommend!",
                 "btn": "Read More",
-                "title": "Ashwini Nathan",
+                "title": "Raghav Prassanna",
                 "caption": "US CPA"
             },
             {
                 "id": 3,
-                "img": "/img/ashwiniNathan.jpg",
-                "para": "I'm thrilled to share that I have cleared all 4 parts of the US CPA examination. It's been a challenging journey and a lot of ups and downs from deciding to quit my job to studying full time and.",
+                "img": "/img/wasinMankad.png",
+                "para": "And here starts my journey to the US CPA. One down and 3 more subjects to go. Thank you Simandhar team for the exception support!",
                 "btn": "Read More",
-                "title": "Ashwini Nathan",
+                "title": "Wasim Mankad",
                 "caption": "US CPA"
             }
         ]
@@ -99,6 +99,65 @@
                 "img": "/img/vijaykumar.webp",
                 "title": "Vijay kumar",
                 "caption": "EA"
+            }
+        ]
+    },
+    "daPage": {
+        "mainHeading": "Meet Our Instructors",
+        "description":"We have a network of leading instructors, who are keen & have successfully helped students and Corporates grow their Career in their respective fields",
+        "list": [
+            {
+                "id": 1,
+                "img": "/img/sripalJain.webp",
+                "para": "Sripal Jain is the Co-Founder of Simandhar Education LLP. He is Awarded Best Edupreneur of Telangana State - 2018 holds a Chartered Accountant and CPA (USA) qualified. He is a Visiting faculty at GITAM, C TARA...",
+                "btn": "Read More",
+                "title": "Sripal Jain",
+                "caption": "CA, CPA, CGMA",
+                "position":"Co-Founder & Lead Instructor, Simandhar Education",
+                "company":"Guest Faculty, IIM"
+            },
+            {
+                "id": 2,
+                "img": "/img/sabitraPanda.webp",
+                "para": "About 15+ years of experience in the field of analytics. A data leader in the field of Data Science (AI/ML), Analytics and Business Intelligence.Successfully trained (Live Training) more than 400 students, globally, in the field of...",
+                "btn": "Read More",
+                "title": "Sabitra Panda",
+                "caption": "MBA, IIM, Indore",
+                "position":"Co-Founder and Chief Data Scientist",
+                "company":"ByteIQ Analytics"
+            },
+            {
+                "id": 3,
+                "img": "/img/anandKakarla.webp",
+                "para": "Anand is a performance-driven professional with 20 years of experience in Global Sales & Business Development, Global Audits and Advisory, Global Outsourcing & Offshoring, International Payroll, Taxation, Process improvement...",
+                "btn": "Read More",
+                "title": "Anand Kakarla",
+                "caption": "CA, Global Practice Leader",
+                "position":"OneSource Consulting, LLC",
+                "company":""
+            }
+        ]
+    },
+    "ifrsPage": {
+        "mainHeading": "What our Achievers have to say",
+        "list": [
+            {
+                "id": 1,
+                "img": "/img/ashwiniNathan.jpg",
+                "para": "I'm thrilled to share that I have cleared all 4 parts of the US CPA examination. It's been a challenging journey and a lot of ups and downs from deciding to quit my job to studying full time and.",
+                "title": "Ashwini Nathan"
+            },
+            {
+                "id": 2,
+                "img": "/img/ashwiniNathan.jpg",
+                "para": "I'm thrilled to share that I have cleared all 4 parts of the US CPA examination. It's been a challenging journey and a lot of ups and downs from deciding to quit my job to studying full time and.",
+                "title": "Ashwini Nathan"
+            },
+            {
+                "id": 3,
+                "img": "/img/ashwiniNathan.jpg",
+                "para": "I'm thrilled to share that I have cleared all 4 parts of the US CPA examination. It's been a challenging journey and a lot of ups and downs from deciding to quit my job to studying full time and.",
+                "title": "Ashwini Nathan"
             }
         ]
     }
